@@ -15,6 +15,7 @@ This repository contains the documentation workflow for Band Quest.
 - Update the indexes in `README.md` files whenever a feature path changes.
 - Follow the communication and logging rules in [docs/agents/iteration-playbook.md](docs/agents/iteration-playbook.md).
 - Always create explicit plans and document your actions whenever you execute creation or editing of files. Use the chat response to clarify the plan before/during execution, and log updates appropriately.
+- **CRITICAL:** The `questions.md` file MUST be treated as an append-only historical log. NEVER overwrite or delete old questions/answers. Always append new items so that all agents and developers maintain full historical context.
 - Start new features from [docs/templates/feature-template.md](docs/templates/feature-template.md).
 - Use `docs/features/roadmap.md` to decide whether a proposal should stay as an epic or be split into smaller features.
 - Use [docs/agents/new-feature-bootstrap.md](docs/agents/new-feature-bootstrap.md) as the operational guide for creating a new feature.

@@ -1,5 +1,22 @@
 # Start Screen and Onboarding (Log)
 
+## [0.3.0] - 2026-06-19T00:30:00Z
+
+### Input
+- Definição do comportamento de Gêneros Musicais e Traços de Origem (Backgrounds).
+
+### Summary
+- Criada a Iteração 03.
+- Gêneros serão desbloqueados por relevância histórica temporal. Podem ser trocados, mas alterações frequentes geram penalidade na fanbase.
+- Traço de origem foi consolidado como o "Background" da história da banda (ex: Nepo babies, Universitários, Banda de Garagem).
+
+### Open questions
+- A mecânica exata de valores de punição e status do Background não pertence ao visual do Onboarding, foi delegada para o detalhamento em "Game Vision".
+
+### Next step
+- Considerar o fluxo inicial visual e de onboarding como preparado ("Handoff ready"). 
+- Passar a trabalhar no Core Loop/Mecânicas base da feature `game-vision`.
+
 ## [0.2.0] - 2026-06-19T00:15:00Z
 
 ### Input
