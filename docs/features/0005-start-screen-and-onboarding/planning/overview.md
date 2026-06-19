@@ -16,3 +16,6 @@ Definir a primeira experiência do jogador ao abrir o jogo e iniciar uma nova jo
 ## Critérios de aceite
 - A primeira tela é compreensível em poucos segundos.
 - O fluxo inicial não depende de instruções externas.
+
+## Journey reference
+- The player journey diagram is documented in [diagrams/player-journey.md](../diagrams/player-journey.md).

@@ -15,15 +15,17 @@ Use this guide to create a new feature from scratch or to split an epic into sma
 3. Start from [docs/templates/feature-template.md](../templates/feature-template.md).
 4. Create the feature folder in English.
 5. Fill the planning file.
-6. Add `decomposition.md` if the proposal can be split.
-7. Add `checklist.md`, `questions.md`, `iteration-01.md`, and `log.md`.
-8. Register the new feature in [docs/features/README.md](../features/README.md).
-9. Update the roadmap if the new feature changes the split strategy.
+6. Add `diagrams/` if the feature needs Mermaid or visual flow documentation.
+7. Add `decomposition.md` if the proposal can be split.
+8. Add `checklist.md`, `questions.md`, `iteration-01.md`, and `log.md`.
+9. Register the new feature in [docs/features/README.md](../features/README.md).
+10. Update the roadmap if the new feature changes the split strategy.
 
 ## Minimal scaffold
 
 ```text
 docs/features/000X-feature-slug/
+  diagrams/
   planning/
     overview.md
   refinement/
@@ -118,3 +120,9 @@ docs/features/000X-feature-slug/
 - Move the proposal into `docs/features/roadmap.md`.
 - Split it into smaller features with independent validation.
 - Keep design work separate when it affects the first experience or visual system.
+
+## Mermaid diagram rule
+
+- If a feature has a user journey, interaction flow, or state map, store the source Mermaid diagram under `diagrams/`.
+- Keep the long-form explanation in planning or feature docs, but keep the diagram source inside the feature folder.
+- Reference the feature diagram from global journey docs instead of duplicating the Mermaid block in multiple places.

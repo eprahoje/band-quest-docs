@@ -6,6 +6,7 @@ Use this file as the starting point for every new feature.
 
 ```text
 docs/features/000X-feature-slug/
+  diagrams/
   planning/
     overview.md
   refinement/
@@ -123,6 +124,7 @@ Describe the problem the feature solves.
 
 ```text
 feature/
+  diagrams/
   planning/
   refinement/
     decomposition.md

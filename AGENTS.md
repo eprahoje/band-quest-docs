@@ -23,6 +23,7 @@ Each feature should follow this layout:
 
 ```text
 docs/features/<feature-id>-<english-slug>/
+  diagrams/
   planning/
     overview.md
   refinement/
