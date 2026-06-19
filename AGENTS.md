@@ -11,6 +11,8 @@ This repository contains the documentation workflow for Band Quest.
 - If a decision is unclear, record it in `refinement/questions.md` before guessing.
 - Use the latest refinement as the source of truth when preparing work for `band-quest-game`.
 - Update the indexes in `README.md` files whenever a feature path changes.
+- Follow the communication and logging rules in [docs/agents/iteration-playbook.md](docs/agents/iteration-playbook.md).
+- Start new features from [docs/templates/feature-template.md](docs/templates/feature-template.md).
 
 ## Feature structure
 
@@ -21,9 +23,11 @@ docs/features/<feature-id>-<english-slug>/
   planning/
     overview.md
   refinement/
+    checklist.md
     questions.md
     iteration-01.md
     iteration-02.md
+    log.md
 ```
 
 ## Handoff to implementation
