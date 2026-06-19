@@ -1,4 +1,4 @@
-# Feature 0005 - Start Screen and Onboarding (Planejamento)
+# Start Screen and Onboarding (Planejamento)
 
 ## Problema
 Definir a primeira experiência do jogador ao abrir o jogo e iniciar uma nova jornada.

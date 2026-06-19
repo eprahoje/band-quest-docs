@@ -1,4 +1,4 @@
-# Feature 0001 - Game Vision
+# Game Vision
 
 **Status:** In Refinement
 

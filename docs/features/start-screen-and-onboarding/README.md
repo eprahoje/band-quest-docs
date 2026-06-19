@@ -1,4 +1,4 @@
-# Feature 0005 - Start Screen and Onboarding
+# Start Screen and Onboarding
 
 **Status:** In Refinement
 
