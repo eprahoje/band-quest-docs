@@ -9,6 +9,7 @@ docs/features/000X-feature-slug/
   planning/
     overview.md
   refinement/
+    decomposition.md
     checklist.md
     questions.md
     iteration-01.md
@@ -38,6 +39,27 @@ Describe the problem the feature solves.
 ```
 
 ## Refinement checklist template
+
+```md
+# Feature 000X - Feature Name (Decomposition)
+
+## Epic breakdown
+- Smaller feature one.
+- Smaller feature two.
+- Smaller feature three.
+
+## Why split
+- Reduce cognitive load.
+- Create implementation-sized slices.
+- Allow independent validation and handoff.
+
+## Recommended order
+1. First smaller feature.
+2. Second smaller feature.
+3. Third smaller feature.
+```
+
+## Checklist template
 
 ```md
 # Feature 000X - Feature Name (Checklist)
@@ -103,6 +125,7 @@ Describe the problem the feature solves.
 feature/
   planning/
   refinement/
+    decomposition.md
     checklist.md
     questions.md
     iteration-01.md
