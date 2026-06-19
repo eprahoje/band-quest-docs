@@ -7,6 +7,7 @@
 ## Pontos em aberto (human-in-the-loop)
 - Fórmulas iniciais de variação de reputação.
 - Custos-base para produção, marketing e logística.
+- Consolide as dúvidas em [questions.md](./questions.md) antes da próxima iteração.
 
 ## Registro
 - Estado: em refinamento contínuo.

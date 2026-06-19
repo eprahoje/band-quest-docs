@@ -18,25 +18,38 @@ A documentação é organizada por **features**. Cada feature possui:
 ```text
 docs/
   features/
-    0001-visao-do-jogo/
-      planejamento/
-      refinamento/
-    0002-progresso-da-banda/
-      planejamento/
-      refinamento/
-    0003-economia-e-reputacao/
-      planejamento/
-      refinamento/
-    0004-competicao-tendencias-tecnologia/
-      planejamento/
-      refinamento/
+    0001-game-vision/
+      planning/
+        overview.md
+      refinement/
+        iteration-01.md
+        questions.md
+    0002-band-progression/
+      planning/
+        overview.md
+      refinement/
+        iteration-01.md
+        questions.md
+    0003-economy-and-reputation/
+      planning/
+        overview.md
+      refinement/
+        iteration-01.md
+        questions.md
+    0004-competition-trends-technology/
+      planning/
+        overview.md
+      refinement/
+        iteration-01.md
+        questions.md
 ```
 
 ## Processo human-in-the-loop
 
-1. Planejar a feature.
-2. Refinar com revisão humana.
-3. Registrar decisões e impactos.
-4. Consolidar versão aprovada para colaboração de outros agentes.
+1. Planejar a feature em `planning/overview.md`.
+2. Registrar dúvidas bloqueantes em `refinement/questions.md`.
+3. Refinar em iterações numeradas dentro de `refinement/`.
+4. Consolidar a decisão antes de levar a implementação para o repositório `band-quest-game`.
+5. Nunca sobrescrever uma iteração anterior; sempre criar a próxima.
 
 Consulte o índice em [docs/features/README.md](docs/features/README.md).
