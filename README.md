@@ -39,4 +39,4 @@ docs/
 3. Registrar decisões e impactos.
 4. Consolidar versão aprovada para colaboração de outros agentes.
 
-Consulte o índice em `/home/runner/work/band-quest-docs/band-quest-docs/docs/features/README.md`.
+Consulte o índice em [docs/features/README.md](docs/features/README.md).
