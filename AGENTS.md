@@ -6,6 +6,7 @@ This repository contains the documentation workflow for Band Quest.
 
 - Keep folder and file names in English.
 - Keep the human-readable content in Portuguese unless a user asks otherwise.
+- **CRITICAL:** Before drafting or updating any feature documents (especially `questions.md` and `log.md`), you MUST consult [docs/templates/feature-template.md](docs/templates/feature-template.md) and [docs/agents/iteration-playbook.md](docs/agents/iteration-playbook.md) to ensure exact compliance with formatting, options structures (A, B, C, D, X format), and semantic headers.
 - Treat each feature as an iterative workflow: `planning/overview.md` -> `refinement/questions.md` -> `refinement/iteration-XX.md`.
 - When an epic is too broad, document the split in `docs/features/roadmap.md` and in `refinement/decomposition.md`.
 - Never overwrite a previous iteration. Add a new iteration file instead.

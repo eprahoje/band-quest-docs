@@ -6,6 +6,7 @@ Use this file as the starting point for every new feature.
 
 ```text
 docs/features/000X-feature-slug/
+  README.md
   diagrams/
   planning/
     overview.md
@@ -81,6 +82,32 @@ Describe the problem the feature solves.
 - [ ] The feature can move to `band-quest-game` safely.
 ```
 
+## Questions template
+
+```md
+# Feature 000X - Feature Name (Questions)
+
+## Open Questions
+
+### [Q1] Question short title?
+**Context:** Why is this a blocking issue or important to define now?
+**Status:** 🔴 Blocking / 🟡 Needs Discussion / 🟢 Minor
+**Options:**
+- [A] Option A: ...
+- [B] Option B: ...
+- [C] Option C: ...
+- [D] Option D: ...
+- [X] Open option: (Let user define another solution)
+
+**Answer:** [User, please type your answer here (e.g., A, B, or your custom text)]
+
+## Resolved Questions
+
+### [Q0] Example of a resolved question?
+**Decision:** We chose X because of Y.
+**References:** Solved in `iteration-XX.md`.
+```
+
 ## Iteration template
 
 ```md
@@ -98,6 +125,38 @@ Describe the problem the feature solves.
 - [ ] Scope reviewed.
 - [ ] Questions updated.
 - [ ] Handoff reviewed.
+```
+
+## Log template
+
+```md
+# Feature 000X - Feature Name (Log)
+
+## Change Log
+
+- **[0.1.0]** `YYYY-MM-DD` 
+  - **Intent**: Initial feature kick-off.
+  - **Action**: Created planning structure.
+  - **Status**: Blocked / Refining / Done
+
+- **[0.1.1]** `YYYY-MM-DD` 
+  - **Intent**: ...
+  - **Action**: ...
+  - **Status**: ...
+```
+
+## Local README template
+
+```md
+# Feature 000X - Feature Name
+
+**Status:** Planning / In Refinement / Ready for Implementation
+
+## Navigation
+- [Planning overview](planning/overview.md)
+- [Open questions](refinement/questions.md)
+- [Latest iteration](refinement/iteration-01.md)
+- [Action log](refinement/log.md)
 ```
 
 ## Log template

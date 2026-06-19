@@ -28,6 +28,7 @@ This document is the rulebook for agent-led feature iterations in Band Quest doc
 - Never start implementation work in `band-quest-game` while open questions remain unresolved.
 - Keep `refinement/checklist.md` updated as the control surface for the feature.
 - Keep log entries append-only and timestamped.
+- When asking questions, always provide distinct formatting with alternative options AND an open/custom option for the user to provide their own answer.
 
 ## Feature log
 
@@ -79,6 +80,11 @@ Use this before a refinement pass:
 Use this when the scope is not clear enough:
 
 > Ainda falta informação para seguir sem suposições. Preciso confirmar: [pergunta objetiva].
+>
+> **Opções:**
+> 1. [Opção A: Descreva uma alternativa de caminho]
+> 2. [Opção B: Descreva outra alternativa de caminho]
+> 3. [Outro / Aberto: O usuário está livre para propor uma solução diferente]
 
 ### Progress update
 

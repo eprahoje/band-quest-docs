@@ -25,6 +25,7 @@ Use this guide to create a new feature from scratch or to split an epic into sma
 
 ```text
 docs/features/000X-feature-slug/
+  README.md
   diagrams/
   planning/
     overview.md
@@ -37,6 +38,20 @@ docs/features/000X-feature-slug/
 ```
 
 ## Simplified file starters
+
+### README.md
+
+```md
+# Feature 000X - Feature Name
+
+**Status:** Planning / In Refinement / Ready for Implementation
+
+## Navigation
+- [Planning overview](planning/overview.md)
+- [Open questions](refinement/questions.md)
+- [Latest iteration](refinement/iteration-01.md)
+- [Action log](refinement/log.md)
+```
 
 ### planning/overview.md
 
@@ -81,7 +96,22 @@ docs/features/000X-feature-slug/
 ```md
 # Feature 000X - Feature Name (Questions)
 
-## Perguntas em aberto
+## Open Questions
+
+### [Q1] Qual é a dúvida?
+**Contexto:** Por que essa questão é importante agora?
+**Status:** 🔴 Bloqueante / 🟡 Requer Discussão
+**Opções:**
+- [A] Opção A: [Descreva cenário A]
+- [B] Opção B: [Descreva cenário B]
+- [C] Opção C: [Descreva cenário C]
+- [D] Opção D: [Descreva cenário D]
+- [X] Aberto: [Usuário pode fornecer uma solução alternativa]
+
+**Resposta:** [Usuário, digite sua resposta aqui (ex: A, B ou texto livre)]
+
+## Resolved Questions
+*(Mova as perguntas resolvidas para cá documentando a decisão)*
 ```
 
 ### refinement/iteration-01.md
@@ -97,6 +127,17 @@ docs/features/000X-feature-slug/
 ```
 
 ### refinement/log.md
+
+```md
+# Feature 000X - Feature Name (Log)
+## Change Log
+
+- **[0.1.0]** `YYYY-MM-DD` 
+  - **Intent**: Initial feature kick-off.
+  - **Action**: Created planning structure.
+  - **Status**: Blocked / Refining / Done
+- **[0.0.1]** `YYYY-MM-DD` - Feature scaffolding created.
+```
 
 ```md
 # Feature 000X - Feature Name (Log)
