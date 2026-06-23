@@ -107,3 +107,22 @@
 ### Next step
 - Gerar o sample de 2 ícones (Lila Tavares, Rita Camargo) para validar o estilo;
   depois produzir os 15 e implementar a feature no jogo.
+
+## [0.6.0] - 2026-06-23T00:00:00Z
+
+### Input
+- Usuário aprovou o estilo flat-vector (Gemini descartado nesta fase) e pediu a
+  criação dos 13 ícones restantes.
+
+### Summary
+- Criados os 13 SVGs restantes (total 15) em `band-quest-game/src/assets/members/`.
+- Teste de validação de SVG reforçado com cobertura cruzada do cast.
+- `type-check` limpo e 34 testes passando.
+- Criado `iteration-06.md`; handoff marcado como produzido.
+
+### Open questions
+- Nenhuma.
+
+### Next step
+- Implementar `MemberCard.vue` consumindo os ícones e popular o roster no store
+  (decomposition #2 e #3).

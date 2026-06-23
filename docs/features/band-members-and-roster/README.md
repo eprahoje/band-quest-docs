@@ -9,7 +9,7 @@
 - [Decomposition](refinement/decomposition.md)
 - [Checklist](refinement/checklist.md)
 - [Open questions](refinement/questions.md)
-- [Latest iteration](refinement/iteration-05.md)
+- [Latest iteration](refinement/iteration-06.md)
 - [Action log](refinement/log.md)
 - [Handoff — character icons](handoff/character-icons-handoff.md)
 - [Handoff — teste Gemini (Lila & Rita)](handoff/gemini-test-lila-rita.md)

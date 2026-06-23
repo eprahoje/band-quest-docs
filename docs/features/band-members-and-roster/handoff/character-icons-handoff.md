@@ -2,8 +2,9 @@
 
 **Para:** agente(s) responsável(is) por produzir os ícones/ilustrações dos
 membros iniciais da banda.
-**Status:** 🟢 PRONTO PARA PRODUÇÃO. Cast com identidade brasileira (15
-personagens), restrições de estilo fechadas e briefing visual por personagem.
+**Status:** ✅ PRODUZIDO (15/15, flat-vector autoral) em
+`band-quest-game/src/assets/members/`, validado por teste automatizado. Cast com
+identidade brasileira; pixel-art segue como direção futura (0006 iter-04).
 
 ---
 

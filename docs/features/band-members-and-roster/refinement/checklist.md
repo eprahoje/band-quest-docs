@@ -13,6 +13,7 @@
 - [x] Cast inicial definido (quantidade, papéis, identidade).
 - [x] Brief de arte completo em `handoff/character-icons-handoff.md`.
 - [x] Restrições de estilo herdadas da 0006 registradas no brief.
+- [x] 15 SVGs flat-vector produzidos e validados por teste automatizado.
 
 ## Handoff readiness
 - [x] Scope can be split into small, testable implementation steps.
