@@ -52,7 +52,7 @@
 - Checklist: [checklist.md](./start-screen-and-onboarding/refinement/checklist.md)
 - Perguntas: [questions.md](./start-screen-and-onboarding/refinement/questions.md)
 - Log: [log.md](./start-screen-and-onboarding/refinement/log.md)
-- Refinamento: [iteration-01.md](./start-screen-and-onboarding/refinement/iteration-01.md)
+- Refinamento: [iteration-04.md](./start-screen-and-onboarding/refinement/iteration-04.md)
 
 ## 0006 - Art Direction and Visual System
 - Diagrams: [README.md](./art-direction-and-visual-system/diagrams/README.md)

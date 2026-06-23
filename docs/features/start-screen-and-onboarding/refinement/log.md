@@ -1,5 +1,24 @@
 # Start Screen and Onboarding (Log)
 
+## [0.4.0] - 2026-06-23T00:00:00Z
+
+### Input
+- Feature 0006 (Art Direction) encerrada. Decisões de sistema visual precisam
+  ser incorporadas às telas do onboarding.
+
+### Summary
+- Criada iteration-04 reconciliando 0005 com as decisões da 0006:
+  - Animação de menu (CSS/JS) confirmada como compatível com "MVP estático".
+  - Avatar dos membros na criação de banda = ilustração vetorial estática (0006 iter-02).
+  - Telas de gênero e background usam ícones Tabler/Lucide + texto; sem arte original.
+- README atualizado com navegação completa e ponteiro para iteration-04.
+
+### Open questions
+- Nenhuma.
+
+### Next step
+- Revisar handoff readiness e avaliar se 0005 está pronta para implementação.
+
 ## [0.3.0] - 2026-06-19T00:30:00Z
 
 ### Input
