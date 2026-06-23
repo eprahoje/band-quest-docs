@@ -4,10 +4,11 @@ Use this file as the starting point for every new feature.
 
 ## Folder layout
 
-```text
+```
 docs/features/000X-feature-slug/
   README.md
   diagrams/
+    README.md
   planning/
     overview.md
   refinement/
@@ -15,13 +16,12 @@ docs/features/000X-feature-slug/
     checklist.md
     questions.md
     iteration-01.md
-    iteration-02.md
     log.md
 ```
 
 ## Planning template
 
-```md
+```
 # Feature 000X - Feature Name (Planning)
 
 ## Problem
@@ -35,14 +35,17 @@ Describe the problem the feature solves.
 - Slice one.
 - Slice two.
 
+## Non-goals (nesta fase)
+- O que explicitamente não está incluso ainda.
+
 ## Acceptance criteria
 - The feature is described clearly enough for refinement.
 - The scope is small enough for incremental implementation.
 ```
 
-## Refinement checklist template
+## Decomposition template
 
-```md
+```
 # Feature 000X - Feature Name (Decomposition)
 
 ## Epic breakdown
@@ -63,28 +66,26 @@ Describe the problem the feature solves.
 
 ## Checklist template
 
-```md
+```
 # Feature 000X - Feature Name (Checklist)
 
-## Scope
-- [ ] The problem statement is still accurate.
-- [ ] The current iteration fits the planned scope.
-- [ ] No hidden assumptions were introduced.
+## Planning
+- [ ] Problem is clearly stated.
+- [ ] Goals are measurable or at least falsifiable.
+- [ ] Non-goals are explicit.
 
-## Questions
-- [ ] Open questions are listed in `questions.md`.
-- [ ] Blocking doubts are explicit.
-- [ ] Nothing important is waiting only in chat.
+## Refinement
+- [ ] All blocking questions in `questions.md` are answered.
+- [ ] Latest iteration reflects the current decision, not a stale one.
 
-## Handoff
-- [ ] The latest iteration is ready for implementation.
-- [ ] The change can be split into small tasks.
-- [ ] The feature can move to `band-quest-game` safely.
+## Handoff readiness
+- [ ] Scope can be split into small, testable implementation steps.
+- [ ] `band-quest-game` team/agent has enough context without re-reading the whole history.
 ```
 
 ## Questions template
 
-```md
+```
 # Feature 000X - Feature Name (Questions)
 
 ## Open Questions
@@ -110,7 +111,7 @@ Describe the problem the feature solves.
 
 ## Iteration template
 
-```md
+```
 # Feature 000X - Feature Name (Refinement 01)
 
 ## Decisions
@@ -129,42 +130,12 @@ Describe the problem the feature solves.
 
 ## Log template
 
-```md
+Use exactly this format — it is the only valid log format in this repository.
+
+```
 # Feature 000X - Feature Name (Log)
 
-## Change Log
-
-- **[0.1.0]** `YYYY-MM-DD` 
-  - **Intent**: Initial feature kick-off.
-  - **Action**: Created planning structure.
-  - **Status**: Blocked / Refining / Done
-
-- **[0.1.1]** `YYYY-MM-DD` 
-  - **Intent**: ...
-  - **Action**: ...
-  - **Status**: ...
-```
-
-## Local README template
-
-```md
-# Feature 000X - Feature Name
-
-**Status:** Planning / In Refinement / Ready for Implementation
-
-## Navigation
-- [Planning overview](planning/overview.md)
-- [Open questions](refinement/questions.md)
-- [Latest iteration](refinement/iteration-01.md)
-- [Action log](refinement/log.md)
-```
-
-## Log template
-
-```md
-# Feature 000X - Feature Name (Log)
-
-## [0.1.0] - 2026-06-18T00:00:00Z
+## [0.1.0] - YYYY-MM-DDTHH:MM:SSZ
 
 ### Input
 - Original user request or change request.
@@ -179,24 +150,19 @@ Describe the problem the feature solves.
 - The next decision or action.
 ```
 
-## Code snippet examples
+## Local README template
 
-```text
-feature/
-  diagrams/
-  planning/
-  refinement/
-    decomposition.md
-    checklist.md
-    questions.md
-    iteration-01.md
-    log.md
 ```
+# Feature 000X - Feature Name
 
-```md
-## [0.2.0] - 2026-06-18T14:30:00Z
-### Added
-- New refinement question.
-### Changed
-- Scope updated after review.
+**Status:** Planning / In Refinement / Ready for Implementation
+
+## Navigation
+- [Diagrams](diagrams/README.md)
+- [Planning overview](planning/overview.md)
+- [Decomposition](refinement/decomposition.md)
+- [Checklist](refinement/checklist.md)
+- [Open questions](refinement/questions.md)
+- [Latest iteration](refinement/iteration-01.md)
+- [Action log](refinement/log.md)
 ```
