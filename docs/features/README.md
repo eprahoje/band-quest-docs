@@ -36,14 +36,15 @@
 - Log: [log.md](./economy-and-reputation/refinement/log.md)
 - Refinamento: [iteration-01.md](./economy-and-reputation/refinement/iteration-01.md)
 
-## 0004 - Competição, Tendências e Tecnologia
+## 0004 - Competição e Mercado
+*(pasta: `competition-trends-technology`)*
 - Diagrams: [README.md](./competition-trends-technology/diagrams/README.md)
 - Planejamento: [overview.md](./competition-trends-technology/planning/overview.md)
 - Decomposição: [decomposition.md](./competition-trends-technology/refinement/decomposition.md)
 - Checklist: [checklist.md](./competition-trends-technology/refinement/checklist.md)
 - Perguntas: [questions.md](./competition-trends-technology/refinement/questions.md)
 - Log: [log.md](./competition-trends-technology/refinement/log.md)
-- Refinamento: [iteration-01.md](./competition-trends-technology/refinement/iteration-01.md)
+- Refinamento: [iteration-02.md](./competition-trends-technology/refinement/iteration-02.md)
 
 ## 0005 - Start Screen and Onboarding
 - Diagrams: [README.md](./start-screen-and-onboarding/diagrams/README.md)
@@ -52,7 +53,7 @@
 - Checklist: [checklist.md](./start-screen-and-onboarding/refinement/checklist.md)
 - Perguntas: [questions.md](./start-screen-and-onboarding/refinement/questions.md)
 - Log: [log.md](./start-screen-and-onboarding/refinement/log.md)
-- Refinamento: [iteration-04.md](./start-screen-and-onboarding/refinement/iteration-04.md)
+- Refinamento: [iteration-05.md](./start-screen-and-onboarding/refinement/iteration-05.md)
 
 ## 0006 - Art Direction and Visual System
 - Diagrams: [README.md](./art-direction-and-visual-system/diagrams/README.md)
@@ -61,7 +62,7 @@
 - Checklist: [checklist.md](./art-direction-and-visual-system/refinement/checklist.md)
 - Perguntas: [questions.md](./art-direction-and-visual-system/refinement/questions.md)
 - Log: [log.md](./art-direction-and-visual-system/refinement/log.md)
-- Refinamento: [iteration-03.md](./art-direction-and-visual-system/refinement/iteration-03.md)
+- Refinamento: [iteration-04.md](./art-direction-and-visual-system/refinement/iteration-04.md)
 
 ## 0007 - Band Members and Roster
 - Diagrams: [README.md](./band-members-and-roster/diagrams/README.md)

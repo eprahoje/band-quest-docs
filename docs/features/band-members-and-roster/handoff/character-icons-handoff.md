@@ -12,6 +12,10 @@ Band Quest é um RPG de gestão de banda de rock. Cada membro aparece num **card
 (ver [feature 0006 — member-card](../../art-direction-and-visual-system/README.md))
 com um avatar circular. Estes ícones são esses avatares.
 
+> **Estilo atual: flat-vector (interino).** A direção de arte futura é
+> **pixel-art** (ver 0006, iteration-04) — a ser desenvolvida pós-validação do
+> core loop. Os SVGs produzidos agora são a camada atual/MVP.
+
 ## Restrições de estilo (fechadas — herdadas da 0006)
 - **Ilustração vetorial simples, estática, uma pose fixa por personagem.** Sem
   animação, sem variações por humor/fadiga.

@@ -118,3 +118,19 @@
 
 ### Next step
 - Implementar `MemberCard.vue` e popular membros iniciais em `startGame`.
+
+## [0.7.0] - 2026-06-23T00:00:00Z
+
+### Input
+- Usuário testou geração de arte no Gemini (não agradou nesta fase) e pediu para
+  registrar o **pixel-art** como direção de arte futura.
+
+### Summary
+- Criada `iteration-04.md`: pixel-art como direção futura (pós-validação);
+  flat-vector autoral mantido como camada atual/MVP.
+
+### Open questions
+- Nenhuma.
+
+### Next step
+- Produzir os ícones flat-vector dos membros (feature 0007) como camada atual.

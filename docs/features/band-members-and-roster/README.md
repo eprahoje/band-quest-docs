@@ -12,6 +12,7 @@
 - [Latest iteration](refinement/iteration-05.md)
 - [Action log](refinement/log.md)
 - [Handoff — character icons](handoff/character-icons-handoff.md)
+- [Handoff — teste Gemini (Lila & Rita)](handoff/gemini-test-lila-rita.md)
 
 ## Relationships
 - **0006 (Art Direction)** — dona do *card visual* do membro e do estilo de

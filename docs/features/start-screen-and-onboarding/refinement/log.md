@@ -1,5 +1,23 @@
 # Start Screen and Onboarding (Log)
 
+## [0.6.0] - 2026-06-23T00:00:00Z
+
+### Input
+- Reconciliação com a redefinição da 0001 (sem seleção de era) e a criação da
+  0010 (modos de sessão).
+
+### Summary
+- Criada `iteration-05`: o fluxo de nova partida adiciona **seleção de modo/
+  duração de sessão** (nova fatia 0005d), consumindo as regras da 0010.
+- Confirmado que **não há tela de seleção de era**.
+- Desbloqueio de gêneros por relevância temporal passa a se apoiar na 0008.
+
+### Open questions
+- Nenhuma bloqueante aqui (o detalhe dos modos é refino da 0010).
+
+### Next step
+- Refinar a 0010; implementar 0005a–c; 0005d após a 0010.
+
 ## [0.5.0] - 2026-06-23T00:00:00Z
 
 ### Input
