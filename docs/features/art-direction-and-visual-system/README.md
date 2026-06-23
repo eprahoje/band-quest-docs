@@ -8,5 +8,5 @@
 - [Decomposition](refinement/decomposition.md)
 - [Checklist](refinement/checklist.md)
 - [Open questions](refinement/questions.md)
-- [Latest iteration](refinement/iteration-01.md)
+- [Latest iteration](refinement/iteration-02.md)
 - [Action log](refinement/log.md)

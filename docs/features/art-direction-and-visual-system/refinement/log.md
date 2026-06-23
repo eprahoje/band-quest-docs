@@ -36,3 +36,19 @@
 
 ### Next step
 - Decidir Q1 e avançar para `iteration-02.md` com a escolha final de avatar.
+
+## [0.3.0] - 2026-06-22T00:00:00Z
+
+### Input
+- Usuário respondeu Q1: opção [B] — ilustração vetorial simples, uma pose fixa por personagem, sem animação.
+
+### Summary
+- Q1 resolvida e movida para "Resolved Questions" em `questions.md`.
+- Criado `iteration-02.md` documentando a decisão de avatar vetorial estático.
+- Checklist atualizado: seção "Refinement" totalmente concluída.
+
+### Open questions
+- Nenhuma. Todas as perguntas da feature 0006 estão resolvidas.
+
+### Next step
+- Revisar handoff readiness no checklist e preparar entrega para `band-quest-game`.

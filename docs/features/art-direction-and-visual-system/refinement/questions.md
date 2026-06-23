@@ -2,18 +2,13 @@
 
 ## Open Questions
 
-### [Q1] Avatar dos membros da banda: iniciais coloridas ou ilustração vetorial estática?
-**Context:** Define o nível mínimo de produção de arte do MVP.
-**Status:** 🟡 Needs Discussion
-**Options:**
-- [A] Iniciais coloridas (zero arte, como no protótipo discutido).
-- [B] Ilustração vetorial simples, uma pose fixa por personagem, sem animação.
-- [C] Híbrido: iniciais no MVP, ilustração vetorial entra como melhoria pós-validação.
-- [X] Open option: (defina outra abordagem)
-
-**Answer:** [aguardando decisão]
+*(Sem perguntas abertas no momento.)*
 
 ## Resolved Questions
+
+### [Q1] Avatar dos membros da banda: iniciais coloridas ou ilustração vetorial estática?
+**Decision:** Ilustração vetorial simples, uma pose fixa por personagem, sem animação [B].
+**References:** Solved in `iteration-02.md`.
 
 ### [Q0] O MVP deve depender de sprites ou pixel art de personagens?
 **Decision:** Não. O MVP usa cards, ícones e painéis de stats; nenhuma tela

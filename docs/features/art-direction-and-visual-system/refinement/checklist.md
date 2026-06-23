@@ -6,8 +6,8 @@
 - [x] Non-goals are explicit.
 
 ## Refinement
-- [ ] All blocking questions in `questions.md` are answered.
-- [ ] Latest iteration reflects the current decision, not a stale one.
+- [x] All blocking questions in `questions.md` are answered.
+- [x] Latest iteration reflects the current decision, not a stale one.
 
 ## Handoff readiness
 - [ ] Scope can be split into small, testable implementation steps.
