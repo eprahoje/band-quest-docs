@@ -38,6 +38,29 @@ docs/features/<feature-id>-<english-slug>/
     log.md
 ```
 
+## AI-DLC phase mapping
+
+This workflow follows the spirit of AWS's AI-Driven Development Lifecycle (AI-DLC):
+AI proposes, humans validate, work moves in short, reviewable cycles.
+
+- **Inception** -> `planning/overview.md` + `refinement/questions.md`.
+  Equivalent to AI-DLC's "Mob Elaboration": the agent proposes scope and
+  options, the human validates or redirects before any further work happens.
+- **Construction** -> `refinement/iteration-NN.md`.
+  Equivalent to AI-DLC's "Bolts": short, validated cycles. Each iteration
+  file is one Bolt. Never edit a past iteration; create the next one.
+- **Operations** -> handoff to `band-quest-game`.
+  Only happens after the "Handoff to implementation" checklist below passes.
+
+## Integrity rule
+
+- No feature may be listed in `docs/features/README.md` unless
+  `planning/overview.md` already exists for it.
+- Before finishing any edit session, verify every link added or changed in
+  any `README.md` index actually resolves to a file that exists in the repo.
+- If a feature is referenced but not yet started, mark it explicitly as
+  `(not started)` in the index instead of linking to files that don't exist.
+
 ## Handoff to implementation
 
 Before coding in `band-quest-game`, verify:
