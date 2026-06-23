@@ -61,6 +61,35 @@ AI proposes, humans validate, work moves in short, reviewable cycles.
 - If a feature is referenced but not yet started, mark it explicitly as
   `(not started)` in the index instead of linking to files that don't exist.
 
+## Spec-Driven Development (SDD) strategy
+
+This project follows the spec-anchored level of Spec-Driven Development:
+specs are written before implementation, and they are kept and evolved over
+time — never deleted once the feature ships. We deliberately do not adopt
+spec-as-source (where specs replace code as the only human-edited artifact);
+that level is still experimental and adds overhead without reducing LLM
+non-determinism, which is a bad trade-off for a one-person team.
+
+### Memory bank vs specs
+- **Memory bank** (`AGENTS.md` + `docs/memory-bank/`): context valid for any
+  AI session — process rules, product vision, cross-cutting architecture
+  decisions.
+- **Specs** (`docs/features/000X-*/`): context valid only for the specific
+  feature being created or changed.
+
+### Scaling the workflow to the size of the change
+- Small, isolated changes (typo fixes, obvious bugs, copy edits) do not need
+  a full feature folder. A single `iteration-NN.md` entry, or even just a
+  clear commit message, is enough.
+- New functionality affecting game mechanics, economy, progression, or
+  structural UI must follow the full spec-anchored flow: planning ->
+  questions -> iteration -> design (when the feature is large enough to
+  warrant a separate technical design).
+- When in doubt about which path applies, default to the lighter path and
+  ask the human to confirm if more structure is needed. Do not impose the
+  full workflow on small changes "to be safe" — that defeats the purpose of
+  scaling.
+
 ## Handoff to implementation
 
 Before coding in `band-quest-game`, verify:
