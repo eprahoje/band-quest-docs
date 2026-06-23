@@ -1,14 +1,18 @@
-# Feature 0006 - Art Direction and Visual System (Refinamento 01)
+# Feature 0006 - Art Direction and Visual System (Refinement 01)
 
 ## Decisions
-- A linguagem visual deve ser consistente e fácil de aplicar em todas as telas.
-- A documentação deve orientar sem depender de arte finalizada.
+- O MVP visual será estático e baseado em ícones, cards e painéis de stats —
+  sem sprites, pixel art ou ilustração animada de personagens.
+- O feed de eventos substitui qualquer cena ilustrada por timeline de
+  ícone + texto.
+- Arte original (se houver) é uma camada de polimento pós-MVP, não um
+  bloqueador de validação do core loop.
 
 ## Questions
-- Direção visual retrô, moderna ou híbrida.
-- Guia de cores, tipografia e gráficos.
+- Avatar dos membros: iniciais coloridas vs ilustração vetorial estática
+  (ver `questions.md`, Q1, ainda aberta).
 
 ## Checklist result
-- [ ] Scope reviewed.
-- [ ] Questions updated.
+- [x] Scope reviewed.
+- [x] Questions updated.
 - [ ] Handoff reviewed.

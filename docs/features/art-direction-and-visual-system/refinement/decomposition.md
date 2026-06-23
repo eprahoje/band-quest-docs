@@ -1,15 +1,18 @@
-# Feature 0006 - Art Direction and Visual System (Decomposição)
+# Feature 0006 - Art Direction and Visual System (Decomposition)
 
 ## Epic breakdown
-- 0006a - Visual Style Guide.
-- 0006b - UI Component Language.
-- 0006c - Graphics and Presentation Rules.
+- Sistema de cards de membros da banda (avatar + atributos).
+- Painel de stats globais (reputação, caixa, fãs, fadiga).
+- Feed de eventos (timeline de notícias do jogo).
+- Biblioteca de ícones por categoria de ação.
 
 ## Why split
-- A direção de arte precisa orientar várias superfícies do jogo.
-- Separar ajuda a padronizar decisões visuais antes da implementação.
+- Cada peça pode ser validada isoladamente como componente de UI.
+- Permite que o avatar (decisão ainda aberta, ver `questions.md`) evolua sem
+  travar o resto do sistema visual.
 
 ## Recommended order
-1. Visual style guide.
-2. UI component language.
-3. Graphics and presentation rules.
+1. Painel de stats (mais simples, sem dependência de assets).
+2. Feed de eventos.
+3. Cards de membros (depende da decisão de avatar).
+4. Biblioteca de ícones consolidada como guia de referência.
