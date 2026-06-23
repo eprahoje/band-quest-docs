@@ -25,7 +25,7 @@ This repository contains the documentation workflow for Band Quest.
 Each feature should follow this layout:
 
 ```text
-docs/features/<feature-id>-<english-slug>/
+docs/features/<english-slug>/
   diagrams/
   planning/
     overview.md

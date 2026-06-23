@@ -5,7 +5,7 @@ Use this file as the starting point for every new feature.
 ## Folder layout
 
 ```
-docs/features/000X-feature-slug/
+docs/features/feature-slug/
   README.md
   diagrams/
     README.md
