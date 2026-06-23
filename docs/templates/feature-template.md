@@ -11,6 +11,7 @@ docs/features/000X-feature-slug/
     README.md
   planning/
     overview.md
+    design.md        <- opcional, ver "Design template"
   refinement/
     decomposition.md
     checklist.md
@@ -62,6 +63,30 @@ Describe the problem the feature solves.
 1. First smaller feature.
 2. Second smaller feature.
 3. Third smaller feature.
+```
+
+## Design template (opcional)
+
+Use apenas quando a feature tiver decisões de arquitetura relevantes, ou for
+grande o suficiente para precisar de um design técnico separado da spec
+funcional. Features pequenas podem ir direto de `planning/overview.md` para
+`refinement/iteration-01.md` sem este arquivo.
+
+```
+# Feature 000X - Feature Name (Design)
+
+## Componentes afetados
+- Componente um.
+- Componente dois.
+
+## Modelo de dados (se houver)
+- Entidade um: campos relevantes.
+
+## Decisões técnicas
+- Decisão e justificativa.
+
+## Riscos e trade-offs
+- Risco um e como será mitigado.
 ```
 
 ## Checklist template
