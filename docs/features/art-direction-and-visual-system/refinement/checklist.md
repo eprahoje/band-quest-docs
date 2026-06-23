@@ -10,5 +10,5 @@
 - [x] Latest iteration reflects the current decision, not a stale one.
 
 ## Handoff readiness
-- [ ] Scope can be split into small, testable implementation steps.
-- [ ] `band-quest-game` team/agent has enough context without re-reading the whole history.
+- [x] Scope can be split into small, testable implementation steps.
+- [x] `band-quest-game` team/agent has enough context without re-reading the whole history.

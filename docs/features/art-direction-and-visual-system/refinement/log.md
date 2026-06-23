@@ -52,3 +52,23 @@
 
 ### Next step
 - Revisar handoff readiness no checklist e preparar entrega para `band-quest-game`.
+
+## [0.4.0] - 2026-06-23T00:00:00Z
+
+### Input
+- Revisão de handoff readiness para liberar a feature para `band-quest-game`.
+
+### Summary
+- Checklist 100% concluído. Ordem de implementação já definida em `decomposition.md`:
+  1. Painel de stats (sem dependência de assets).
+  2. Feed de eventos (ícone de biblioteca + texto).
+  3. Cards de membros com avatar vetorial estático.
+  4. Guia de referência da biblioteca de ícones (Tabler/Lucide).
+- Feature 0006 liberada para handoff. Feature 0005 receberá iteration-04
+  incorporando as decisões desta feature.
+
+### Open questions
+- Nenhuma.
+
+### Next step
+- Implementar em `band-quest-game` seguindo a ordem do `decomposition.md`.
