@@ -126,3 +126,24 @@
 ### Next step
 - Implementar `MemberCard.vue` consumindo os ícones e popular o roster no store
   (decomposition #2 e #3).
+
+## [0.7.0] - 2026-06-23T00:00:00Z
+
+### Input
+- Implementar a feature no jogo (decomposition #2 e #3).
+
+### Summary
+- `band-quest-game`: criado `src/data/cast.ts` (modelo de membro, 15 personagens,
+  regras de composição + `validateRoster`, formação inicial padrão).
+- Criado `MemberCard.vue` (avatar SVG + atributos + acento) consumindo os tokens.
+- Store `game.ts`: `BandMember` migrado para o modelo do `design.md`; `startGame`
+  semeia um roster inicial válido (interino até a seleção da 0005d/0010).
+- `GameView` renderiza a seção "Banda" com os cards.
+- Testes: cast/validateRoster, MemberCard e seeding do roster — 46 testes,
+  type-check limpo e build OK.
+
+### Open questions
+- Nenhuma. A seleção interativa do roster (3–5 do cast) fica para a 0005d/0010.
+
+### Next step
+- Implementar a tela de seleção de roster (fatia 0005d, dependente da 0010).
