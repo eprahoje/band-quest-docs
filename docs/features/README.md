@@ -61,4 +61,14 @@
 - Checklist: [checklist.md](./art-direction-and-visual-system/refinement/checklist.md)
 - Perguntas: [questions.md](./art-direction-and-visual-system/refinement/questions.md)
 - Log: [log.md](./art-direction-and-visual-system/refinement/log.md)
-- Refinamento: [iteration-01.md](./art-direction-and-visual-system/refinement/iteration-01.md)
+- Refinamento: [iteration-03.md](./art-direction-and-visual-system/refinement/iteration-03.md)
+
+## 0007 - Band Members and Roster
+- Diagrams: [README.md](./band-members-and-roster/diagrams/README.md)
+- Planejamento: [overview.md](./band-members-and-roster/planning/overview.md)
+- Decomposição: [decomposition.md](./band-members-and-roster/refinement/decomposition.md)
+- Checklist: [checklist.md](./band-members-and-roster/refinement/checklist.md)
+- Perguntas: [questions.md](./band-members-and-roster/refinement/questions.md)
+- Log: [log.md](./band-members-and-roster/refinement/log.md)
+- Refinamento: [iteration-01.md](./band-members-and-roster/refinement/iteration-01.md)
+- Handoff: [character-icons-handoff.md](./band-members-and-roster/handoff/character-icons-handoff.md)
