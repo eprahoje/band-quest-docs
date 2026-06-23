@@ -67,7 +67,7 @@
 ### Next step
 - Aprovar/ajustar o cast e disparar o handoff de ícones; em paralelo, implementar
   em `band-quest-game` na ordem do `decomposition.md` (modelo → MemberCard →
-  integração no roster/criação).
+  integração no roster/criação). (Superado pelas iterações 04–05.)
 
 ## [0.4.0] - 2026-06-23T00:00:00Z
 
@@ -88,3 +88,22 @@
 ### Next step
 - Decidir o produtor dos ícones (gerar localmente vs Gemini/Nano Banana vs outro
   agente) e iniciar a produção; depois implementar a feature no jogo.
+
+## [0.5.0] - 2026-06-23T00:00:00Z
+
+### Input
+- Usuário pediu para construir, juntos, uma história breve para cada personagem,
+  para aproximar o jogador e não deixar o membro como mera peça de build.
+
+### Summary
+- Definido o tom (realista + bem-humorado, com equilíbrio variável por
+  personagem) via comparação de registros.
+- Escritas as 15 histórias curtas e adicionadas a `planning/design.md`.
+- Criado `iteration-05.md`.
+
+### Open questions
+- Nenhuma bloqueante. Histórias e nomes seguem ajustáveis.
+
+### Next step
+- Gerar o sample de 2 ícones (Lila Tavares, Rita Camargo) para validar o estilo;
+  depois produzir os 15 e implementar a feature no jogo.

@@ -74,7 +74,9 @@ importa para a arte (função, acento, vibe).
 ## Briefings de produção por personagem
 Use cada bloco como descrição/prompt do personagem. Aplicar a todos as
 **restrições de estilo** acima (vetorial, busto, atemporal, fundo transparente,
-contraste sobre fundo escuro, cor de acento indicada).
+contraste sobre fundo escuro, cor de acento indicada). Para **expressão e
+personalidade**, ver as histórias em
+[`../planning/design.md`](../planning/design.md#histórias-dos-personagens).
 
 1. **Lila Tavares** (Vocal) — Mulher negra, cabelo black power volumoso, sorriso
    largo e olhar magnético; postura de quem domina o palco.

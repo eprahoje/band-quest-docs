@@ -9,7 +9,7 @@
 - [Decomposition](refinement/decomposition.md)
 - [Checklist](refinement/checklist.md)
 - [Open questions](refinement/questions.md)
-- [Latest iteration](refinement/iteration-04.md)
+- [Latest iteration](refinement/iteration-05.md)
 - [Action log](refinement/log.md)
 - [Handoff — character icons](handoff/character-icons-handoff.md)
 
