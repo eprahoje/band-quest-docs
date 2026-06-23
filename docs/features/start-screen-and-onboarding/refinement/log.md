@@ -1,5 +1,27 @@
 # Start Screen and Onboarding (Log)
 
+## [0.5.0] - 2026-06-23T00:00:00Z
+
+### Input
+- Revisão de handoff readiness para liberar a feature para `band-quest-game`.
+
+### Summary
+- Non-goals adicionados ao `planning/overview.md` (sem tutorial obrigatório,
+  sem sprites, sem assets originais no fluxo de seleção).
+- Checklist migrado para o formato atual (Planning / Refinement / Handoff readiness)
+  com todos os itens concluídos.
+- Status atualizado para Ready for Implementation.
+- Ordem de implementação (ver `decomposition.md`):
+  1. 0005a — Title Screen Layout.
+  2. 0005b — New Game Entry Flow (nome, gênero, logo, traço de origem).
+  3. 0005c — First-Time Onboarding (tutorial opcional, dicas in-game).
+
+### Open questions
+- Nenhuma.
+
+### Next step
+- Implementar em `band-quest-game` após o stats panel e event feed da feature 0006.
+
 ## [0.4.0] - 2026-06-23T00:00:00Z
 
 ### Input

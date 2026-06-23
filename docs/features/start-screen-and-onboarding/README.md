@@ -1,6 +1,6 @@
 # Feature 0005 - Start Screen and Onboarding
 
-**Status:** In Refinement
+**Status:** Ready for Implementation
 
 ## Navigation
 - [Diagrams](diagrams/README.md)

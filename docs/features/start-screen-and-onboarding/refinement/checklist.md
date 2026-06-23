@@ -1,16 +1,14 @@
 # Feature 0005 - Start Screen and Onboarding (Checklist)
 
-## Scope
-- [ ] The problem statement is still accurate.
-- [ ] The current iteration fits the planned scope.
-- [ ] No hidden assumptions were introduced.
+## Planning
+- [x] Problem is clearly stated.
+- [x] Goals are measurable or at least falsifiable.
+- [x] Non-goals are explicit.
 
-## Questions
-- [ ] Open questions are listed in `questions.md`.
-- [ ] Blocking doubts are explicit.
-- [ ] Nothing important is waiting only in chat.
+## Refinement
+- [x] All blocking questions in `questions.md` are answered.
+- [x] Latest iteration reflects the current decision, not a stale one.
 
-## Handoff
-- [ ] The latest iteration is ready for implementation.
-- [ ] The change can be split into small tasks.
-- [ ] The feature can move to `band-quest-game` safely.
+## Handoff readiness
+- [x] Scope can be split into small, testable implementation steps.
+- [x] `band-quest-game` team/agent has enough context without re-reading the whole history.
