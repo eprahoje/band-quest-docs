@@ -3,4 +3,4 @@
 Reserved for Mermaid diagrams and flowcharts related to this feature.
 
 ## Current diagrams
-- Player journey and onboarding flow is owned by [../0005-start-screen-and-onboarding/diagrams/player-journey.md](../0005-start-screen-and-onboarding/diagrams/player-journey.md).
+- Player journey and onboarding flow is owned by [../../start-screen-and-onboarding/diagrams/player-journey.md](../../start-screen-and-onboarding/diagrams/player-journey.md).
