@@ -16,7 +16,7 @@
 - Checklist: [checklist.md](./game-vision/refinement/checklist.md)
 - Perguntas: [questions.md](./game-vision/refinement/questions.md)
 - Log: [log.md](./game-vision/refinement/log.md)
-- Refinamento: [iteration-01.md](./game-vision/refinement/iteration-01.md)
+- Refinamento: [iteration-02.md](./game-vision/refinement/iteration-02.md)
 
 ## 0002 - Progressão da Banda
 - Diagrams: [README.md](./band-progression/diagrams/README.md)
@@ -70,5 +70,33 @@
 - Checklist: [checklist.md](./band-members-and-roster/refinement/checklist.md)
 - Perguntas: [questions.md](./band-members-and-roster/refinement/questions.md)
 - Log: [log.md](./band-members-and-roster/refinement/log.md)
-- Refinamento: [iteration-01.md](./band-members-and-roster/refinement/iteration-01.md)
+- Refinamento: [iteration-05.md](./band-members-and-roster/refinement/iteration-05.md)
+- Design: [design.md](./band-members-and-roster/planning/design.md)
 - Handoff: [character-icons-handoff.md](./band-members-and-roster/handoff/character-icons-handoff.md)
+
+## 0008 - Game Timeline and Technology Evolution
+- Diagrams: [README.md](./game-timeline-and-technology-evolution/diagrams/README.md)
+- Planejamento: [overview.md](./game-timeline-and-technology-evolution/planning/overview.md)
+- Decomposição: [decomposition.md](./game-timeline-and-technology-evolution/refinement/decomposition.md)
+- Checklist: [checklist.md](./game-timeline-and-technology-evolution/refinement/checklist.md)
+- Perguntas: [questions.md](./game-timeline-and-technology-evolution/refinement/questions.md)
+- Log: [log.md](./game-timeline-and-technology-evolution/refinement/log.md)
+- Refinamento: [iteration-01.md](./game-timeline-and-technology-evolution/refinement/iteration-01.md)
+
+## 0009 - Brazil 2000s Scenarios and Events
+- Diagrams: [README.md](./brazil-2000s-scenarios-and-events/diagrams/README.md)
+- Planejamento: [overview.md](./brazil-2000s-scenarios-and-events/planning/overview.md)
+- Decomposição: [decomposition.md](./brazil-2000s-scenarios-and-events/refinement/decomposition.md)
+- Checklist: [checklist.md](./brazil-2000s-scenarios-and-events/refinement/checklist.md)
+- Perguntas: [questions.md](./brazil-2000s-scenarios-and-events/refinement/questions.md)
+- Log: [log.md](./brazil-2000s-scenarios-and-events/refinement/log.md)
+- Refinamento: [iteration-01.md](./brazil-2000s-scenarios-and-events/refinement/iteration-01.md)
+
+## 0010 - Session Modes and Outcomes
+- Diagrams: [README.md](./session-modes-and-outcomes/diagrams/README.md)
+- Planejamento: [overview.md](./session-modes-and-outcomes/planning/overview.md)
+- Decomposição: [decomposition.md](./session-modes-and-outcomes/refinement/decomposition.md)
+- Checklist: [checklist.md](./session-modes-and-outcomes/refinement/checklist.md)
+- Perguntas: [questions.md](./session-modes-and-outcomes/refinement/questions.md)
+- Log: [log.md](./session-modes-and-outcomes/refinement/log.md)
+- Refinamento: [iteration-01.md](./session-modes-and-outcomes/refinement/iteration-01.md)

@@ -2,29 +2,20 @@
 
 ## Open Questions
 
-### [Q1] Quais épocas entram no MVP?
-**Contexto:** Precisamos definir se o jogo começa em uma época fixa, se podemos escolher a década, ou se há uma linha do tempo específica.
-**Status:** 🔴 Bloqueante
-**Opções:**
-- [A] Limitar apenas aos anos 2000.
-- [B] Permitir iniciar em 1970.
-- [C] Permitir iniciar em 1980.
-- [D] Permitir múltiplas opções (1970, 1980, 1990 e 2000).
-- [X] Aberto: [Sinta-se à vontade para propor outra divisão de datas]
-
-**Resposta:** [Usuário, digite sua resposta aqui (ex: A, B ou texto livre)]
-
-### [Q2] Qual o nível de detalhe histórico por época?
-**Contexto:** Se tivermos várias épocas, precisamos mapear eventos históricos (ex: invenção do CD, streaming)?
-**Status:** 🟡 Requer Discussão
-**Opções:**
-- [A] Nível alto (apenas macro-tendências tecnológicas como Fita K7 vs CD).
-- [B] Nível médio (eventos por década).
-- [C] Detalhado (gêneros que nascem a cada ano real).
-- [D] Opcional (apenas contexto estético, sem impacto mecânico).
-- [X] Aberto: [Sinta-se à vontade para propor outra profundidade histórica]
-
-**Resposta:** [Usuário, digite sua resposta aqui (ex: A, B ou texto livre)]
+*(Sem perguntas bloqueantes no momento.)*
 
 ## Resolved Questions
-*(Nenhuma pergunta resolvida ainda)*
+
+### [Q1] Quais épocas entram no MVP?
+**Decisão:** Início **fixo no Brasil dos anos 2000** — sem seleção de época. Em
+vez de escolher a era, o jogo avança no tempo a partir dos anos 2000 e o jogador
+escolhe a **duração/modo da sessão**. Isso substitui o split antigo "Era Selection
+and New Game Flow".
+**Referências:** Resolvida em `iteration-02.md`. Modos de sessão na feature 0010.
+
+### [Q2] Qual o nível de detalhe histórico por época?
+**Decisão:** Macro-tendências tecnológicas **com impacto mecânico** (não só
+estético), modeladas numa linha do tempo a partir dos anos 2000. O detalhamento
+fica na feature **0008 (Game Timeline and Technology Evolution)**; o sabor
+estético/cultural (Brasil anos 2000) fica na **0009**.
+**Referências:** Resolvida em `iteration-02.md`.
