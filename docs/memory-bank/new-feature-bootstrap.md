@@ -24,7 +24,7 @@ Use this guide to create a new feature from scratch or to split an epic into sma
 ## Minimal scaffold
 
 ```text
-docs/features/000X-feature-slug/
+docs/features/feature-slug/
   README.md
   diagrams/
   planning/

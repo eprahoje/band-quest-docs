@@ -6,19 +6,19 @@ This repository contains the documentation workflow for Band Quest.
 
 - Keep folder and file names in English.
 - Keep the human-readable content in Portuguese unless a user asks otherwise.
-- **CRITICAL:** Before drafting or updating any feature documents (especially `questions.md` and `log.md`), you MUST consult [docs/templates/feature-template.md](docs/templates/feature-template.md) and [docs/agents/iteration-playbook.md](docs/agents/iteration-playbook.md) to ensure exact compliance with formatting, options structures (A, B, C, D, X format), and semantic headers.
+- **CRITICAL:** Before drafting or updating any feature documents (especially `questions.md` and `log.md`), you MUST consult [docs/templates/feature-template.md](docs/templates/feature-template.md) and [docs/memory-bank/iteration-playbook.md](docs/memory-bank/iteration-playbook.md) to ensure exact compliance with formatting, options structures (A, B, C, D, X format), and semantic headers.
 - Treat each feature as an iterative workflow: `planning/overview.md` -> `refinement/questions.md` -> `refinement/iteration-XX.md`.
 - When an epic is too broad, document the split in `docs/features/roadmap.md` and in `refinement/decomposition.md`.
 - Never overwrite a previous iteration. Add a new iteration file instead.
 - If a decision is unclear, record it in `refinement/questions.md` before guessing.
 - Use the latest refinement as the source of truth when preparing work for `band-quest-game`.
 - Update the indexes in `README.md` files whenever a feature path changes.
-- Follow the communication and logging rules in [docs/agents/iteration-playbook.md](docs/agents/iteration-playbook.md).
+- Follow the communication and logging rules in [docs/memory-bank/iteration-playbook.md](docs/memory-bank/iteration-playbook.md).
 - Always create explicit plans and document your actions whenever you execute creation or editing of files. Use the chat response to clarify the plan before/during execution, and log updates appropriately.
 - **CRITICAL:** The `questions.md` file MUST be treated as an append-only historical log. NEVER overwrite or delete old questions/answers. Always append new items so that all agents and developers maintain full historical context.
 - Start new features from [docs/templates/feature-template.md](docs/templates/feature-template.md).
 - Use `docs/features/roadmap.md` to decide whether a proposal should stay as an epic or be split into smaller features.
-- Use [docs/agents/new-feature-bootstrap.md](docs/agents/new-feature-bootstrap.md) as the operational guide for creating a new feature.
+- Use [docs/memory-bank/new-feature-bootstrap.md](docs/memory-bank/new-feature-bootstrap.md) as the operational guide for creating a new feature.
 
 ## Feature structure
 

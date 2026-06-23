@@ -9,12 +9,14 @@ para a tarefa/feature específica em curso.
 - [`product.md`](product.md) — visão de produto, objetivo do jogo, público.
 - [`architecture.md`](architecture.md) — decisões de arquitetura que atravessam
   múltiplas features (ex: estratégia visual definida na feature 0006).
-- Conteúdo migrado de `docs/agents/`, classificado e movido aqui após revisão
-  humana (ver handoff v2, Etapa A).
+- [`iteration-playbook.md`](iteration-playbook.md) — rulebook para iterações
+  de feature lideradas por agentes (migrado de `docs/agents/`).
+- [`new-feature-bootstrap.md`](new-feature-bootstrap.md) — guia operacional
+  para criar novas features (migrado de `docs/agents/`).
 
 ## Relação com AGENTS.md
 
 `AGENTS.md`, na raiz do repositório, é a "constituição" do projeto: contém as
 regras de processo que a IA deve seguir (estrutura de features, formato de
 log, regras de integridade). Esta pasta complementa `AGENTS.md` com contexto
-de produto e arquitetura — não duplica regras de processo.
+de produto, arquitetura e guias operacionais — não duplica regras de processo.

@@ -1,7 +1,7 @@
 # Índice de Features
 
 ## How to add a new feature
-- Use [docs/agents/new-feature-bootstrap.md](../agents/new-feature-bootstrap.md).
+- Use [docs/memory-bank/new-feature-bootstrap.md](../memory-bank/new-feature-bootstrap.md).
 
 ## Journey docs
 - Player journey map: [docs/journeys/README.md](../journeys/README.md)
