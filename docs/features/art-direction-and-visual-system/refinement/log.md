@@ -72,3 +72,49 @@
 
 ### Next step
 - Implementar em `band-quest-game` seguindo a ordem do `decomposition.md`.
+
+## [0.5.0] - 2026-06-23T00:00:00Z
+
+### Input
+- Usuário pediu para iterar a feature usando Claude Design (ferramenta
+  `DesignSync` + claude.ai/design) para construir a identidade visual do projeto.
+
+### Summary
+- Capturadas 4 decisões de direção de arte (Q2–Q5) via perguntas estruturadas:
+  estética atemporal/multi-era; tom híbrido (base limpa + acento rock); base de
+  cor dark; escopo da 1ª passada = foundations + todos os componentes.
+- Criado `iteration-03.md` registrando a decisão de construir o design system.
+- Q2–Q5 adicionadas a "Resolved Questions" em `questions.md` (append-only).
+- Construído o bundle de design system em `band-quest-docs/design-system/`
+  (`tokens.css` + foundations + componentes) e sincronizado com Claude Design.
+
+### Open questions
+- Nenhuma bloqueante. Refino visual dos componentes segue iterativo no
+  design system.
+
+### Next step
+- Iterar componente a componente no Claude Design e usar `tokens.css` como
+  contrato para a implementação Vue em `band-quest-game`.
+
+## [0.6.0] - 2026-06-23T00:00:00Z
+
+### Input
+- Usuário pediu para seguir do design system para a implementação.
+
+### Summary
+- Tokens do design system portados para `band-quest-game/src/assets/tokens.css`
+  (espelho do contrato), aplicados globalmente via `base.css`/`main.css` +
+  fontes Oswald/Inter em `index.html`.
+- `StatsPanel.vue` reestilizado com cor semântica por stat (reputação/caixa/
+  fãs/fadiga) e tipografia display; ícone de fadiga trocado para `IconBolt`.
+- `EventFeed.vue` reestilizado como timeline com acento por categoria.
+- `GameView.vue` e `StartView.vue` alinhados à marca (band name display,
+  botão primário spotlight, turn badge).
+- Verificação: `type-check` limpo, 17/17 testes, build de produção OK.
+
+### Open questions
+- Nenhuma bloqueante. Próxima fatia natural: componente `MemberCard` (decomp #3)
+  — depende de popular `members` no store ao iniciar a partida.
+
+### Next step
+- Implementar `MemberCard.vue` e popular membros iniciais em `startGame`.

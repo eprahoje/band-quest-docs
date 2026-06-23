@@ -1,0 +1,66 @@
+<!-- @dsCard group="Brand" name="Brand overview" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Band Quest — Design System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<style>
+  body { margin: 0; }
+  .wrap { padding: var(--bq-space-8) var(--bq-space-6); max-width: 720px; }
+  .brand { font-family: var(--bq-font-display); font-weight: 700; text-transform: uppercase;
+           letter-spacing: var(--bq-tracking-display); font-size: var(--bq-text-3xl); line-height: var(--bq-leading-tight); }
+  .brand b { color: var(--bq-spotlight); }
+  .tagline { color: var(--bq-text-muted); margin: var(--bq-space-3) 0 var(--bq-space-6); font-size: var(--bq-text-lg); }
+  .pills { display: flex; gap: var(--bq-space-2); flex-wrap: wrap; margin-bottom: var(--bq-space-7); }
+  .pill { font-size: var(--bq-text-xs); text-transform: uppercase; letter-spacing: var(--bq-tracking-caps);
+          padding: var(--bq-space-1) var(--bq-space-3); border-radius: var(--bq-radius-pill);
+          border: 1px solid var(--bq-border-strong); color: var(--bq-text-muted); }
+  .swatches { display: flex; gap: var(--bq-space-2); margin-bottom: var(--bq-space-7); }
+  .swatches span { width: 48px; height: 48px; border-radius: var(--bq-radius-md); border: 1px solid var(--bq-border); }
+  h2 { font-family: var(--bq-font-display); font-weight: 600; letter-spacing: var(--bq-tracking-caps);
+       text-transform: uppercase; font-size: var(--bq-text-sm); color: var(--bq-text-muted); margin: 0 0 var(--bq-space-3); }
+  ul { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--bq-space-2); }
+  a { color: var(--bq-spotlight); text-decoration: none; }
+  li { font-size: var(--bq-text-sm); }
+</style>
+</head>
+<body class="bq-root">
+<div class="wrap">
+  <div class="brand">Band <b>Quest</b></div>
+  <p class="tagline">RPG de gestão de banda de rock — identidade atemporal, palco escuro, atitude.</p>
+
+  <div class="pills">
+    <span class="pill">Atemporal / multi-era</span>
+    <span class="pill">Híbrido limpo + rock</span>
+    <span class="pill">Dark</span>
+  </div>
+
+  <div class="swatches">
+    <span style="background:var(--bq-spotlight)"></span>
+    <span style="background:var(--bq-ember)"></span>
+    <span style="background:var(--bq-stat-cash)"></span>
+    <span style="background:var(--bq-stat-fans)"></span>
+    <span style="background:var(--bq-bg-surface)"></span>
+  </div>
+
+  <h2>Foundations</h2>
+  <ul>
+    <li><a href="foundations/colors.html">Colors</a> — superfícies, acentos, semântica de stats</li>
+    <li><a href="foundations/typography.html">Typography</a> — Oswald + Inter + escala</li>
+    <li><a href="foundations/spacing.html">Spacing &amp; radius</a></li>
+  </ul>
+
+  <h2 style="margin-top:var(--bq-space-6)">Components</h2>
+  <ul>
+    <li><a href="components/member-card.html">Member card</a></li>
+    <li><a href="components/stats-panel.html">Stats panel</a></li>
+    <li><a href="components/event-feed.html">Event feed</a></li>
+    <li><a href="components/icons.html">Icon library</a></li>
+  </ul>
+</div>
+</body>
+</html>

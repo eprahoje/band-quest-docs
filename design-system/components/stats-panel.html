@@ -1,0 +1,64 @@
+<!-- @dsCard group="Components" name="Stats panel" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Band Quest — Stats Panel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css">
+<style>
+  body { margin: 0; }
+  .wrap { padding: var(--bq-space-6); }
+  .panel { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--bq-space-4); max-width: 760px; }
+  @media (max-width: 640px){ .panel { grid-template-columns: repeat(2,1fr); } }
+  .tile { background: var(--bq-bg-surface); border: 1px solid var(--bq-border);
+          border-radius: var(--bq-radius-lg); padding: var(--bq-space-4); position: relative; overflow: hidden; }
+  .tile::before { content:""; position:absolute; inset:0 auto 0 0; width:3px; background: var(--accent); }
+  .ic { width: 32px; height: 32px; border-radius: var(--bq-radius-md); display:flex; align-items:center; justify-content:center;
+        background: color-mix(in srgb, var(--accent) 18%, transparent); color: var(--accent); margin-bottom: var(--bq-space-3); }
+  .ic svg { width: 20px; height: 20px; }
+  .lab { font-size: var(--bq-text-xs); text-transform: uppercase; letter-spacing: var(--bq-tracking-caps); color: var(--bq-text-muted); }
+  .val { font-family: var(--bq-font-display); font-weight: 700; font-size: var(--bq-text-2xl);
+         font-variant-numeric: tabular-nums; line-height: var(--bq-leading-tight); margin-top: 2px; }
+  .delta { font-size: var(--bq-text-xs); font-family: var(--bq-font-mono); margin-top: var(--bq-space-2); }
+  .up { color: var(--bq-positive); } .down { color: var(--bq-negative); }
+</style>
+</head>
+<body class="bq-root">
+<div class="wrap">
+  <div class="panel">
+
+    <div class="tile" style="--accent:var(--bq-stat-rep)">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.2 6.6.9-4.8 4.7 1.2 6.6L12 17.8 6.1 20.4l1.2-6.6L2.5 9.1l6.6-.9z"/></svg></div>
+      <div class="lab">Reputação</div>
+      <div class="val">1.842</div>
+      <div class="delta up">▲ +120 no turno</div>
+    </div>
+
+    <div class="tile" style="--accent:var(--bq-stat-cash)">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5c-.5-1-1.5-1.5-2.5-1.5-1.4 0-2.5.8-2.5 2s1.1 1.8 2.5 2 2.5.8 2.5 2-1.1 2-2.5 2c-1 0-2-.5-2.5-1.5M12 6.5v11"/></svg></div>
+      <div class="lab">Caixa</div>
+      <div class="val">R$ 12.480</div>
+      <div class="delta down">▼ -2.300 no turno</div>
+    </div>
+
+    <div class="tile" style="--accent:var(--bq-stat-fans)">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 5.5a3 3 0 0 1 0 5.8M17 14c2.5.6 4 2.6 4 5.5"/></svg></div>
+      <div class="lab">Fãs</div>
+      <div class="val">48,2 mil</div>
+      <div class="delta up">▲ +3,1 mil no turno</div>
+    </div>
+
+    <div class="tile" style="--accent:var(--bq-stat-fatigue)">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 3L4 14h7l-1 7 9-11h-7z"/></svg></div>
+      <div class="lab">Fadiga</div>
+      <div class="val">67%</div>
+      <div class="delta down">▲ +12% no turno</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

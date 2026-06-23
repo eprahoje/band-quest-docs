@@ -1,0 +1,46 @@
+<!-- @dsCard group="Type" name="Typography" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Band Quest — Typography</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css">
+<style>
+  body { margin: 0; }
+  .wrap { padding: var(--bq-space-6); max-width: 760px; }
+  .display { font-family: var(--bq-font-display); }
+  .body { font-family: var(--bq-font-body); }
+  h2 { font-family: var(--bq-font-display); font-weight: 600; letter-spacing: var(--bq-tracking-caps);
+       text-transform: uppercase; font-size: var(--bq-text-sm); color: var(--bq-text-muted);
+       margin: var(--bq-space-6) 0 var(--bq-space-3); border-top: 1px solid var(--bq-border); padding-top: var(--bq-space-4); }
+  .row { display: flex; align-items: baseline; gap: var(--bq-space-4); margin-bottom: var(--bq-space-2); }
+  .tag { font-family: var(--bq-font-mono); font-size: var(--bq-text-xs); color: var(--bq-text-faint); width: 64px; flex: none; }
+  .brand { font-family: var(--bq-font-display); font-weight: 700; text-transform: uppercase;
+           letter-spacing: var(--bq-tracking-display); font-size: var(--bq-text-3xl); line-height: var(--bq-leading-tight); }
+  .brand b { color: var(--bq-spotlight); }
+</style>
+</head>
+<body class="bq-root">
+<div class="wrap">
+  <div class="brand">Band <b>Quest</b></div>
+  <p style="color:var(--bq-text-muted);margin-top:var(--bq-space-2)">Display: Oswald (pôster/rock) · Texto: Inter (dashboard legível)</p>
+
+  <h2>Display — Oswald</h2>
+  <div class="row"><span class="tag">3xl</span><span class="display" style="font-size:var(--bq-text-3xl);font-weight:700;text-transform:uppercase">Turnê Mundial</span></div>
+  <div class="row"><span class="tag">2xl</span><span class="display" style="font-size:var(--bq-text-2xl);font-weight:600;text-transform:uppercase">Gravar Álbum</span></div>
+  <div class="row"><span class="tag">xl</span><span class="display" style="font-size:var(--bq-text-xl);font-weight:600;text-transform:uppercase">Próximo Show</span></div>
+
+  <h2>Body — Inter</h2>
+  <div class="row"><span class="tag">lg</span><span class="body" style="font-size:var(--bq-text-lg)">A banda assinou com a gravadora.</span></div>
+  <div class="row"><span class="tag">md</span><span class="body" style="font-size:var(--bq-text-md)">Cada decisão afeta dinheiro e reputação ao longo dos turnos.</span></div>
+  <div class="row"><span class="tag">sm</span><span class="body" style="font-size:var(--bq-text-sm);color:var(--bq-text-muted)">Label secundário · metadados de evento</span></div>
+  <div class="row"><span class="tag">xs</span><span class="body" style="font-size:var(--bq-text-xs);color:var(--bq-text-faint);text-transform:uppercase;letter-spacing:var(--bq-tracking-caps)">Caps · hint</span></div>
+
+  <h2>Números — tabular</h2>
+  <div class="row"><span class="tag">stat</span><span class="display" style="font-size:var(--bq-text-2xl);font-weight:700;font-variant-numeric:tabular-nums;color:var(--bq-spotlight)">R$ 12.480</span></div>
+</div>
+</body>
+</html>

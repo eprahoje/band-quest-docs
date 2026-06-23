@@ -1,0 +1,50 @@
+<!-- @dsCard group="Spacing" name="Spacing & radius" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Band Quest — Spacing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css">
+<style>
+  body { margin: 0; }
+  .wrap { padding: var(--bq-space-6); max-width: 720px; }
+  h1 { font-family: var(--bq-font-display); font-weight: 700; text-transform: uppercase;
+       letter-spacing: var(--bq-tracking-display); font-size: var(--bq-text-2xl); margin: 0 0 var(--bq-space-5); }
+  h2 { font-family: var(--bq-font-display); font-weight: 600; letter-spacing: var(--bq-tracking-caps);
+       text-transform: uppercase; font-size: var(--bq-text-sm); color: var(--bq-text-muted); margin: var(--bq-space-6) 0 var(--bq-space-3); }
+  .row { display: flex; align-items: center; gap: var(--bq-space-4); margin-bottom: var(--bq-space-2); }
+  .tag { font-family: var(--bq-font-mono); font-size: var(--bq-text-xs); color: var(--bq-text-faint); width: 96px; flex: none; }
+  .bar { height: 16px; background: var(--bq-spotlight); border-radius: 3px; }
+  .radii { display: flex; gap: var(--bq-space-4); flex-wrap: wrap; }
+  .box { width: 88px; height: 88px; background: var(--bq-bg-elevated); border: 1px solid var(--bq-border-strong);
+         display: flex; align-items: flex-end; justify-content: center; padding: var(--bq-space-2);
+         font-family: var(--bq-font-mono); font-size: var(--bq-text-xs); color: var(--bq-text-muted); }
+</style>
+</head>
+<body class="bq-root">
+<div class="wrap">
+  <h1>Espaçamento & Raio</h1>
+
+  <h2>Escala de espaço (base 4px)</h2>
+  <div class="row"><span class="tag">space-1 · 4</span><div class="bar" style="width:var(--bq-space-1)"></div></div>
+  <div class="row"><span class="tag">space-2 · 8</span><div class="bar" style="width:var(--bq-space-2)"></div></div>
+  <div class="row"><span class="tag">space-3 · 12</span><div class="bar" style="width:var(--bq-space-3)"></div></div>
+  <div class="row"><span class="tag">space-4 · 16</span><div class="bar" style="width:var(--bq-space-4)"></div></div>
+  <div class="row"><span class="tag">space-5 · 24</span><div class="bar" style="width:var(--bq-space-5)"></div></div>
+  <div class="row"><span class="tag">space-6 · 32</span><div class="bar" style="width:var(--bq-space-6)"></div></div>
+  <div class="row"><span class="tag">space-7 · 48</span><div class="bar" style="width:var(--bq-space-7)"></div></div>
+  <div class="row"><span class="tag">space-8 · 64</span><div class="bar" style="width:var(--bq-space-8)"></div></div>
+
+  <h2>Raio de borda</h2>
+  <div class="radii">
+    <div class="box" style="border-radius:var(--bq-radius-sm)">sm · 6</div>
+    <div class="box" style="border-radius:var(--bq-radius-md)">md · 10</div>
+    <div class="box" style="border-radius:var(--bq-radius-lg)">lg · 16</div>
+    <div class="box" style="border-radius:var(--bq-radius-pill)">pill</div>
+  </div>
+</div>
+</body>
+</html>

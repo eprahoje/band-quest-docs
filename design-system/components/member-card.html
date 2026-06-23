@@ -1,0 +1,85 @@
+<!-- @dsCard group="Components" name="Member card" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Band Quest — Member Card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css">
+<style>
+  body { margin: 0; }
+  .wrap { padding: var(--bq-space-6); display: flex; gap: var(--bq-space-5); flex-wrap: wrap; }
+
+  .card {
+    width: 240px; background: var(--bq-bg-surface); border: 1px solid var(--bq-border);
+    border-radius: var(--bq-radius-lg); overflow: hidden; box-shadow: var(--bq-shadow-md);
+  }
+  .head { display: flex; gap: var(--bq-space-3); padding: var(--bq-space-4); align-items: center; }
+  .avatar {
+    width: 56px; height: 56px; border-radius: var(--bq-radius-pill); flex: none;
+    display: flex; align-items: flex-end; justify-content: center; overflow: hidden;
+    background: linear-gradient(160deg, var(--bq-bg-elevated), var(--bq-bg-inset));
+    border: 1px solid var(--bq-border-strong);
+  }
+  .avatar svg { width: 70%; height: 70%; }
+  .name { font-family: var(--bq-font-display); font-weight: 700; text-transform: uppercase;
+          letter-spacing: var(--bq-tracking-display); font-size: var(--bq-text-lg); line-height: var(--bq-leading-tight); }
+  .role { font-size: var(--bq-text-xs); color: var(--bq-text-muted); text-transform: uppercase;
+          letter-spacing: var(--bq-tracking-caps); margin-top: 2px; }
+  .attrs { padding: 0 var(--bq-space-4) var(--bq-space-4); display: grid; gap: var(--bq-space-3); }
+  .attr { display: grid; grid-template-columns: 1fr auto; gap: var(--bq-space-1); }
+  .attr .lab { font-size: var(--bq-text-xs); color: var(--bq-text-muted); }
+  .attr .val { font-family: var(--bq-font-mono); font-size: var(--bq-text-xs); color: var(--bq-text); }
+  .track { grid-column: 1 / -1; height: 6px; background: var(--bq-bg-inset); border-radius: var(--bq-radius-pill); overflow: hidden; }
+  .fill { height: 100%; border-radius: var(--bq-radius-pill); }
+  .ribbon { padding: var(--bq-space-2) var(--bq-space-4); background: var(--bq-spotlight-dim);
+            border-top: 1px solid var(--bq-border); display: flex; justify-content: space-between; align-items: center; }
+  .ribbon .role2 { font-size: var(--bq-text-xs); color: var(--bq-spotlight); font-weight: var(--bq-weight-semibold); }
+</style>
+</head>
+<body class="bq-root">
+<div class="wrap">
+
+  <div class="card">
+    <div class="head">
+      <div class="avatar">
+        <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="16" r="9" fill="var(--bq-spotlight)"/><path d="M6 46c0-10 8-16 18-16s18 6 18 16" fill="var(--bq-spotlight)"/></svg>
+      </div>
+      <div>
+        <div class="name">Iggy Vance</div>
+        <div class="role">Vocal · Líder</div>
+      </div>
+    </div>
+    <div class="attrs">
+      <div class="attr"><span class="lab">Técnica</span><span class="val">72</span><div class="track"><div class="fill" style="width:72%;background:var(--bq-stat-rep)"></div></div></div>
+      <div class="attr"><span class="lab">Carisma</span><span class="val">88</span><div class="track"><div class="fill" style="width:88%;background:var(--bq-stat-fans)"></div></div></div>
+      <div class="attr"><span class="lab">Criatividade</span><span class="val">64</span><div class="track"><div class="fill" style="width:64%;background:var(--bq-spotlight)"></div></div></div>
+      <div class="attr"><span class="lab">Energia</span><span class="val">41</span><div class="track"><div class="fill" style="width:41%;background:var(--bq-stat-fatigue)"></div></div></div>
+    </div>
+    <div class="ribbon"><span class="role2">★ Front-man</span><span style="font-size:var(--bq-text-xs);color:var(--bq-text-faint)">Nv. 7</span></div>
+  </div>
+
+  <div class="card">
+    <div class="head">
+      <div class="avatar">
+        <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="16" r="9" fill="var(--bq-stat-cash)"/><path d="M6 46c0-10 8-16 18-16s18 6 18 16" fill="var(--bq-stat-cash)"/></svg>
+      </div>
+      <div>
+        <div class="name">Rhea Cole</div>
+        <div class="role">Guitarra</div>
+      </div>
+    </div>
+    <div class="attrs">
+      <div class="attr"><span class="lab">Técnica</span><span class="val">91</span><div class="track"><div class="fill" style="width:91%;background:var(--bq-stat-rep)"></div></div></div>
+      <div class="attr"><span class="lab">Carisma</span><span class="val">55</span><div class="track"><div class="fill" style="width:55%;background:var(--bq-stat-fans)"></div></div></div>
+      <div class="attr"><span class="lab">Criatividade</span><span class="val">79</span><div class="track"><div class="fill" style="width:79%;background:var(--bq-spotlight)"></div></div></div>
+      <div class="attr"><span class="lab">Energia</span><span class="val">68</span><div class="track"><div class="fill" style="width:68%;background:var(--bq-stat-fatigue)"></div></div></div>
+    </div>
+    <div class="ribbon"><span class="role2">★ Solista</span><span style="font-size:var(--bq-text-xs);color:var(--bq-text-faint)">Nv. 9</span></div>
+  </div>
+
+</div>
+</body>
+</html>

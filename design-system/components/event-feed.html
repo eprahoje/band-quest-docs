@@ -1,0 +1,68 @@
+<!-- @dsCard group="Components" name="Event feed" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Band Quest — Event Feed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css">
+<style>
+  body { margin: 0; }
+  .wrap { padding: var(--bq-space-6); max-width: 520px; }
+  h1 { font-family: var(--bq-font-display); font-weight: 700; text-transform: uppercase;
+       letter-spacing: var(--bq-tracking-display); font-size: var(--bq-text-xl); margin: 0 0 var(--bq-space-5); }
+  .feed { position: relative; padding-left: var(--bq-space-6); }
+  .feed::before { content:""; position:absolute; left: 15px; top: 4px; bottom: 4px; width: 2px; background: var(--bq-border); }
+  .item { position: relative; padding: 0 0 var(--bq-space-5) var(--bq-space-4); }
+  .dot { position: absolute; left: calc(-1 * var(--bq-space-6) + 4px); top: 0; width: 32px; height: 32px; border-radius: var(--bq-radius-pill);
+         display:flex; align-items:center; justify-content:center; background: var(--bq-bg-elevated);
+         border: 1px solid var(--bq-border-strong); color: var(--accent); }
+  .dot svg { width: 18px; height: 18px; }
+  .title { font-weight: var(--bq-weight-semibold); font-size: var(--bq-text-md); }
+  .desc { font-size: var(--bq-text-sm); color: var(--bq-text-muted); margin-top: 2px; }
+  .time { font-size: var(--bq-text-xs); color: var(--bq-text-faint); font-family: var(--bq-font-mono); margin-top: var(--bq-space-2); }
+  .tag { display:inline-block; font-size: var(--bq-text-xs); font-weight: var(--bq-weight-semibold);
+         padding: 1px var(--bq-space-2); border-radius: var(--bq-radius-pill); margin-left: var(--bq-space-2); }
+  .pos { color: var(--bq-positive); background: color-mix(in srgb, var(--bq-positive) 16%, transparent); }
+  .neg { color: var(--bq-negative); background: color-mix(in srgb, var(--bq-negative) 16%, transparent); }
+</style>
+</head>
+<body class="bq-root">
+<div class="wrap">
+  <h1>Feed de Eventos</h1>
+  <div class="feed">
+
+    <div class="item" style="--accent:var(--bq-stat-fans)">
+      <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></div>
+      <div class="title">Show lotado no Cavern Club <span class="tag pos">+3,1 mil fãs</span></div>
+      <div class="desc">A energia da plateia transbordou. A imprensa local cobriu o show.</div>
+      <div class="time">Turno 12 · semana 2</div>
+    </div>
+
+    <div class="item" style="--accent:var(--bq-spotlight)">
+      <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/></svg></div>
+      <div class="title">Single entrou nas paradas <span class="tag pos">+120 reputação</span></div>
+      <div class="desc">"Neon Static" alcançou o top 40 regional.</div>
+      <div class="time">Turno 11 · semana 4</div>
+    </div>
+
+    <div class="item" style="--accent:var(--bq-negative)">
+      <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h13l5 5v5h-2M3 17h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></div>
+      <div class="title">Van quebrou na estrada <span class="tag neg">-R$ 2.300</span></div>
+      <div class="desc">O conserto atrasou a turnê e aumentou a fadiga da banda.</div>
+      <div class="time">Turno 11 · semana 1</div>
+    </div>
+
+    <div class="item" style="--accent:var(--bq-stat-cash)">
+      <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
+      <div class="title">Proposta de contrato recebida <span class="tag pos">decisão</span></div>
+      <div class="desc">A gravadora Halcyon ofereceu um adiantamento. Aceitar?</div>
+      <div class="time">Turno 10 · semana 3</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

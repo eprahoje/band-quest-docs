@@ -1,0 +1,67 @@
+<!-- @dsCard group="Colors" name="Color palette" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Band Quest — Colors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css">
+<style>
+  body { margin: 0; }
+  .wrap { padding: var(--bq-space-6); max-width: 880px; }
+  h1 { font-family: var(--bq-font-display); font-weight: 700; letter-spacing: var(--bq-tracking-display);
+       font-size: var(--bq-text-2xl); margin: 0 0 var(--bq-space-1); text-transform: uppercase; }
+  .sub { color: var(--bq-text-muted); margin: 0 0 var(--bq-space-6); font-size: var(--bq-text-sm); }
+  h2 { font-family: var(--bq-font-display); font-weight: 600; letter-spacing: var(--bq-tracking-caps);
+       text-transform: uppercase; font-size: var(--bq-text-sm); color: var(--bq-text-muted);
+       margin: var(--bq-space-6) 0 var(--bq-space-3); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px,1fr)); gap: var(--bq-space-3); }
+  .sw { border: 1px solid var(--bq-border); border-radius: var(--bq-radius-md); overflow: hidden; background: var(--bq-bg-surface); }
+  .chip { height: 64px; }
+  .meta { padding: var(--bq-space-2) var(--bq-space-3); }
+  .name { font-size: var(--bq-text-sm); font-weight: var(--bq-weight-semibold); }
+  .hex  { font-family: var(--bq-font-mono); font-size: var(--bq-text-xs); color: var(--bq-text-faint); }
+</style>
+</head>
+<body class="bq-root">
+<div class="wrap">
+  <h1>Paleta de Cores</h1>
+  <p class="sub">Base dark de palco · acentos atemporais · semântica de stats.</p>
+
+  <h2>Superfícies</h2>
+  <div class="grid">
+    <div class="sw"><div class="chip" style="background:var(--bq-bg-base)"></div><div class="meta"><div class="name">bg-base</div><div class="hex">#0e0e12</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--bq-bg-surface)"></div><div class="meta"><div class="name">bg-surface</div><div class="hex">#16161d</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--bq-bg-elevated)"></div><div class="meta"><div class="name">bg-elevated</div><div class="hex">#1f1f29</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--bq-bg-inset)"></div><div class="meta"><div class="name">bg-inset</div><div class="hex">#0a0a0e</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--bq-border)"></div><div class="meta"><div class="name">border</div><div class="hex">#2a2a35</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--bq-border-strong)"></div><div class="meta"><div class="name">border-strong</div><div class="hex">#3a3a48</div></div></div>
+  </div>
+
+  <h2>Acentos de marca</h2>
+  <div class="grid">
+    <div class="sw"><div class="chip" style="background:var(--bq-spotlight)"></div><div class="meta"><div class="name">spotlight</div><div class="hex">#f5a623</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--bq-ember)"></div><div class="meta"><div class="name">ember</div><div class="hex">#e2473b</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--bq-spotlight-dim)"></div><div class="meta"><div class="name">spotlight-dim</div><div class="hex">#3a2c12</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--bq-ember-dim)"></div><div class="meta"><div class="name">ember-dim</div><div class="hex">#3a1816</div></div></div>
+  </div>
+
+  <h2>Semântica de stats</h2>
+  <div class="grid">
+    <div class="sw"><div class="chip" style="background:var(--bq-stat-rep)"></div><div class="meta"><div class="name">stat-rep</div><div class="hex">reputação</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--bq-stat-cash)"></div><div class="meta"><div class="name">stat-cash</div><div class="hex">caixa</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--bq-stat-fans)"></div><div class="meta"><div class="name">stat-fans</div><div class="hex">fãs</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--bq-stat-fatigue)"></div><div class="meta"><div class="name">stat-fatigue</div><div class="hex">fadiga</div></div></div>
+  </div>
+
+  <h2>Texto</h2>
+  <div class="grid">
+    <div class="sw"><div class="chip" style="background:var(--bq-text)"></div><div class="meta"><div class="name">text</div><div class="hex">#f4f3f1</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--bq-text-muted)"></div><div class="meta"><div class="name">text-muted</div><div class="hex">#a8a6b2</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--bq-text-faint)"></div><div class="meta"><div class="name">text-faint</div><div class="hex">#6d6b78</div></div></div>
+  </div>
+</div>
+</body>
+</html>
