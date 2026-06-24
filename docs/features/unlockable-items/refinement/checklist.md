@@ -1,4 +1,4 @@
-# Feature 0010 - Session Modes and Outcomes (Checklist)
+# Feature 0012 - Unlockable Items (Checklist)
 
 ## Planning
 - [x] Problem is clearly stated.
@@ -14,7 +14,8 @@
 - [x] `band-quest-game` team/agent has enough context without re-reading the whole history.
 
 ## Dependencies / delegations
-- Calibragem numérica (pesos da nota, fator de duração, N/M de derrota) → 0003.
-- Catálogo de marcos e bônus → 0011 (Career Milestones).
-- Catálogo de itens e desbloqueio → 0012 (Unlockable Items).
-- UI de seleção de modo + toggles do modo livre → 0005d.
+- Custos e valores dos efeitos → 0003.
+- Ids de marco que desbloqueiam itens → 0011.
+- Itens por época → 0008.
+- Staff (desbloqueios via contratações) → 0013.
+- Loja fica na 0012; extrair para feature própria só se crescer (ver `roadmap.md`).

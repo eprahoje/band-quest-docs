@@ -1,4 +1,4 @@
-# Feature 0010 - Session Modes and Outcomes (Checklist)
+# Feature 0011 - Career Milestones (Checklist)
 
 ## Planning
 - [x] Problem is clearly stated.
@@ -14,7 +14,6 @@
 - [x] `band-quest-game` team/agent has enough context without re-reading the whole history.
 
 ## Dependencies / delegations
-- Calibragem numérica (pesos da nota, fator de duração, N/M de derrota) → 0003.
-- Catálogo de marcos e bônus → 0011 (Career Milestones).
-- Catálogo de itens e desbloqueio → 0012 (Unlockable Items).
-- UI de seleção de modo + toggles do modo livre → 0005d.
+- Calibragem numérica (limiares das condições, valores das recompensas) → 0003.
+- Ids de item desbloqueado (`unlockItemId`) → 0012.
+- Bônus na nota final → 0010.

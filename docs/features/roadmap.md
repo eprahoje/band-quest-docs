@@ -47,6 +47,80 @@ Note: Start Screen and Onboarding is intentionally cross-cutting. It belongs to 
   (Progressão da Banda) cobre fases de carreira, não o roster. A 0007 referencia
   0005, 0006 e 0002 sem se sobrepor a elas.
 
+- **0011 - Career Milestones** e **0012 - Unlockable Items** — surgiram da Q6 da
+  0010 (Session Modes and Outcomes). Ao definir que marcos de carreira dão bônus e
+  desbloqueiam itens, o usuário optou por separar as duas responsabilidades em
+  features próprias: a **0011** é dona do catálogo de marcos e suas recompensas; a
+  **0012** é dona do catálogo de itens, das fontes de desbloqueio e dos efeitos. A
+  0010 apenas referencia ambas (a nota final lê o bônus dos marcos). A calibragem
+  numérica de ambas fica na 0003.
+
+## Desdobramentos do refinamento da 0012
+
+Surgiram durante a Q4 da 0012 (Unlockable Items) e foram decididos nas Q5/Q6:
+
+- **0013 - Staff and Crew (criada)** — contratar empresário, preparador vocal,
+  roadies, motorista, etc., levando a desbloqueios e caminhos próprios. É um sistema
+  distinto de "itens"; virou feature própria por decisão da Q6 da 0012.
+- **Loja (Shop) de itens** — **fica na 0012** como fonte de desbloqueio por compra.
+  Gatilho de extração para feature própria: se ganhar preços dinâmicos, estoque por
+  época ou UI dedicada que justifiquem escopo separado (decisão da Q5 da 0012).
+
+## Desdobramento do refinamento da 0003
+
+- **0014 - Core Loop and Actions (criada)** — surgiu na Q3 da 0003: ações têm
+  **duração variável em turnos** (gravar álbum/turnê ocupam N turnos conforme
+  escopo/qualidade) e o turno é uma **semana** (calendário granular), não um ano.
+  Hoje as ações estão hardcoded no `GameView`; a 0014 é dona do **modelo de ação +
+  duração + ciclo de vida**. A 0003 fornece custos/ganhos; a 0008 fornece o
+  calendário. Promovida de candidata a feature por decisão da Q3 da 0003.
+
+## Backlog de playtest — 2026-06-24 (Playtest 01)
+
+Feedback do primeiro playtest do motor de ações (0014) + caixa/calendário (0003).
+Detalhe completo e input original em
+[docs/playtests/playtest-2026-06-24.md](../playtests/playtest-2026-06-24.md).
+
+### Features candidatas (a scaffoldar quando priorizadas)
+- **0015 - Songwriting and Releases (candidata)** — gravação profunda: o jogador
+  controla nome do single, gênero base, temas; cadeia composição → single → álbum
+  (álbum exige X singles + músicas; demo exige mínimo de músicas) e seus impactos.
+  (Ponto 3.)
+- **0016 - Venues and Shows (candidata)** — localidade dos shows; catálogo de
+  lugares que se desbloqueia conforme a reputação cresce; trajeto de turnê pelas
+  cidades/estados do Brasil (começa no estado de origem e evolui). (Pontos 6 e 10.)
+
+### Revisões de mecânica / escopo
+- **Granularidade do turno** (0003 Q3 / 0008 / 0014) — turno = **semana** não
+  agradou; migrar para **dia** (ações de 1+ dias) para mais realismo, mais ações
+  paralelas e desbloqueio de ações principais via progresso/staff. (Ponto 1.)
+- **Marketing desbloqueável** (0014 + 0012/0013) — tirar das ações iniciais;
+  liberar via staff ou agência (item caro). (Ponto 9.)
+- **Turnê: requisito alto + gate por staff** (0014 + 0013) — turnê difícil de
+  conquistar; meta-game inicial = bares/lugares menores até surgirem oportunidades.
+  (Pontos 10 e 11.)
+
+### Bug conhecido
+- **Soft-lock de descanso** (0014) — `rest` é bloqueado pela fadiga junto das demais
+  ações `main`; isentar `rest` do bloqueio. Correção rápida. (Ponto 2.)
+
+### UX / técnico
+- **Timeline "infinita"** (0014 / `EventFeed`) — o feed renderiza todos os eventos
+  sem limite/rolagem e infla a altura da página. Começar por cap + rolagem (últimos
+  N) e, depois, histórico completo separado; avaliar poda no store. (Ponto 12.)
+
+### Backlog de balance (iteração de balance da 0003)
+- Curva de reputação: 40+ cedo demais e com pouco impacto; equilibrar ganhos/perdas
+  de recursos. (Ponto 7.)
+- Preços/requisitos visíveis por ação + eventos relatando impactos em recursos.
+  (Ponto 4.)
+- Tornar visível a **manutenção** da banda (dinheiro/reputação/fãs por turno).
+  (Ponto 8.)
+
+### Backlog de eventos (0009)
+- Acontecimentos aleatórios por turno com escopos **membro / banda / mundo**, com
+  impacto opcional, para dar variedade à timeline. (Ponto 5.)
+
 ## Mudança de premissa temporal (0001, iteration-02)
 
 A 0001 foi redefinida: **sem seleção de era** — o jogo começa fixo no **Brasil

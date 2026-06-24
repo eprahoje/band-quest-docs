@@ -1,4 +1,4 @@
-# Feature 0010 - Session Modes and Outcomes (Checklist)
+# Feature 0014 - Core Loop and Actions (Checklist)
 
 ## Planning
 - [x] Problem is clearly stated.
@@ -14,7 +14,7 @@
 - [x] `band-quest-game` team/agent has enough context without re-reading the whole history.
 
 ## Dependencies / delegations
-- Calibragem numérica (pesos da nota, fator de duração, N/M de derrota) → 0003.
-- Catálogo de marcos e bônus → 0011 (Career Milestones).
-- Catálogo de itens e desbloqueio → 0012 (Unlockable Items).
-- UI de seleção de modo + toggles do modo livre → 0005d.
+- Valores (durações, custos, ganhos, variância) → iteração de balance da 0003.
+- Calendário/avanço de turno (semana) → 0008.
+- Modificadores de resultado → membros (0007), itens (0012), staff (0013).
+- Eventos durante a ação → 0009. Marcos disparados por ações → 0011.

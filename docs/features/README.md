@@ -9,6 +9,9 @@
 ## Roadmap
 - Decomposição das propostas iniciais: [roadmap.md](./roadmap.md)
 
+## Playtests / feedback
+- Sessões de playtest e backlog: [docs/playtests/README.md](../playtests/README.md)
+
 ## 0001 - Visão do Jogo
 - Diagrams: [README.md](./game-vision/diagrams/README.md)
 - Planejamento: [overview.md](./game-vision/planning/overview.md)
@@ -34,7 +37,7 @@
 - Checklist: [checklist.md](./economy-and-reputation/refinement/checklist.md)
 - Perguntas: [questions.md](./economy-and-reputation/refinement/questions.md)
 - Log: [log.md](./economy-and-reputation/refinement/log.md)
-- Refinamento: [iteration-01.md](./economy-and-reputation/refinement/iteration-01.md)
+- Refinamento: [iteration-03.md](./economy-and-reputation/refinement/iteration-03.md)
 
 ## 0004 - Competição e Mercado
 *(pasta: `competition-trends-technology`)*
@@ -100,4 +103,43 @@
 - Checklist: [checklist.md](./session-modes-and-outcomes/refinement/checklist.md)
 - Perguntas: [questions.md](./session-modes-and-outcomes/refinement/questions.md)
 - Log: [log.md](./session-modes-and-outcomes/refinement/log.md)
-- Refinamento: [iteration-01.md](./session-modes-and-outcomes/refinement/iteration-01.md)
+- Refinamento: [iteration-03.md](./session-modes-and-outcomes/refinement/iteration-03.md)
+
+## 0011 - Career Milestones
+- Diagrams: [README.md](./career-milestones/diagrams/README.md)
+- Planejamento: [overview.md](./career-milestones/planning/overview.md)
+- Decomposição: [decomposition.md](./career-milestones/refinement/decomposition.md)
+- Checklist: [checklist.md](./career-milestones/refinement/checklist.md)
+- Perguntas: [questions.md](./career-milestones/refinement/questions.md)
+- Log: [log.md](./career-milestones/refinement/log.md)
+- Refinamento: [iteration-02.md](./career-milestones/refinement/iteration-02.md)
+- Design: [design.md](./career-milestones/planning/design.md)
+
+## 0012 - Unlockable Items
+- Diagrams: [README.md](./unlockable-items/diagrams/README.md)
+- Planejamento: [overview.md](./unlockable-items/planning/overview.md)
+- Decomposição: [decomposition.md](./unlockable-items/refinement/decomposition.md)
+- Checklist: [checklist.md](./unlockable-items/refinement/checklist.md)
+- Perguntas: [questions.md](./unlockable-items/refinement/questions.md)
+- Log: [log.md](./unlockable-items/refinement/log.md)
+- Refinamento: [iteration-03.md](./unlockable-items/refinement/iteration-03.md)
+- Design: [design.md](./unlockable-items/planning/design.md)
+
+## 0013 - Staff and Crew
+- Diagrams: [README.md](./staff-and-crew/diagrams/README.md)
+- Planejamento: [overview.md](./staff-and-crew/planning/overview.md)
+- Decomposição: [decomposition.md](./staff-and-crew/refinement/decomposition.md)
+- Checklist: [checklist.md](./staff-and-crew/refinement/checklist.md)
+- Perguntas: [questions.md](./staff-and-crew/refinement/questions.md)
+- Log: [log.md](./staff-and-crew/refinement/log.md)
+- Refinamento: [iteration-01.md](./staff-and-crew/refinement/iteration-01.md)
+
+## 0014 - Core Loop and Actions
+- Diagrams: [README.md](./core-loop-and-actions/diagrams/README.md)
+- Planejamento: [overview.md](./core-loop-and-actions/planning/overview.md)
+- Decomposição: [decomposition.md](./core-loop-and-actions/refinement/decomposition.md)
+- Checklist: [checklist.md](./core-loop-and-actions/refinement/checklist.md)
+- Perguntas: [questions.md](./core-loop-and-actions/refinement/questions.md)
+- Log: [log.md](./core-loop-and-actions/refinement/log.md)
+- Refinamento: [iteration-02.md](./core-loop-and-actions/refinement/iteration-02.md)
+- Design: [design.md](./core-loop-and-actions/planning/design.md)
