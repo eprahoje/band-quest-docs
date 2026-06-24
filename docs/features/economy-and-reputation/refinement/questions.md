@@ -18,6 +18,8 @@ gravação, marketing, logística/turnê, salários (0013), manutenção mínima
 feature **0014 - Core Loop and Actions**; a 0003 fornece custos/ganhos, a 0014 a
 duração e a mecânica.
 **References:** Solved in `iteration-03.md`.
+**⚠️ Revisado:** a unidade passou a ser **dia** (12×30 = 360/ano) após o Playtest 01.
+Ver `iteration-04.md` e a iteration-02 da 0008.
 
 ### [Q2] Como a reputação se comporta ao longo do tempo?
 

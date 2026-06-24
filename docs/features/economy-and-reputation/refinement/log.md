@@ -101,3 +101,19 @@
 
 ### Next step
 - Incorporar estes itens ao abrir a iteração de balance.
+
+## [0.6.0] - 2026-06-24T00:00:00Z
+
+### Input
+- Revisão de cadência (Playtest 01, ponto 1): turno = semana → **dia**.
+
+### Summary
+- Criado `iteration-04.md`: turno = **1 dia** (calendário 360 dias/ano, dono na
+  0008); custos recorrentes e durações de ação passam a ser por dia. Supersede a
+  decisão de turno = semana (iteration-03); nota adicionada à Q3 resolvida.
+
+### Open questions
+- Nenhuma nova. Valores concretos seguem para a iteração de balance.
+
+### Next step
+- Iteração de balance já na base diária (custos/ganhos/durações/decay/limiares).

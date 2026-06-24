@@ -1,8 +1,12 @@
 # Feature 0014 - Core Loop and Actions (Design)
 
-> Modelo de ação e catálogo inicial. Turno = **semana** (0003/0008). Os **valores**
-> (durações, custos, ganhos, variância) são calibrados na **iteração de balance da
-> 0003** — aqui ficam placeholders conceituais.
+> Modelo de ação e catálogo inicial. Turno = **dia** (0008 iteration-02 / 0003
+> iteration-04; calendário 12×30 = 360/ano). As `durationTurns` representam **dias**.
+> Os **valores** (durações, custos, ganhos, variância) são calibrados na **iteração
+> de balance da 0003** — aqui ficam placeholders conceituais.
+>
+> **Avanço de tempo:** orientado por ações — o jogador não avança dia a dia; o botão
+> "Avançar" salta para a **próxima conclusão de ação** (menor `turnsRemaining`).
 
 ## Componentes afetados
 - `band-quest-game`: novo módulo de ações (catálogo + máquina de estado), integração
@@ -50,8 +54,9 @@ interface ActiveAction {
   concluir: aplica `outcome` (modulado por recursos + variância), registra um evento
   e pode disparar marco (0011) e/ou consumir/produzir pré-requisitos (ex.: músicas).
 - **Lanes:** uma ação `main` por vez; ações `background` podem rodar em paralelo.
-- **Avanço de turno:** avançar o turno decrementa `turnsRemaining` de todas as ações
-  ativas e cobra custos recorrentes (salários 0013, decay 0003).
+- **Avanço de tempo:** "Avançar" salta `delta` dias = menor `turnsRemaining` entre as
+  ações ativas (1 dia se não houver ações); decrementa todas as ativas em `delta`,
+  conclui as que chegam a zero e cobra custos recorrentes (salários 0013, decay 0003).
 
 ## Catálogo inicial proposto
 

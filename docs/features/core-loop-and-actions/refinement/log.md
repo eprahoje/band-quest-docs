@@ -104,3 +104,21 @@
 
 ### Next step
 - Decidir e implementar turno = dia (ponto 1); depois, iteração de balance da 0003.
+
+## [0.6.0] - 2026-06-24T00:00:00Z
+
+### Input
+- Decisão de granularidade (Playtest 01, ponto 1): turno = dia + avanço por ações.
+
+### Summary
+- Criado `iteration-03.md`: durações das ações em **dias**; **tempo avança pelas
+  ações** — botão "Avançar" salta para a próxima conclusão (menor `turnsRemaining`);
+  calendário exibido como Ano · Mês · Dia (360/ano). Decisão casada com a 0008
+  (iteration-02) e a 0003 (iteration-04).
+
+### Open questions
+- Nenhuma nova bloqueante.
+
+### Next step
+- Implementar (calendário dia + advanceToNextCompletion + durações em dias) e seguir
+  para o balance da 0003.

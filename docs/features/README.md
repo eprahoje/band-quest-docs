@@ -37,7 +37,7 @@
 - Checklist: [checklist.md](./economy-and-reputation/refinement/checklist.md)
 - Perguntas: [questions.md](./economy-and-reputation/refinement/questions.md)
 - Log: [log.md](./economy-and-reputation/refinement/log.md)
-- Refinamento: [iteration-03.md](./economy-and-reputation/refinement/iteration-03.md)
+- Refinamento: [iteration-04.md](./economy-and-reputation/refinement/iteration-04.md)
 
 ## 0004 - Competição e Mercado
 *(pasta: `competition-trends-technology`)*
@@ -85,7 +85,7 @@
 - Checklist: [checklist.md](./game-timeline-and-technology-evolution/refinement/checklist.md)
 - Perguntas: [questions.md](./game-timeline-and-technology-evolution/refinement/questions.md)
 - Log: [log.md](./game-timeline-and-technology-evolution/refinement/log.md)
-- Refinamento: [iteration-01.md](./game-timeline-and-technology-evolution/refinement/iteration-01.md)
+- Refinamento: [iteration-02.md](./game-timeline-and-technology-evolution/refinement/iteration-02.md)
 
 ## 0009 - Brazil 2000s Scenarios and Events
 - Diagrams: [README.md](./brazil-2000s-scenarios-and-events/diagrams/README.md)
@@ -141,5 +141,5 @@
 - Checklist: [checklist.md](./core-loop-and-actions/refinement/checklist.md)
 - Perguntas: [questions.md](./core-loop-and-actions/refinement/questions.md)
 - Log: [log.md](./core-loop-and-actions/refinement/log.md)
-- Refinamento: [iteration-02.md](./core-loop-and-actions/refinement/iteration-02.md)
+- Refinamento: [iteration-03.md](./core-loop-and-actions/refinement/iteration-03.md)
 - Design: [design.md](./core-loop-and-actions/planning/design.md)

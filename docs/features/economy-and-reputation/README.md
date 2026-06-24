@@ -9,7 +9,7 @@ valores numa iteração de balance futura)
 - [Decomposition](refinement/decomposition.md)
 - [Checklist](refinement/checklist.md)
 - [Open questions](refinement/questions.md)
-- [Latest iteration](refinement/iteration-03.md)
+- [Latest iteration](refinement/iteration-04.md)
 - [Action log](refinement/log.md)
 
 ## Relationships

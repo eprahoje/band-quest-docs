@@ -13,18 +13,6 @@
 
 **Answer:**
 
-### [Q2] Ritmo do tempo: relação turno ↔ ano?
-**Context:** Precisamos saber quanto tempo de jogo passa por turno para casar com
-os modos de sessão (0010: 10/20/30 anos).
-**Status:** 🔴 Blocking
-**Options:**
-- [A] 1 turno = 1 mês (12 turnos/ano).
-- [B] 1 turno = 1 trimestre (4 turnos/ano).
-- [C] 1 turno = 1 ano.
-- [X] Aberto.
-
-**Answer:**
-
 ### [Q3] Quais eixos tecnológicos modelar?
 **Context:** Define o que muda com o tempo.
 **Status:** 🟡 Needs Discussion
@@ -47,4 +35,9 @@ os modos de sessão (0010: 10/20/30 anos).
 **Answer:**
 
 ## Resolved Questions
-*(Nenhuma ainda.)*
+
+### [Q2] Ritmo do tempo: relação turno ↔ ano?
+**Decision:** 1 turno = **1 dia**. Calendário de jogo de 12 meses × 30 dias = 360
+dias/ano, exibido como Ano · Mês · Dia. O tempo avança pelas ações (0014), não dia a
+dia. Revisão da cadência após o Playtest 01 (substitui turno = semana).
+**References:** Solved in `iteration-02.md`.
