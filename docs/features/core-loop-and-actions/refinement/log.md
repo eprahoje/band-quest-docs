@@ -87,3 +87,20 @@
 ### Next step
 - Corrigir o bug de descanso (rápido) e tratar os demais pontos junto do balance da
   0003 e das candidatas 0015/0016.
+
+## [0.5.0] - 2026-06-24T00:00:00Z
+
+### Input
+- Retomada da sessão: corrigir o bug do descanso (playtest, ponto 2).
+
+### Summary
+- **BUG resolvido:** adicionado `allowWhenFatigued` ao `ActionDef` (marcado em
+  `rest`); `canStartAction` só bloqueia ação `main` por fadiga quando
+  `!allowWhenFatigued`. Elimina o soft-lock (descansar exausto). Coberto por teste
+  (`game.spec.ts`, 71 testes passando).
+
+### Open questions
+- Nenhuma. Próximo: granularidade do turno (semana → dia).
+
+### Next step
+- Decidir e implementar turno = dia (ponto 1); depois, iteração de balance da 0003.
