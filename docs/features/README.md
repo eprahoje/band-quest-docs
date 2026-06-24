@@ -37,7 +37,7 @@
 - Checklist: [checklist.md](./economy-and-reputation/refinement/checklist.md)
 - Perguntas: [questions.md](./economy-and-reputation/refinement/questions.md)
 - Log: [log.md](./economy-and-reputation/refinement/log.md)
-- Refinamento: [iteration-04.md](./economy-and-reputation/refinement/iteration-04.md)
+- Refinamento: [iteration-05.md](./economy-and-reputation/refinement/iteration-05.md)
 
 ## 0004 - Competição e Mercado
 *(pasta: `competition-trends-technology`)*

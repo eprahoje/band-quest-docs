@@ -122,3 +122,20 @@
 ### Next step
 - Implementar (calendário dia + advanceToNextCompletion + durações em dias) e seguir
   para o balance da 0003.
+
+## [0.7.0] - 2026-06-24T00:00:00Z
+
+### Input
+- Refinamento do modelo de ação durante o balance da 0003 (iteration-05).
+
+### Summary
+- Adicionado `outcomeModifier` à `ActionEffortOption`: o esforço passa a **modular o
+  resultado** (escala ganhos positivos), não só o custo/duração. Corrige o caso em
+  que opções "caprichado" eram estritamente piores (mais caro/lento, mesmo retorno).
+- `resolveOutcome` aplica `outcomeModifier` junto do modulador de qualidade da banda.
+
+### Open questions
+- Nenhuma.
+
+### Next step
+- Continuar o balance (0003) e seguir para fim de sessão (0010) e marcos (0011).

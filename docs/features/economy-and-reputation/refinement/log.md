@@ -117,3 +117,25 @@
 
 ### Next step
 - Iteração de balance já na base diária (custos/ganhos/durações/decay/limiares).
+
+## [0.7.0] - 2026-06-24T00:00:00Z
+
+### Input
+- Iteração de balance (1ª passada). Decisões do usuário: modelo de custos
+  estruturado (mensais por membro crescendo com reputação; por ação; staff futuro)
+  com painel de Custos; reputação mais escassa + decay por inatividade; dificuldade
+  equilibrada.
+
+### Summary
+- Criado `iteration-05.md` (Balance pass 1) com a tabela de números (base diária),
+  o modelo de custos, a reputação rebalanceada + decay e a dificuldade-alvo.
+- Refinamento do modelo da 0014: esforço passa a modular o resultado
+  (`outcomeModifier`), corrigindo o caso "caprichado" estritamente pior.
+- Implementação no jogo (actions.ts/game.ts/GameView) + testes.
+
+### Open questions
+- Nenhuma bloqueante. Números são placeholders a afinar jogando.
+
+### Next step
+- Playtest da economia; ajustar valores. Depois: fim de sessão da 0010 (nota/derrota)
+  e marcos da 0011.
