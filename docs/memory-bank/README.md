@@ -6,6 +6,9 @@ para a tarefa/feature específica em curso.
 
 ## Arquivos
 
+- [`ai-dlc.md`](ai-dlc.md) — **fonte canônica** das fases do AI-DLC
+  (Inception · Implement · Validate · Deploy) e seus gates. `Operate` deferido
+  enquanto o jogo está em pré-alpha.
 - [`product.md`](product.md) — visão de produto, objetivo do jogo, público.
 - [`architecture.md`](architecture.md) — decisões de arquitetura que atravessam
   múltiplas features (ex: estratégia visual definida na feature 0006).

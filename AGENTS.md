@@ -38,19 +38,34 @@ docs/features/<english-slug>/
     log.md
 ```
 
-## AI-DLC phase mapping
+## AI-DLC phases
 
-This workflow follows the spirit of AWS's AI-Driven Development Lifecycle (AI-DLC):
-AI proposes, humans validate, work moves in short, reviewable cycles.
+This workflow follows AWS's AI-Driven Development Lifecycle (AI-DLC):
+AI proposes, humans validate, work moves in short, reviewable cycles (bolts).
+The **canonical definition of the phases and gates lives in
+[docs/memory-bank/ai-dlc.md](docs/memory-bank/ai-dlc.md)** — read it before
+starting any cycle. Summary:
 
-- **Inception** -> `planning/overview.md` + `refinement/questions.md`.
-  Equivalent to AI-DLC's "Mob Elaboration": the agent proposes scope and
-  options, the human validates or redirects before any further work happens.
-- **Construction** -> `refinement/iteration-NN.md`.
-  Equivalent to AI-DLC's "Bolts": short, validated cycles. Each iteration
-  file is one Bolt. Never edit a past iteration; create the next one.
-- **Operations** -> handoff to `band-quest-game`.
-  Only happens after the "Handoff to implementation" checklist below passes.
+While the game is in pre-alpha we go explicitly through **4 of the 5 phases**
+(`Operate` is deferred until there is a published build):
+
+- **Inception** (this repo, `band-quest-docs`) -> `planning/overview.md`,
+  `refinement/questions.md`, `refinement/iteration-NN.md`, `design.md`.
+  Exit gate **G1 (Spec pronta)** = the "Handoff to implementation" checklist below.
+- **Implement** (`band-quest-game`) -> code against the spec + `tokens.css`,
+  with Vitest tests. Exit gate **G2** = new behavior implemented and covered.
+- **Validate** (`band-quest-game`) -> the "gate verde": `test:unit` +
+  `type-check` + `lint` + build, plus a manual playtest when mechanics change.
+  Exit gate **G3**.
+- **Deploy** (`band-quest-game` + this repo) -> in pre-alpha this means
+  **registrar o incremento**: commit both repos, update memory bank, roadmap,
+  playtest docs and the feature `log.md`. Exit gate **G4**.
+
+Never edit a past iteration; create the next one — each iteration file is one
+bolt. Scale the ceremony to the size of the change (see the scaling rule in
+`ai-dlc.md`): small fixes fast-track through Implement/Validate/Deploy in a
+single cycle; mechanics/economy/progression/structural-UI changes go through all
+four gates, recorded inline in the feature `log.md`.
 
 ## Integrity rule
 
@@ -90,11 +105,12 @@ non-determinism, which is a bad trade-off for a one-person team.
   full workflow on small changes "to be safe" — that defeats the purpose of
   scaling.
 
-## Handoff to implementation
+## Handoff to implementation — Gate G1 (Inception -> Implement)
 
+This checklist is the **G1 gate** in [docs/memory-bank/ai-dlc.md](docs/memory-bank/ai-dlc.md).
 Before coding in `band-quest-game`, verify:
 
 1. The feature problem is clear.
-2. Open questions are documented.
+2. Open questions are documented and **none blocking** remain open.
 3. The latest refinement iteration is approved.
 4. The implementation can be split into small, testable steps.

@@ -11,6 +11,11 @@ This document is the rulebook for agent-led feature iterations in Band Quest doc
 
 ## Iteration phases
 
+These eight steps are the detail of the **Inception** phase of AI-DLC (see the
+canonical model in [ai-dlc.md](ai-dlc.md)). Steps 1–7 happen inside Inception;
+step 8 (Handoff) is the **G1 gate** that moves the feature on to Implement,
+Validate and Deploy in `band-quest-game`.
+
 1. Intake: capture the original user request and the feature context.
 2. Clarification: identify gaps and ask the human before guessing.
 3. Planning: define scope, goals, and constraints in `planning/overview.md`.
@@ -18,7 +23,7 @@ This document is the rulebook for agent-led feature iterations in Band Quest doc
 5. Refinement: produce numbered iterations in `refinement/iteration-XX.md`.
 6. Validation: compare the iteration against the current request and the open questions.
 7. Logging: append the iteration outcome to `refinement/log.md`.
-8. Handoff: prepare the resulting contract for `band-quest-game`.
+8. Handoff (gate G1): prepare the resulting contract for `band-quest-game`.
 
 ## Required checkpoints
 
