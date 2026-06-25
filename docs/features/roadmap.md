@@ -121,6 +121,38 @@ Detalhe completo e input original em
 - Acontecimentos aleatórios por turno com escopos **membro / banda / mundo**, com
   impacto opcional, para dar variedade à timeline. (Ponto 5.)
 
+## Backlog de playtest — 2026-06-24 (Playtest 02)
+
+Após o Balance pass 1. Detalhe e input original em
+[docs/playtests/playtest-2026-06-24-session-02.md](../playtests/playtest-2026-06-24-session-02.md).
+
+### Feito nesta sessão (implementado)
+- Reputação começa em 0 e **sem teto** (ponto 1) — futuras lojas/desbloqueios.
+- Calendário mostra o **ano histórico real** (início em 2000) (ponto 7).
+- **Recuperação passiva** de fadiga ao avançar o tempo (ponto 8).
+- Acontecimentos **reportam os efeitos** (deltas) das ações (ponto 9).
+
+### Features candidatas (a scaffoldar quando priorizadas)
+- **0015 - Songwriting and Releases (candidata)** — reforçada: janela de músicas
+  consultável; música com nome/gênero/tema; álbum exige X singles + X músicas;
+  aprofundar o que "caprichado" muda além do custo (pontos 5, 5.1, 5.2).
+- **0017 - Contracts and Salaries (candidata)** — salário individual por atributos +
+  reputação, crescendo com a evolução do membro; contratos (1 ano), renovação que
+  aumenta salário e traz exigências; salário visível nos cards (pontos 2, 2.1, 2.2).
+
+### Revisões / dependências
+- **Ensaiar → XP de membro** (ponto 3) — redefine `rehearse` (0014); depende de
+  progressão de membros (0007) e de estúdio como item (0012).
+- **Aba de Ganhos** (ponto 6) — espelha a de Custos; exige receita rastreada
+  (royalties/vendas) — 0003 + 0015.
+- **Painéis recolhíveis** (ponto 4) — UI da 0014; casa com a timeline infinita
+  (Playtest 01, ponto 12).
+- **Contexto histórico no start** (ponto 7.1) — 0005 + sabor 0009.
+
+### Próxima slice candidata
+- **Escolha do tamanho da sessão no setup** (ponto 10) — StartView (0005d) consumindo
+  os modos da 0010; pareia com o fim de sessão da 0010 (nota/derrota).
+
 ## Mudança de premissa temporal (0001, iteration-02)
 
 A 0001 foi redefinida: **sem seleção de era** — o jogo começa fixo no **Brasil

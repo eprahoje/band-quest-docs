@@ -139,3 +139,23 @@
 ### Next step
 - Playtest da economia; ajustar valores. Depois: fim de sessão da 0010 (nota/derrota)
   e marcos da 0011.
+
+## [0.8.0] - 2026-06-24T00:00:00Z
+
+### Input
+- Playtest 02 (ver `docs/playtests/playtest-2026-06-24-session-02.md`).
+
+### Summary
+- **Modelo de reputação alterado (ponto 1):** começa em **0** e **não tem teto**
+  (mantém piso 0) — habilita lojas/desbloqueios futuros baseados em reputação como
+  pontuação crescente. O salário mensal `(1 + rep/100)` passa a crescer junto
+  (alinhado ao ponto 2 — reavaliar limites no próximo balance).
+- Quick wins do Playtest 02 implementados: ano histórico real (2000+, ponto 7),
+  recuperação passiva de fadiga (ponto 8), eventos reportando efeitos (ponto 9).
+
+### Open questions
+- Nenhuma bloqueante.
+
+### Next step
+- Balance pass 2 após novo playtest; e features candidatas (0015 Songwriting, 0017
+  Contracts and Salaries) + escolha de duração da sessão (0010/0005d, ponto 10).
