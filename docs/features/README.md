@@ -103,7 +103,7 @@
 - Checklist: [checklist.md](./session-modes-and-outcomes/refinement/checklist.md)
 - Perguntas: [questions.md](./session-modes-and-outcomes/refinement/questions.md)
 - Log: [log.md](./session-modes-and-outcomes/refinement/log.md)
-- Refinamento: [iteration-03.md](./session-modes-and-outcomes/refinement/iteration-03.md)
+- Refinamento: [iteration-04.md](./session-modes-and-outcomes/refinement/iteration-04.md)
 
 ## 0011 - Career Milestones
 - Diagrams: [README.md](./career-milestones/diagrams/README.md)

@@ -21,7 +21,7 @@ esforço modula resultado). Feedback do usuário, preservado e mapeado.
 | 7.1 | Tela de contextualização histórica ao dar start | Nova feature | 0005 (start) + 0009 | documentado |
 | 8 | Passar o tempo restaura um pouco de energia | Balance | 0014 | ✅ feito |
 | 9 | Acontecimentos registram os efeitos (deltas) da ação | UX | 0014 | ✅ feito |
-| 10 | Escolher o tamanho da sessão no setup | Feature | 0010 + 0005d | próxima slice |
+| 10 | Escolher o tamanho da sessão no setup | Feature | 0010 + 0005d | ✅ feito |
 
 ## Pontos (input original preservado)
 

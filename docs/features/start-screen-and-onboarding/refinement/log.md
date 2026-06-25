@@ -122,3 +122,19 @@
 
 ### Next step
 - Responder `questions.md` antes da próxima iteração.
+
+## [0.7.0] - 2026-06-24T00:00:00Z
+
+### Input
+- Implementação da fatia 0005d (seleção de duração de sessão), junto da fatia 1 da
+  0010.
+
+### Summary
+- A `StartView` passou a oferecer 10/20/30 anos (temporizado) ou Livre, alimentando
+  o `startGame` (sessionMode/durationYears). Ver 0010 `iteration-04.md`.
+
+### Open questions
+- Onboarding/contexto histórico no start (Playtest 02, ponto 7.1) — futuro.
+
+### Next step
+- Tela de contexto histórico e refino visual do onboarding.

@@ -64,3 +64,21 @@
 ### Next step
 - Implementar o núcleo da 0010 quando a 0003 (números) estiver pronta, ou levar os
   modos já definidos para a fatia de UI (0005d). Refinar 0011 e 0012 em paralelo.
+
+## [0.4.0] - 2026-06-24T00:00:00Z
+
+### Input
+- Implementação (fatia 1) acordada: temporizados + nota em estrelas + derrota por
+  falência; modo livre básico; dissolução depois.
+
+### Summary
+- Criado `iteration-04.md`. No jogo: `data/session.ts` (modos + computeScore/
+  computeStars puros), config de sessão no store, fim por tempo (sucesso → estrelas),
+  derrota por falência (90 dias no vermelho), `ResultView` + rota `/result`, seleção
+  de duração na `StartView` (0005d). 90 testes; type-check/lint/build OK.
+
+### Open questions
+- Dissolução por fadiga (Q2) e toggles do modo livre (Q7) — adiados.
+
+### Next step
+- Próximas fatias: dissolução; bônus de marcos (0011) na nota; toggles do modo livre.
