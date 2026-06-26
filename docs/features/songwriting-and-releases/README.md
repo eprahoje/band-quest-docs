@@ -1,6 +1,6 @@
 # Feature 0015 - Songwriting and Releases
 
-**Status:** In Implementation — slice 1/5 entregue (G1 ✅)
+**Status:** In Implementation — slices 1 e 3 entregues (faltam 2, 4, 5) (G1 ✅)
 
 Modelo de **música como objeto de primeira classe** (nome, gênero, tema, qualidade)
 e a **cadeia de lançamento** composição → demo / single / álbum, com inventário

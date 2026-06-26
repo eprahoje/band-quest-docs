@@ -8,8 +8,8 @@ Slices candidatas (validáveis de forma independente, na ordem sugerida):
    `Song`. Migrar `record-*` para consumir/referenciar músicas concretas.
 2. **Qualidade** — derivar `quality` de atributos da banda (0007) + esforço (0014) +
    variação leve; refletir a qualidade nos efeitos do lançamento.
-3. **Cadeia de lançamento** — tipos demo/single/álbum com regras de composição
-   (mínimos de músicas/singles) e produção de um objeto `Release`.
+3. ✅ **Cadeia de lançamento** *(feito 2026-06-25)* — tipos demo/single/álbum com regras de
+   composição (mínimos de músicas/singles) e produção de um objeto `Release`.
 4. **Receita de longo prazo (royalties)** — lançamentos geram receita decrescente por
    turno; estrutura aqui, números na 0003.
 5. **Inventário/janela** — UI consultável de músicas e lançamentos.

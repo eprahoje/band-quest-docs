@@ -1,5 +1,38 @@
 # Feature 0015 - Songwriting and Releases (Log)
 
+## [0.4.0] - 2026-06-25T00:00:00Z — Implement → Validate → Deploy (slice 3)
+
+### Input
+- Slice 3 da decomposition: cadeia de lançamento (D3). Slice 2 (entrosamento) pulada
+  por ora — entra depois.
+
+### Summary (band-quest-game)
+- Novo `data/releases.ts`: modelo `Release` (id, type, title, releaseTurn, trackIds,
+  quality, consumedByAlbumId) + `RELEASE_RULES` (demo: 3 músicas; single: 1 música;
+  álbum: 2 singles + 4 músicas) + `createRelease`/`averageQuality`/`generateAlbumTitle`.
+- `actions.ts`: `ActionRequirements.singles`, `ActionDef.release`; record-demo agora
+  exige 3 músicas (release demo); record-single 1 música (release single); record-album
+  exige 2 singles + 4 músicas (release album).
+- Store: `releases[]` + `availableSingles` (singles não absorvidos). Ao iniciar, reserva
+  músicas (released) e singles, guardando os ids na ActiveAction; ao concluir, cria o
+  `Release` (single herda o nome da faixa; álbum gera título e agrega faixas dos singles
+  absorvidos + músicas novas, marcando os singles com `consumedByAlbumId`). Evento nomeia
+  o lançamento.
+- GameView: cards mostram requisito de `single(s)`.
+
+### Validate (gate verde)
+- 108 testes (era 101): +7 (`data/releases.spec.ts` + cadeia single/álbum no store).
+- type-check, lint, build OK. Mecânica mudou (gating de álbum/demo), mas releases só
+  ficam visíveis na slice 5 ⇒ playtest manual adiado, coberto por testes automatizados.
+
+### Open questions
+- Nenhuma. Royalties (receita de longo prazo) = slice 4; entrosamento na qualidade =
+  slice 2. Mínimos (3/1/2+4) e custos seguem placeholders (0003).
+
+### Next step
+- Slice 4 (royalties decrescentes por lançamento) ou slice 5 (inventário visível, que
+  destrava o playtest da cadeia).
+
 ## [0.3.0] - 2026-06-25T00:00:00Z — Implement → Validate → Deploy (slice 1)
 
 ### Input
