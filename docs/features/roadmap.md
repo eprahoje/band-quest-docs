@@ -166,8 +166,10 @@ Após a 0015 (slices 1, 3, 5). Detalhe e input original em
   Músicas (nome/estilo/tema) e renomear lançamentos.
 - ✅ **Quick win — contador redundante** (ponto 6) — *feito 2026-06-26*: removido o
   "Músicas prontas" da loop-bar.
-- **Royalties + aba de Ganhos** (ponto 8) — slice 4 (royalties decrescentes) + aba de
-  Ganhos (0003 + 0015). **Agora prioritária.**
+- ✅ **Royalties + aba de Ganhos** (ponto 8) — *feito 2026-06-26* (slice 4): lançamentos
+  geram royalty decrescente por turno (demo 0, single cauda curta, álbum cauda longa);
+  aba **Ganhos** espelha a de Custos; coluna de royalty atual no SongLibrary. Números são
+  placeholders → 0003.
 - **SongLibrary: ordenação + cap** (ponto 10) — mais novo → mais antigo + limite com
   indicação de ocultos (espelha o EventFeed). Filtro fica como evolução.
 - **Quick win:** remover "Músicas prontas: {qtd}" da loop-bar (ponto 6) — redundante.

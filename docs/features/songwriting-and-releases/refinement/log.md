@@ -1,5 +1,42 @@
 # Feature 0015 - Songwriting and Releases (Log)
 
+## [0.7.0] - 2026-06-26T00:00:00Z — Implement → Validate → Deploy (slice 4: royalties + aba de Ganhos)
+
+### Input
+- Slice 4 da decomposition (D4). Playtest 03 ponto 8 (prioritária): receita de longo
+  prazo dos lançamentos + aba de Ganhos espelhando a de Custos.
+
+### Summary (band-quest-game)
+- **`data/releases.ts`:** `Release` ganhou `fanBaseAtRelease`, `currentRoyalty` (pago no
+  próximo turno) e `totalRoyaltiesEarned`. Novas funções puras: `initialRoyalty(quality,
+  fanBase, type)` (∝ qualidade × base de fãs × multiplicador do tipo) e `accrueRoyalty(
+  current, decay, days)` (soma geométrica fechada `c·(1−d^n)/(1−d)`; expira ao cair abaixo
+  do piso). `ROYALTY_PROFILE` por tipo: **demo** não rende (multiplier 0), **single** cauda
+  curta-média (decay 0.96), **álbum** cauda longa (decay 0.985). `createRelease` agora exige
+  `fanBase` e semeia o royalty inicial.
+- **Store:** `royaltyIncomePerTurn` (soma dos royalties ativos) e `royaltiesEarnedTotal`
+  (acumulado da sessão). `advanceDays` chama `accrueRoyalties(days)` antes dos custos:
+  credita só a parte inteira no caixa (resíduo fracionário acumulado), decai cada lançamento
+  e expira no piso. Royalties reportados como **um evento por virada de mês** (`flushRoyalties`,
+  par com os custos mensais) — não inflam a timeline.
+- **UI:** nova seção recolhível **Ganhos** no GameView (espelha Custos: royalties/dia +
+  total recebido, tom positivo). `SongLibrary` ganhou a coluna **royalty atual** por
+  lançamento (`R$ x/dia`, ou `—` quando expirado).
+
+### Validate (gate verde)
+- 130 testes (era 117): +13 (releases royalty puros ×6, store royalties ×5, SongLibrary
+  coluna ×1, GameView aba ×1).
+- type-check, lint, build OK.
+- **Playtest manual da receita (compor → single/álbum → ver royalties acumulando):
+  DESTRAVADO** e recomendado ao humano — não executado no navegador pela IA.
+
+### Open questions
+- Nenhuma. Pesos do royalty (multiplier/decay/piso/peso de fãs) são **placeholders → 0003**.
+
+### Next step
+- Resta da 0015: **slice 2** (entrosamento via `rehearse` na qualidade). Demais candidatas
+  do Playtest 03: ordenação+cap do SongLibrary (ponto 10), EP/LP (8.1).
+
 ## [0.6.0] - 2026-06-26T00:00:00Z — Implement → Validate → Deploy (D6 + D7)
 
 ### Input
