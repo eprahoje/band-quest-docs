@@ -1,5 +1,33 @@
 # Feature 0014 - Core Loop and Actions (Log)
 
+## [0.8.0] - 2026-06-25T00:00:00Z — Implement → Validate → Deploy (G2→G3→G4)
+
+### Input
+- Fast-track de UX (regra de escala do AI-DLC): quick wins adiados dos Playtests 01
+  e 02 — timeline inflando a página (P01 ponto 12) e painéis sempre expandidos
+  (P02 ponto 4). Sem mudança de mecânica/economia.
+
+### Summary
+- **Timeline com cap + rolagem** (`EventFeed.vue`): renderiza só os 40 acontecimentos
+  mais recentes, com `max-height`/scroll e aviso de quantos ficaram ocultos. O feed
+  deixa de inflar a altura da página.
+- **Painéis recolhíveis**: novo componente reutilizável `CollapsibleSection.vue`
+  (header-botão com chevron, `aria-expanded`, slot, `hint` opcional). No `GameView`
+  as seções Custos, Banda, Em andamento e Ações viraram recolhíveis; `StatsPanel` e a
+  loop-bar de avanço permanecem fixas (controle principal sempre à vista).
+- Tipografia do header reaproveita `.section-title` (tokens.css), sem novo token.
+
+### Validate (gate verde)
+- 95 testes (era 90): +3 `CollapsibleSection.spec.ts`, +2 `EventFeed.spec.ts`.
+- type-check, lint e build OK. Mudança UI-only ⇒ sem playtest manual exigido.
+
+### Open questions
+- Nenhuma. Backlog futuro: histórico completo separado / poda de eventos no store.
+
+### Next step
+- Voltar ao backlog: features candidatas 0015 (Songwriting) e 0017 (Contracts) ou
+  balance pass 2 (0003).
+
 ## [0.1.0] - 2026-06-23T00:00:00Z
 
 ### Input

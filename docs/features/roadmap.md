@@ -105,9 +105,9 @@ Detalhe completo e input original em
   ações `main`; isentar `rest` do bloqueio. Correção rápida. (Ponto 2.)
 
 ### UX / técnico
-- **Timeline "infinita"** (0014 / `EventFeed`) — o feed renderiza todos os eventos
-  sem limite/rolagem e infla a altura da página. Começar por cap + rolagem (últimos
-  N) e, depois, histórico completo separado; avaliar poda no store. (Ponto 12.)
+- ✅ **Timeline "infinita"** (0014 / `EventFeed`) — **feito (2026-06-25)**: cap de 40
+  eventos renderizados + rolagem (`max-height`), com aviso de quantos ficaram ocultos.
+  Histórico completo separado / poda no store seguem como backlog futuro. (Ponto 12.)
 
 ### Backlog de balance (iteração de balance da 0003)
 - Curva de reputação: 40+ cedo demais e com pouco impacto; equilibrar ganhos/perdas
@@ -145,8 +145,9 @@ Após o Balance pass 1. Detalhe e input original em
   progressão de membros (0007) e de estúdio como item (0012).
 - **Aba de Ganhos** (ponto 6) — espelha a de Custos; exige receita rastreada
   (royalties/vendas) — 0003 + 0015.
-- **Painéis recolhíveis** (ponto 4) — UI da 0014; casa com a timeline infinita
-  (Playtest 01, ponto 12).
+- ✅ **Painéis recolhíveis** (ponto 4) — **feito (2026-06-25)**: componente
+  `CollapsibleSection` reutilizável; seções Custos, Banda, Em andamento e Ações
+  recolhíveis no GameView (Stats e a loop-bar de avanço seguem fixas).
 - **Contexto histórico no start** (ponto 7.1) — 0005 + sabor 0009.
 
 ### Próxima slice candidata
