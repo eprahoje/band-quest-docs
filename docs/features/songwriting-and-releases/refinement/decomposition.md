@@ -3,9 +3,9 @@
 ## Epic breakdown
 Slices candidatas (validáveis de forma independente, na ordem sugerida):
 
-1. **Modelo de música** — substituir o contador `songs` por uma lista de objetos
-   `Song` (id, name, genre, theme, quality). `compose` passa a criar um `Song`.
-   Migrar `record-*` para consumir/referenciar músicas concretas.
+1. ✅ **Modelo de música** *(feito 2026-06-25)* — substituir o contador `songs` por uma
+   lista de objetos `Song` (id, name, genre, theme, quality). `compose` passa a criar um
+   `Song`. Migrar `record-*` para consumir/referenciar músicas concretas.
 2. **Qualidade** — derivar `quality` de atributos da banda (0007) + esforço (0014) +
    variação leve; refletir a qualidade nos efeitos do lançamento.
 3. **Cadeia de lançamento** — tipos demo/single/álbum com regras de composição
