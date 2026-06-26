@@ -1,5 +1,33 @@
 # Feature 0015 - Songwriting and Releases (Log)
 
+## [0.5.0] - 2026-06-25T00:00:00Z — Implement → Validate → Deploy (slice 5)
+
+### Input
+- Slice 5 da decomposition: inventário visível (D5). Destrava o playtest acumulado
+  das slices 1 e 3 (músicas/lançamentos antes invisíveis).
+
+### Summary (band-quest-game)
+- Store: extraído `computeCalendar(turn)` (puro, exportado) e exposto `calendarAt(t)`
+  para formatar a data de um lançamento a partir do `releaseTurn`.
+- Novo `components/SongLibrary.vue`: dois painéis recolhíveis (reusa
+  `CollapsibleSection`) — **Músicas** (nome · gênero · tema · qualidade · status) e
+  **Lançamentos** (tipo · título · data · nº de faixas · qualidade). Ambos colapsados
+  por padrão, com contagem no hint. Chips de status/tipo alinhados ao design-system.
+- GameView: `<SongLibrary />` inserido após "Em andamento".
+
+### Validate (gate verde)
+- 111 testes (era 108): +3 (`SongLibrary.spec.ts`).
+- type-check, lint, build OK. Render do inventário coberto por teste.
+- **Playtest manual da cadeia (compor → single → álbum): DESTRAVADO** e recomendado
+  ao humano — não executado no navegador nesta sessão.
+
+### Open questions
+- Nenhuma. Coluna "royalty atual" do inventário entra com a slice 4 (royalties).
+
+### Next step
+- Slice 4 (royalties decrescentes) — completa a coluna de receita do inventário e a
+  base da aba de Ganhos. Slice 2 (entrosamento) segue pendente.
+
 ## [0.4.0] - 2026-06-25T00:00:00Z — Implement → Validate → Deploy (slice 3)
 
 ### Input

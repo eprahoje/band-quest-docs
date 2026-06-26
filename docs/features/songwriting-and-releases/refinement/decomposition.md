@@ -12,7 +12,7 @@ Slices candidatas (validáveis de forma independente, na ordem sugerida):
    composição (mínimos de músicas/singles) e produção de um objeto `Release`.
 4. **Receita de longo prazo (royalties)** — lançamentos geram receita decrescente por
    turno; estrutura aqui, números na 0003.
-5. **Inventário/janela** — UI consultável de músicas e lançamentos.
+5. ✅ **Inventário/janela** *(feito 2026-06-25)* — UI consultável de músicas e lançamentos.
 
 ## Why split
 O modelo de música (slice 1) é o alicerce e já é entregável/testável sozinho (troca o
