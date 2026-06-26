@@ -143,3 +143,12 @@
 - Log: [log.md](./core-loop-and-actions/refinement/log.md)
 - Refinamento: [iteration-03.md](./core-loop-and-actions/refinement/iteration-03.md)
 - Design: [design.md](./core-loop-and-actions/planning/design.md)
+
+## 0015 - Songwriting and Releases
+- Diagrams: [README.md](./songwriting-and-releases/diagrams/README.md)
+- Planejamento: [overview.md](./songwriting-and-releases/planning/overview.md)
+- Decomposição: [decomposition.md](./songwriting-and-releases/refinement/decomposition.md)
+- Checklist: [checklist.md](./songwriting-and-releases/refinement/checklist.md)
+- Perguntas: [questions.md](./songwriting-and-releases/refinement/questions.md)
+- Log: [log.md](./songwriting-and-releases/refinement/log.md)
+- Refinamento: [iteration-01.md](./songwriting-and-releases/refinement/iteration-01.md)

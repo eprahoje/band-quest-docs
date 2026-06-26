@@ -82,7 +82,7 @@ Detalhe completo e input original em
 [docs/playtests/playtest-2026-06-24.md](../playtests/playtest-2026-06-24.md).
 
 ### Features candidatas (a scaffoldar quando priorizadas)
-- **0015 - Songwriting and Releases (candidata)** — gravação profunda: o jogador
+- **0015 - Songwriting and Releases (scaffoldada 2026-06-25, In Refinement)** — gravação profunda: o jogador
   controla nome do single, gênero base, temas; cadeia composição → single → álbum
   (álbum exige X singles + músicas; demo exige mínimo de músicas) e seus impactos.
   (Ponto 3.)
@@ -133,7 +133,7 @@ Após o Balance pass 1. Detalhe e input original em
 - Acontecimentos **reportam os efeitos** (deltas) das ações (ponto 9).
 
 ### Features candidatas (a scaffoldar quando priorizadas)
-- **0015 - Songwriting and Releases (candidata)** — reforçada: janela de músicas
+- **0015 - Songwriting and Releases (scaffoldada 2026-06-25, In Refinement)** — reforçada: janela de músicas
   consultável; música com nome/gênero/tema; álbum exige X singles + X músicas;
   aprofundar o que "caprichado" muda além do custo (pontos 5, 5.1, 5.2).
 - **0017 - Contracts and Salaries (candidata)** — salário individual por atributos +
