@@ -151,4 +151,4 @@
 - Checklist: [checklist.md](./songwriting-and-releases/refinement/checklist.md)
 - Perguntas: [questions.md](./songwriting-and-releases/refinement/questions.md)
 - Log: [log.md](./songwriting-and-releases/refinement/log.md)
-- Refinamento: [iteration-01.md](./songwriting-and-releases/refinement/iteration-01.md)
+- Refinamento: [iteration-02.md](./songwriting-and-releases/refinement/iteration-02.md)

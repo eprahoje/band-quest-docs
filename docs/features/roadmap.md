@@ -160,12 +160,14 @@ Após a 0015 (slices 1, 3, 5). Detalhe e input original em
 [docs/playtests/playtest-2026-06-25.md](../playtests/playtest-2026-06-25.md).
 
 ### Follow-up da 0015 (em implementação)
-- **Seleção de faixas ao gravar** (ponto 4) — substituir o auto-pick das músicas mais
-  antigas por escolha explícita; torna a qualidade significativa. **Alta prioridade.**
-- **Edição de metadado** (pontos 2, 3) — UI para nomear/editar nome/estilo/tema da música
-  ao compor e renomear lançamentos; entrega a promessa "editável" da D1.
+- ✅ **Seleção de faixas ao gravar** (ponto 4) — *feito 2026-06-26* (D6): painel inline
+  de seleção; o jogador escolhe as músicas/singles. Qualidade passou a importar.
+- ✅ **Edição de metadado** (pontos 2, 3) — *feito 2026-06-26* (D7): edição inline na aba
+  Músicas (nome/estilo/tema) e renomear lançamentos.
+- ✅ **Quick win — contador redundante** (ponto 6) — *feito 2026-06-26*: removido o
+  "Músicas prontas" da loop-bar.
 - **Royalties + aba de Ganhos** (ponto 8) — slice 4 (royalties decrescentes) + aba de
-  Ganhos (0003 + 0015). Agora prioritária.
+  Ganhos (0003 + 0015). **Agora prioritária.**
 - **SongLibrary: ordenação + cap** (ponto 10) — mais novo → mais antigo + limite com
   indicação de ocultos (espelha o EventFeed). Filtro fica como evolução.
 - **Quick win:** remover "Músicas prontas: {qtd}" da loop-bar (ponto 6) — redundante.

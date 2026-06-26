@@ -1,5 +1,36 @@
 # Feature 0015 - Songwriting and Releases (Log)
 
+## [0.6.0] - 2026-06-26T00:00:00Z — Implement → Validate → Deploy (D6 + D7)
+
+### Input
+- Playtest 03 (pontos 4/4.1, 2/3) + quick win ponto 6. Refinamento iteration-02.
+
+### Summary (band-quest-game)
+- **Seleção de faixas ao gravar (D6):** `startAction(id, effort?, selection?)` aceita
+  `{ songIds, singleIds }` e valida a quantidade; sem seleção mantém o auto-pick. GameView
+  ganhou um **painel de seleção inline** ao clicar o esforço de uma gravação (lista as
+  músicas com qualidade; álbum também escolhe os 2 singles), com Confirmar/Cancelar.
+- **Edição de metadado (D7):** store `editSong(id, {name,genre,theme})` e
+  `renameRelease(id, title)`; SongLibrary com edição inline por linha (música e
+  lançamento).
+- **Quick win (ponto 6):** removido o contador "Músicas prontas" da loop-bar (redundante
+  com a aba Músicas).
+
+### Validate (gate verde)
+- 117 testes (era 111): +6 (store seleção/edição, GameView picker, SongLibrary edit).
+- type-check, lint, build OK.
+- Nota de processo: parte dos edits de código-fonte se perdeu numa compactação de
+  contexto e foi **reaplicada**; o working tree do docs foi restaurado do HEAD (o commit
+  do Playtest 03 estava íntegro).
+
+### Open questions
+- Nenhuma. Pools maiores de nomes (ponto 5) e filtro/ordenação avançada (ponto 10.1)
+  ficam para depois.
+
+### Next step
+- Slice 4 (royalties + aba de Ganhos) — agora prioritária pelo Playtest 03 (ponto 8).
+  Slice 2 (entrosamento) segue pendente.
+
 ## [0.5.0] - 2026-06-25T00:00:00Z — Implement → Validate → Deploy (slice 5)
 
 ### Input
