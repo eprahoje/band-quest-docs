@@ -11,3 +11,4 @@ correspondentes.
 ## Sessões
 - [2026-06-24 — Playtest 01 (motor de ações 0014 + caixa/calendário 0003)](playtest-2026-06-24.md)
 - [2026-06-24 — Playtest 02 (após o Balance pass 1)](playtest-2026-06-24-session-02.md)
+- [2026-06-25 — Playtest 03 (após a 0015 — songwriting, cadeia e inventário)](playtest-2026-06-25.md)

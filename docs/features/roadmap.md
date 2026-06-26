@@ -154,6 +154,41 @@ Após o Balance pass 1. Detalhe e input original em
 - **Escolha do tamanho da sessão no setup** (ponto 10) — StartView (0005d) consumindo
   os modos da 0010; pareia com o fim de sessão da 0010 (nota/derrota).
 
+## Backlog de playtest — 2026-06-25 (Playtest 03)
+
+Após a 0015 (slices 1, 3, 5). Detalhe e input original em
+[docs/playtests/playtest-2026-06-25.md](../playtests/playtest-2026-06-25.md).
+
+### Follow-up da 0015 (em implementação)
+- **Seleção de faixas ao gravar** (ponto 4) — substituir o auto-pick das músicas mais
+  antigas por escolha explícita; torna a qualidade significativa. **Alta prioridade.**
+- **Edição de metadado** (pontos 2, 3) — UI para nomear/editar nome/estilo/tema da música
+  ao compor e renomear lançamentos; entrega a promessa "editável" da D1.
+- **Royalties + aba de Ganhos** (ponto 8) — slice 4 (royalties decrescentes) + aba de
+  Ganhos (0003 + 0015). Agora prioritária.
+- **SongLibrary: ordenação + cap** (ponto 10) — mais novo → mais antigo + limite com
+  indicação de ocultos (espelha o EventFeed). Filtro fica como evolução.
+- **Quick win:** remover "Músicas prontas: {qtd}" da loop-bar (ponto 6) — redundante.
+- **EP/LP** (ponto 8.1) — extensão de design da 0015 (nova iteration): dividir álbum em
+  EP e LP; multi-CD/ao vivo/DVD (8.2) ficam para o futuro.
+- **Pools maiores** de nomes autogerados (ponto 5) — futuro.
+
+### Candidatas a feature (novas/reforçadas)
+- **0016 - Venues and Shows** (reforçada) — locais por reputação, ingressos, calendário
+  de shows (pontos 7.1, 7.2, 7.3).
+- **0018 - Label Contracts and Opportunities** (nova) — demo como porta de entrada para
+  oportunidades/contrato com gravadora (ponto 1). Casa com "Label Contract and Tour Flow".
+- **0019 - Decision Gates / Choice Events** (nova) — eventos que exigem decisão do jogador
+  com consequências; complementa a 0009 (ponto 12).
+- **Navegação / UI Shell** (nova, sem número) — dividir a tela única em abas/telas
+  (ref.: *A Story of a Band*) quando o scroll único ficar grande demais (ponto 11).
+
+### Balance
+- **Cachê de show escala com reputação** (ponto 7) — 0003 + 0014.
+- **Turnê rende pouco / fadiga mal calibrada** (pontos 9, 9.1) — rever cachê e escalar
+  fadiga por duração (mini-turnê não pode cansar mais que a nacional por retorno) — 0014.
+- **Gate de staff para turnê** (ponto 9.2) — reforça a 0013.
+
 ## Mudança de premissa temporal (0001, iteration-02)
 
 A 0001 foi redefinida: **sem seleção de era** — o jogo começa fixo no **Brasil
