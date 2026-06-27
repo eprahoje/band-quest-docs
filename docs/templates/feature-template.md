@@ -99,7 +99,7 @@ mecânica/economia/progressão/UI estrutural — mudança pequena faz fast-track
 **Snippets, não código:** só assinaturas e o ponto de encaixe, nunca o corpo das
 funções.
 
-```
+````
 # Feature 000X - Feature Name — Plano slice NN (G1.5)
 
 ## Objetivo prático
@@ -129,7 +129,7 @@ TipoExistente += { campoNovo }
 flowchart LR
   origem --> novaPeca --> destino
 ```
-```
+````
 
 ## Checklist template
 
