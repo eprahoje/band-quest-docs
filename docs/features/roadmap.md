@@ -199,13 +199,11 @@ Após a 0015 (slice 4 royalties/aba de Ganhos + iteration-02 D6/D7). Detalhe e i
 original em [docs/playtests/playtest-2026-06-26.md](../playtests/playtest-2026-06-26.md).
 Dois itens marcados como bug foram **investigados no código** antes do registro (pontos 2 e 6).
 
-### Bug estrutural de fadiga (pontos 2 e 6) — causa-raiz achada
-- **Fadiga lump-sum vs recuperação passiva** (0014) — a fadiga de uma ação é aplicada uma
-  vez **na conclusão**, mas a recuperação passiva (`-1/dia`) incide sobre **todos os dias**
-  avançados; ações longas têm a própria fadiga anulada (turnê nacional ≈ 0; mini-turnê
-  ≈ +31; gravar álbum **−35**, pois não tem custo de fadiga). Corrigir com fadiga
-  **proporcional à duração** (e/ou suspender recuperação durante ação main extenuante).
-  Resolve a turnê (ponto 2 / P03 9.1) e o "álbum zera a fadiga" (ponto 6) de uma vez.
+### Bug estrutural de fadiga (pontos 2 e 6) — ✅ corrigido (2026-06-26, 0014 it-04)
+- ✅ **Fadiga lump-sum vs recuperação passiva** (0014) — **feito**: modelo de **fadiga por
+  dia** (`fatiguePerDay`), proporcional à duração da ação; recuperação passiva só em dias
+  ociosos (sem ação `main` em curso). Turnê nacional (45d) +90; mini (14d) +28; gravar
+  álbum (35d) ~+53 (não zera). Resolve pontos 2, 6 e o P03 9.1. Números → balance (0003).
 
 ### Follow-up da 0015 (criação e inventário)
 - **Gênero/tema escolhidos na composição** (ponto 1.1) — nova iteration da 0015: escolher

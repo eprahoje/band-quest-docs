@@ -1,5 +1,36 @@
 # Feature 0014 - Core Loop and Actions (Log)
 
+## [0.9.0] - 2026-06-26T00:00:00Z — Inception → Implement → Validate → Deploy (G1→G4)
+
+### Input
+- **Playtest 04** (pontos 2 e 6): turnê nacional não cansava e gravar álbum "zerava"
+  a fadiga. Investigação no código confirmou bug estrutural; modelo de correção
+  validado com o usuário (G1) → **fadiga por dia (proporcional)**. Ver iteration-04.
+
+### Summary
+- **Modelo de fadiga por dia** (`fatiguePerDay` em `ActionDef`): a fadiga de uma ação
+  passa a acumular **proporcional à duração**, enquanto a ação está em curso, em vez do
+  antigo lump-sum na conclusão. Removida a fadiga de `outcome.metrics` de todas as ações.
+- **Recuperação passiva só em dias ociosos**: `applyFatigueForSpan(days)` no store soma
+  `fatiguePerDay × days` das ações ativas e só aplica o passivo (`-1/dia`) quando **não
+  há ação `main` em curso**. `rest` recupera pela própria taxa negativa (−6/dia).
+- Resultado: turnê nacional (45d) cansa **+90**; mini (14d) **+28**; gravar álbum (35d)
+  **acumula ~+53** (não zera). Pontos 2 e 6 resolvidos na raiz; P03 9.1 absorvido.
+- Trade-off aceito: a fadiga deixa de ser `chip` no evento de conclusão (sobe gradual
+  no painel de stats). Números são placeholders de balance (0003).
+
+### Validate (gate verde)
+- `test:unit` 133 (era 130; +3: turnê proporcional, álbum não zera, passivo suspenso
+  durante ação main); `type-check`, `lint`, `build` OK. Playtest manual (feel) fica com
+  o humano — a lógica do bug está coberta por teste determinístico.
+
+### Open questions
+- Nenhuma. Calibragem fina das taxas → iteração de balance da 0003.
+
+### Next step
+- Playtest humano para confirmar o feel; seguir o backlog do Playtest 04 (gênero na
+  composição / gravadoras / descartar músicas) ou balance de cachê de show.
+
 ## [0.8.0] - 2026-06-25T00:00:00Z — Implement → Validate → Deploy (G2→G3→G4)
 
 ### Input
