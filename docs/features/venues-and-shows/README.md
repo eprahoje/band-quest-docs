@@ -1,6 +1,6 @@
 # Feature 0016 - Venues and Shows
 
-**Status:** Ready for Implementation (G1 ✅) — MVP = slices 1 (catálogo + desbloqueio) e 2 (agendar + cachê+bilheteria)
+**Status:** In Implementation — slice 1 (catálogo + desbloqueio) entregue; falta slice 2 (agendar + cachê+bilheteria)
 
 Locais de show por reputação, venda de ingressos e agenda/calendário de shows e turnês.
 Dá progressão geográfica e profundidade ao "tocar show" (hoje uma ação genérica de 1 dia

@@ -1,5 +1,33 @@
 # Feature 0016 - Venues and Shows (Log)
 
+## [0.3.0] - 2026-06-27T00:00:00Z — slice 1 (catálogo + desbloqueio) — Implement→Validate→Deploy
+
+### Input
+- G1 liberado (it-02). MVP slice 1: catálogo de locais + desbloqueio por reputação + fãs.
+
+### Summary
+- `data/venues.ts`: modelo `Venue` (id, name, tier, capacity, region, repThreshold, minFans)
+  + `VENUE_TIER_LABEL` + catálogo `VENUES` (um por tier: bar/casa/ginásio/estádio) +
+  `isVenueUnlocked` / `missingRequirement` / `getVenue`. `region` = "Nacional" (gancho do
+  híbrido futuro). Números = placeholders (0003).
+- `stores/game.ts`: computed `venueCatalog` (cada local + `unlocked` + `missing` derivados
+  da reputação/fãs atuais), exportado.
+- `components/VenueList.vue`: seção recolhível "Locais" (reusa CollapsibleSection) com
+  tier, capacidade e estado liberado/🔒 + requisito que falta; hint = liberados/total.
+  Inserida no GameView após a SongLibrary.
+
+### Validate (gate verde)
+- `test:unit` 147 (era 141; +venues.spec: desbloqueio exige rep E fãs, requisito que falta,
+  capacidades crescentes; +store: catálogo só com o bar liberado no início, desbloqueio ao
+  cruzar limiares). `type-check`/`lint`/`build` OK. Playtest deferido (leva).
+
+### Open questions
+- Nenhuma. Slice 1 é informativa (sem booking ainda — vem na slice 2).
+
+### Next step
+- **Slice 2**: agendar show no local (compromisso datado) + receita cachê+bilheteria
+  (substitui o `play-show` imediato da 0014).
+
 ## [0.2.0] - 2026-06-27T00:00:00Z — Inception → G1 (spec pronta)
 
 ### Input
