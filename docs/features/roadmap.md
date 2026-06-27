@@ -209,14 +209,16 @@ Dois itens marcados como bug foram **investigados no código** antes do registro
   (overflow intencional); concluir acima de 100 reduz os ganhos da ação (até −50%) e custa
   reputação (∝ excesso). Números → balance (0003).
 
-### Follow-up da 0015 (criação e inventário)
-- **Gênero/tema escolhidos na composição** (ponto 1.1) — nova iteration da 0015: escolher
-  gênero e tema no ato de compor (com botão "aleatório"); título segue auto + editável.
-  Reavalia a edição livre da D7.
-- **Descartar músicas ruins** (ponto 5) — ação de descarte na aba Músicas (SongLibrary);
-  bloquear descarte de música já lançada.
-- **Quick win — âncora ao gravar** (ponto 1.5) — rolar/ancorar a visão para a caixa de
-  feedback ao iniciar uma gravação (GameView).
+### Follow-up da 0015 (criação e inventário) — ✅ feito (leva 2026-06-26, playtest deferido)
+- ✅ **Gênero/tema escolhidos na composição** (ponto 1.1) — **feito** (0015 it-03, D8):
+  `compose` abre seletor de gênero (default = banda) + tema, com 🎲 Aleatório; título segue
+  auto + editável. Edição inline da D7 mantida. Gêneros por época = 0008 (futuro).
+- ✅ **Descartar músicas ruins** (ponto 5) — **feito** (0015 it-03, D9): `discardSong` na aba
+  Músicas (botão 🗑 com confirmação); música já lançada não pode ser descartada.
+- ✅ **Quick win — âncora ao gravar** (ponto 1.5) — **feito** (0015 it-03): `scrollIntoView`
+  puxa a visão ao abrir o painel de composição/seleção.
+- ✅ **Cachê de show ∝ reputação** (ponto 4 + P03 ponto 7) — **feito** (0014 it-06): cachê de
+  show/turnê escala com a reputação (`1 + rep × 0.01`); reputação-base do show 1 → 2.
 
 ### Candidatas a feature (novas/reforçadas)
 - **0018 - Label Contracts and Opportunities** (reforçada, urgente) — origem dos royalties
@@ -229,8 +231,9 @@ Dois itens marcados como bug foram **investigados no código** antes do registro
 - **Vendas de álbum distintas de royalties** (pontos 3, 3.1) — pico no lançamento (∝
   gravadora + fãs + qualidade) vs cauda decrescente; 0015 + 0018 + 0003.
 - **Turnê como marketing do último álbum** (ponto 3.2) — toggle opcional; 0014 + 0015.
-- **Cachê de show ∝ reputação + ganho de reputação não-trivial** (ponto 4) — ainda aberto
-  desde o P03 ponto 7; o `+1` fixo é artefato de arredondamento de base baixa. 0003 + 0014.
+- ✅ **Cachê de show ∝ reputação + ganho de reputação não-trivial** (ponto 4 / P03 ponto 7) —
+  **feito** (0014 it-06): cachê escala com reputação; reputação-base do show 1 → 2. Calibragem
+  fina dos números → balance (0003).
 
 ## Mudança de premissa temporal (0001, iteration-02)
 

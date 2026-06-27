@@ -1,5 +1,22 @@
 # Feature 0014 - Core Loop and Actions (Log)
 
+## [0.11.0] - 2026-06-26T00:00:00Z — iteration-06 (cachê ∝ reputação) — G1→G4
+
+### Input
+- Playtest 04 ponto 4 (+ Playtest 03 ponto 7, aberto): shows rendem pouco mesmo com a
+  reputação subindo; ganho de reputação parecia fixo em +1. Leva de iterações (playtest deferido).
+
+### Summary
+- **Cachê ∝ reputação**: flag `cashScalesWithReputation` (play-show, tour);
+  `resolveOutcome` aplica `reputationCashMultiplier` ao cash positivo; store calcula
+  `1 + reputação × REP_CASH_FACTOR` (0.01 → +50% a rep 50, +100% a rep 100).
+- **Reputação do show 1 → 2**: deixa de cair sempre em +1 por arredondamento.
+- Números = placeholders de balance (0003).
+
+### Validate (gate verde)
+- `test:unit` 140 (+cachê escala com reputação no resolveOutcome e no store); teste-base
+  do show atualizado (rep 2). `type-check`/`lint`/`build` OK. Playtest deferido.
+
 ## [0.10.0] - 2026-06-26T00:00:00Z — Inception → Implement → Validate → Deploy (G1→G4)
 
 ### Input

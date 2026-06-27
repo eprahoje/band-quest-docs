@@ -1,5 +1,27 @@
 # Feature 0015 - Songwriting and Releases (Log)
 
+## [0.8.0] - 2026-06-26T00:00:00Z — iteration-03 (gênero na composição + descarte) — G1→G4
+
+### Input
+- Playtest 04 pontos 1.1 (escolher gênero/tema ao compor), 5 (descartar músicas), 1.5
+  (âncora ao gravar). Leva de iterações com playtest deferido (avaliar em lote).
+
+### Summary
+- **D8 — gênero/tema na composição**: `SONG_GENRES` + `pickGenre`; `compose` abre seletor
+  de gênero (default = gênero da banda) e tema, com botão 🎲 Aleatório; título segue
+  autogerado + editável. `ActionSelection.genre/theme` + `ActiveAction.composeGenre/Theme`.
+- **D9 — descartar músicas**: `discardSong(id)` remove música `composed`; música lançada
+  não pode ser descartada (botão 🗑 só nas prontas, com confirmação).
+- **UX — âncora**: ao abrir o painel de composição/seleção, `scrollIntoView` puxa a visão
+  (guardado p/ jsdom).
+
+### Validate (gate verde)
+- `test:unit` 140 (+gênero aplicado, +autogeração sem escolha, +descarte composed/released);
+  `type-check`/`lint`/`build` OK. Playtest deferido (leva).
+
+### Next step
+- (Mesma leva) cachê de show ∝ reputação está na 0014 it-06.
+
 ## [0.7.0] - 2026-06-26T00:00:00Z — Implement → Validate → Deploy (slice 4: royalties + aba de Ganhos)
 
 ### Input
