@@ -193,6 +193,43 @@ Após a 0015 (slices 1, 3, 5). Detalhe e input original em
   fadiga por duração (mini-turnê não pode cansar mais que a nacional por retorno) — 0014.
 - **Gate de staff para turnê** (ponto 9.2) — reforça a 0013.
 
+## Backlog de playtest — 2026-06-26 (Playtest 04)
+
+Após a 0015 (slice 4 royalties/aba de Ganhos + iteration-02 D6/D7). Detalhe e input
+original em [docs/playtests/playtest-2026-06-26.md](../playtests/playtest-2026-06-26.md).
+Dois itens marcados como bug foram **investigados no código** antes do registro (pontos 2 e 6).
+
+### Bug estrutural de fadiga (pontos 2 e 6) — causa-raiz achada
+- **Fadiga lump-sum vs recuperação passiva** (0014) — a fadiga de uma ação é aplicada uma
+  vez **na conclusão**, mas a recuperação passiva (`-1/dia`) incide sobre **todos os dias**
+  avançados; ações longas têm a própria fadiga anulada (turnê nacional ≈ 0; mini-turnê
+  ≈ +31; gravar álbum **−35**, pois não tem custo de fadiga). Corrigir com fadiga
+  **proporcional à duração** (e/ou suspender recuperação durante ação main extenuante).
+  Resolve a turnê (ponto 2 / P03 9.1) e o "álbum zera a fadiga" (ponto 6) de uma vez.
+
+### Follow-up da 0015 (criação e inventário)
+- **Gênero/tema escolhidos na composição** (ponto 1.1) — nova iteration da 0015: escolher
+  gênero e tema no ato de compor (com botão "aleatório"); título segue auto + editável.
+  Reavalia a edição livre da D7.
+- **Descartar músicas ruins** (ponto 5) — ação de descarte na aba Músicas (SongLibrary);
+  bloquear descarte de música já lançada.
+- **Quick win — âncora ao gravar** (ponto 1.5) — rolar/ancorar a visão para a caixa de
+  feedback ao iniciar uma gravação (GameView).
+
+### Candidatas a feature (novas/reforçadas)
+- **0018 - Label Contracts and Opportunities** (reforçada, urgente) — origem dos royalties
+  **e** das vendas de álbum; gravadora como entidade (pontos 1.4, 3, 3.1).
+- **0008 - Game Timeline** (reforçada) — gêneros por época + "invenção" de novos gêneros ao
+  longo do tempo (pontos 1.2, 1.3; fonte: stringshock rock sub-genres timeline).
+- **0016 - Venues and Shows** (reforçada) — agenda/calendário de shows e turnê (ponto 3.3).
+
+### Balance / mecânica
+- **Vendas de álbum distintas de royalties** (pontos 3, 3.1) — pico no lançamento (∝
+  gravadora + fãs + qualidade) vs cauda decrescente; 0015 + 0018 + 0003.
+- **Turnê como marketing do último álbum** (ponto 3.2) — toggle opcional; 0014 + 0015.
+- **Cachê de show ∝ reputação + ganho de reputação não-trivial** (ponto 4) — ainda aberto
+  desde o P03 ponto 7; o `+1` fixo é artefato de arredondamento de base baixa. 0003 + 0014.
+
 ## Mudança de premissa temporal (0001, iteration-02)
 
 A 0001 foi redefinida: **sem seleção de era** — o jogo começa fixo no **Brasil
