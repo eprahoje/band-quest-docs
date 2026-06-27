@@ -1,6 +1,6 @@
 # Feature 0016 - Venues and Shows
 
-**Status:** In Refinement (Inception — rumo a G1)
+**Status:** Ready for Implementation (G1 ✅) — MVP = slices 1 (catálogo + desbloqueio) e 2 (agendar + cachê+bilheteria)
 
 Locais de show por reputação, venda de ingressos e agenda/calendário de shows e turnês.
 Dá progressão geográfica e profundidade ao "tocar show" (hoje uma ação genérica de 1 dia
@@ -11,7 +11,7 @@ na 0014). Emergiu dos Playtests 01 (pontos 6, 10), 03 (pontos 7.1–7.3) e 04 (p
 - [Decomposition](refinement/decomposition.md)
 - [Open questions](refinement/questions.md)
 - [Checklist](refinement/checklist.md)
-- [Latest iteration](refinement/iteration-01.md)
+- [Latest iteration](refinement/iteration-02.md)
 - [Action log](refinement/log.md)
 
 ## Relações

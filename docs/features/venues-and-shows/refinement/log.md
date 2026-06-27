@@ -1,5 +1,26 @@
 # Feature 0016 - Venues and Shows (Log)
 
+## [0.2.0] - 2026-06-27T00:00:00Z — Inception → G1 (spec pronta)
+
+### Input
+- Respostas do usuário a Q1–Q4 (bloqueantes); Q5/Q6 fechadas como escopo.
+
+### Summary
+- **D1 (Q1):** MVP com tiers abstratos; objetivo final híbrido (regiões/cidades) — futuro.
+- **D2 (Q2):** desbloqueio por **reputação + fãs**.
+- **D3 (Q3):** receita = **cachê base + bilheteria** (`min(fãs, capacidade) × preço`),
+  preço fixo por tier no MVP (escolha de preço = evolução).
+- **D4 (Q4):** show é **compromisso datado** (agenda → acontece no dia; faltar penaliza).
+- **D5 (Q5):** turnê fica na 0014 por ora; vira trajeto numa slice futura (0013).
+- **D6 (Q6):** MVP = slice 1 (catálogo + desbloqueio) → slice 2 (agendar + cachê+bilheteria).
+- Decomposição consolidada (5 slices; MVP = 1 e 2). Questões movidas para resolvidas.
+
+### Open questions
+- Nenhuma. Números (capacidades, preços, limiares, atratividade) = placeholders (0003).
+
+### Next step
+- **G1 ✅** — iniciar Implement da **slice 1** (modelo `Venue` + catálogo + desbloqueio).
+
 ## [0.1.0] - 2026-06-27T00:00:00Z — Inception (kickoff, rumo a G1)
 
 ### Input

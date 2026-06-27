@@ -160,4 +160,4 @@
 - Checklist: [checklist.md](./venues-and-shows/refinement/checklist.md)
 - Perguntas: [questions.md](./venues-and-shows/refinement/questions.md)
 - Log: [log.md](./venues-and-shows/refinement/log.md)
-- Refinamento: [iteration-01.md](./venues-and-shows/refinement/iteration-01.md)
+- Refinamento: [iteration-02.md](./venues-and-shows/refinement/iteration-02.md)
