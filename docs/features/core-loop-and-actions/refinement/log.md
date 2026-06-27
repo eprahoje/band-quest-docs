@@ -1,5 +1,35 @@
 # Feature 0014 - Core Loop and Actions (Log)
 
+## [0.10.0] - 2026-06-26T00:00:00Z — Inception → Implement → Validate → Deploy (G1→G4)
+
+### Input
+- Proposta do usuário após o playtest da it-04: (a) mostrar quanto cada ação custa de
+  fadiga ANTES de iniciar; (b) em vez de travar a fadiga em 100, deixar estourar e
+  promover CONSEQUÊNCIAS. Modelo de consequência validado (G1): **ganhos reduzidos +
+  perda de reputação**, escalando com o excesso. Ver iteration-05.
+
+### Summary
+- **Preview de fadiga no card** (`GameView`): cada botão de esforço mostra o custo de
+  fadiga (`fatiguePerDay × duração`); descanso mostra a recuperação; aviso (⚠, cor ember)
+  quando iniciar ultrapassaria 100.
+- **Sem teto superior de fadiga** (`applyStatDelta`): removido o `min(100, …)`; mantido o
+  piso 0. O overflow acima de 100 é intencional.
+- **Consequências do excesso** (`completeAction`): ao concluir com fadiga > 100, os ganhos
+  positivos da ação são reduzidos por `1 − min(excesso × 0.01, 0.5)` e a reputação leva um
+  golpe de `−round(excesso × 0.1)`; mensagem ganha sufixo de flavor. Números = placeholders
+  de balance (0003).
+
+### Validate (gate verde)
+- `test:unit` 135 (era 134; +1: estouro reduz ganhos + reputação, sem teto); teste de
+  clamp atualizado (piso 0, sem teto). `type-check`, `lint`, `build` OK.
+
+### Open questions
+- Nenhuma. Calibragem das penalidades/curva → iteração de balance da 0003.
+
+### Next step
+- Playtest humano do feel (ver o ⚠ e sentir o peso do estouro); seguir backlog do
+  Playtest 04 (gênero na composição / gravadoras / descartar músicas).
+
 ## [0.9.1] - 2026-06-26T00:00:00Z — fast-track (UX/reporting)
 
 ### Input

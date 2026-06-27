@@ -204,6 +204,10 @@ Dois itens marcados como bug foram **investigados no código** antes do registro
   dia** (`fatiguePerDay`), proporcional à duração da ação; recuperação passiva só em dias
   ociosos (sem ação `main` em curso). Turnê nacional (45d) +90; mini (14d) +28; gravar
   álbum (35d) ~+53 (não zera). Resolve pontos 2, 6 e o P03 9.1. Números → balance (0003).
+- ✅ **Preview de fadiga + estouro com consequências** (0014 it-05, 2026-06-26) — **feito**:
+  card mostra o custo de fadiga por esforço (⚠ se passar de 100); teto superior removido
+  (overflow intencional); concluir acima de 100 reduz os ganhos da ação (até −50%) e custa
+  reputação (∝ excesso). Números → balance (0003).
 
 ### Follow-up da 0015 (criação e inventário)
 - **Gênero/tema escolhidos na composição** (ponto 1.1) — nova iteration da 0015: escolher
