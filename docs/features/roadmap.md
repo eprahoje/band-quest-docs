@@ -259,11 +259,12 @@ Após o MVP da 0016 (shows datados por local). Detalhe e input original em
 - **Tipos de descanso** (0014, ponto 4) — `rest` com mais opções (folga / descanso / férias 30d).
 
 ### Padrões de UI (design system — 0006)
-- **Select/Dropdown próprio** (ponto 1) — o `<select>` nativo tem opções de baixo contraste;
-  criar componente de lista alinhado ao `tokens.css` (Claude Design). Paliativo de contraste
-  no curto prazo.
-- **Confirmação própria** (ponto 5) — substituir o `window.confirm` do descarte por um
-  modal/inline do design system (não é limitação do navegador).
+- ✅ **Select/Dropdown próprio** (ponto 1) — **feito** (0006 [0.8.0]): `SelectField.vue`
+  (lista própria legível no tema escuro, acessível) + preview `select.html` + token de
+  overlay; compose chooser migrado. Substitui o `<select>` nativo.
+- ✅ **Confirmação própria** (ponto 5) — **feito** (0006 [0.8.0]): `ConfirmDialog.vue`
+  (modal com scrim, Teleport, aria-modal) + preview `confirm-dialog.html`; descarte de música
+  migrado do `window.confirm`.
 
 ### Balance / gates
 - **Gate de staff para locais maiores** (pontos 7, 8) — Aurora vira dinheiro fácil; exigir

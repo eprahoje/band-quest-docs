@@ -22,6 +22,8 @@ design-system/
     member-card.html      # card de membro (avatar vetorial + atributos)
     stats-panel.html      # painel de stats (reputação, caixa, fãs, fadiga)
     event-feed.html       # feed de eventos (timeline ícone + texto)
+    select.html           # select/dropdown próprio (lista legível no tema escuro)
+    confirm-dialog.html   # diálogo de confirmação (modal com scrim)
     icons.html            # biblioteca de ícones (Tabler) por ação do jogo
 ```
 

@@ -1,0 +1,52 @@
+<!-- @dsCard group="Components" name="Confirm dialog" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Band Quest — Confirm Dialog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css">
+<style>
+  body { margin: 0; }
+  .stage { position: relative; min-height: 320px; }
+  /* Scrim do modal — usa o token de overlay. */
+  .overlay {
+    position: absolute; inset: 0; z-index: var(--bq-z-overlay);
+    display: flex; align-items: center; justify-content: center; padding: var(--bq-space-6);
+    background: var(--bq-overlay);
+  }
+  .dialog {
+    width: 100%; max-width: 380px; padding: var(--bq-space-5);
+    background: var(--bq-bg-surface); border: 1px solid var(--bq-border-strong);
+    border-radius: var(--bq-radius-lg); box-shadow: var(--bq-shadow-lg);
+  }
+  .dialog__title { font-family: var(--bq-font-display); font-weight: 700; text-transform: uppercase;
+    letter-spacing: var(--bq-tracking-display); font-size: var(--bq-text-lg); margin: 0 0 var(--bq-space-2); }
+  .dialog__msg { font-size: var(--bq-text-sm); color: var(--bq-text-muted); margin: 0 0 var(--bq-space-5); }
+  .dialog__actions { display: flex; justify-content: flex-end; gap: var(--bq-space-3); }
+  .btn { padding: var(--bq-space-2) var(--bq-space-4); font: inherit; font-size: var(--bq-text-sm);
+    font-weight: var(--bq-weight-semibold); border-radius: var(--bq-radius-md); cursor: pointer; }
+  .btn--ghost { color: var(--bq-text-muted); background: var(--bq-bg-surface); border: 1px solid var(--bq-border); }
+  .btn--ghost:hover { border-color: var(--bq-border-strong); color: var(--bq-text); }
+  /* Ação destrutiva (ember). Para confirmações neutras, usar o âmbar (spotlight). */
+  .btn--danger { color: #fff; background: var(--bq-ember); border: 1px solid var(--bq-ember); }
+  .btn--danger:hover { filter: brightness(1.08); }
+</style>
+</head>
+<body class="bq-root">
+<div class="stage">
+  <div class="overlay">
+    <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="cd-title">
+      <h2 class="dialog__title" id="cd-title">Descartar música?</h2>
+      <p class="dialog__msg">"Última Esquina" será removida da banda. Essa ação não pode ser desfeita.</p>
+      <div class="dialog__actions">
+        <button class="btn btn--ghost">Cancelar</button>
+        <button class="btn btn--danger">Descartar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

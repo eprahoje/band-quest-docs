@@ -134,3 +134,34 @@
 
 ### Next step
 - Produzir os ícones flat-vector dos membros (feature 0007) como camada atual.
+
+## [0.8.0] - 2026-06-27T00:00:00Z — padrões de UI: Select/Dropdown + Confirm dialog
+
+### Input
+- Playtest 05 (pontos 1 e 5): o `<select>` nativo tinha opções de baixo contraste (quase
+  invisíveis) e o descarte usava o `window.confirm` nativo (fora do design system). Decisão
+  do usuário: investir no design system e estabelecer um padrão de listas/confirmação.
+
+### Summary
+- `tokens.css`: novos tokens **`--bq-overlay`** (scrim de modais) e **`--bq-z-overlay`**.
+- `design-system/components/select.html`: padrão de **Select/Dropdown próprio** (botão +
+  lista custom, item selecionado em âmbar, legível no tema escuro) — substitui o `<select>`.
+- `design-system/components/confirm-dialog.html`: padrão de **Confirm dialog** (scrim +
+  diálogo com título/mensagem/ações; ação destrutiva em ember).
+- Implementação consumindo `tokens.css` em band-quest-game: `SelectField.vue` (dropdown
+  acessível: aria-haspopup/expanded, role=listbox/option, fecha por clique-fora) e
+  `ConfirmDialog.vue` (Teleport, aria-modal, foco no confirmar, ESC/scrim cancelam).
+- Fios: o compose chooser (0015) passou a usar `SelectField` para gênero/tema; o descarte
+  de música (SongLibrary) trocou `window.confirm` pelo `ConfirmDialog`.
+
+### Validate (gate verde)
+- `test:unit` 157 (era 150; +SelectField: abre/seleciona/aria-selected; +ConfirmDialog:
+  abre/confirma/cancela). `type-check`/`lint`/`build` OK.
+
+### Open questions
+- Nenhuma. Próximo: sincronizar os 2 cards novos para o Claude Design (DesignSync) — a
+  confirmar com o usuário (ação outward-facing).
+
+### Next step
+- Reaproveitar `SelectField`/`ConfirmDialog` nos próximos fluxos que precisarem de lista/
+  confirmação (ex.: seleção de faixas, modos no StartView).
