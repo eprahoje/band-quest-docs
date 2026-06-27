@@ -244,6 +244,37 @@ Dois itens marcados como bug foram **investigados no código** antes do registro
   **feito** (0014 it-06): cachê escala com reputação; reputação-base do show 1 → 2. Calibragem
   fina dos números → balance (0003).
 
+## Backlog de playtest — 2026-06-27 (Playtest 05)
+
+Após o MVP da 0016 (shows datados por local). Detalhe e input original em
+[docs/playtests/playtest-2026-06-27.md](../playtests/playtest-2026-06-27.md).
+
+### Bugs / quick wins
+- **Agendamento duplicado** (0016, ponto 6) — `scheduleShow` permite 2 shows no mesmo
+  dia/local; bloquear conflito de data.
+- **1 show por vez até a turnê** (0016, ponto 8) — limitar a 1 show agendado enquanto a
+  turnê (0014, rep 30) não libera agendar vários.
+- **Editar nome na composição** (0015, ponto 2) — campo de nome no compose chooser
+  (placeholder autogerado, editável).
+- **Tipos de descanso** (0014, ponto 4) — `rest` com mais opções (folga / descanso / férias 30d).
+
+### Padrões de UI (design system — 0006)
+- **Select/Dropdown próprio** (ponto 1) — o `<select>` nativo tem opções de baixo contraste;
+  criar componente de lista alinhado ao `tokens.css` (Claude Design). Paliativo de contraste
+  no curto prazo.
+- **Confirmação própria** (ponto 5) — substituir o `window.confirm` do descarte por um
+  modal/inline do design system (não é limitação do navegador).
+
+### Balance / gates
+- **Gate de staff para locais maiores** (pontos 7, 8) — Aurora vira dinheiro fácil; exigir
+  staff (roadie) além de reputação+fãs. Reforça a **0013** + amarra na 0016.
+- **Turnê vs show** (ponto 9, + P03 ponto 9) — turnê de 14 dias rende menos que um show na
+  Aurora; rever cachê de turnê × bilheteria. 0003 + 0014 + 0016.
+
+### Nova mecânica (futuro)
+- **Temas múltiplos + combos + tendências** (ponto 3) — música com vários temas; combos com
+  bônus; tendências por período com contrapartida (saturar tema → perde fãs). 0015 + 0008 + 0003.
+
 ## Mudança de premissa temporal (0001, iteration-02)
 
 A 0001 foi redefinida: **sem seleção de era** — o jogo começa fixo no **Brasil
