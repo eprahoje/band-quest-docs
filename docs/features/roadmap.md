@@ -218,7 +218,11 @@ Dois itens marcados como bug foram **investigados no código** antes do registro
 - ✅ **Quick win — âncora ao gravar** (ponto 1.5) — **feito** (0015 it-03): `scrollIntoView`
   puxa a visão ao abrir o painel de composição/seleção.
 - ✅ **Cachê de show ∝ reputação** (ponto 4 + P03 ponto 7) — **feito** (0014 it-06): cachê de
-  show/turnê escala com a reputação (`1 + rep × 0.01`); reputação-base do show 1 → 2.
+  show/turnê escala com a reputação (`1 + rep × 0.01`).
+- ✅ **Reputação do show por faixa aleatória** (ponto 4, feedback) — **feito** (0014 it-07):
+  show sorteia reputação **1–5** (`reputationRange`), em vez de valor fixo.
+- ✅ **Músicas prontas vs lançadas** (ponto 2, feedback) — **feito** (0015 fast-track): aba
+  Músicas lista só as prontas; Lançamentos mostra as faixas pelo nome (evita confusão no descarte).
 
 ### Candidatas a feature (novas/reforçadas)
 - **0018 - Label Contracts and Opportunities** (reforçada, urgente) — origem dos royalties

@@ -26,10 +26,16 @@ atualizar `docs/memory-bank/`, playtests e roadmap faz parte do ciclo, não é u
 fase separada.
 
 ```text
-Inception ──G1──> Implement ──G2──> Validate ──G3──> Deploy ──G4──> (Operate: deferido)
- [docs]            [game]            [game]           [game + docs]
-   └──────────────────────── Learn (transversal) ────────────────────────┘
+Inception ─G1─> Plano de slice ─G1.5─> Implement ─G2─> Validate ─G3─> Deploy ─G4─> (Operate: deferido)
+ [docs]         [docs]                  [game]          [game]         [game + docs]
+   └──────────────────────────────── Learn (transversal) ────────────────────────────────┘
 ```
+
+> **G1.5 não é uma 5ª fase.** É um *gate de ponte* entre Inception e Implement: a
+> spec já está pronta (G1), mas antes de escrever código o agente apresenta o
+> **plano prático do slice** e o humano valida o "como". É onde o princípio "a IA
+> propõe, o humano valida" passa a valer também para a **abordagem técnica**, e
+> não só para a spec (G1) e para o resultado (playtest em G3).
 
 ### 1. Inception — vive em `band-quest-docs`
 
@@ -46,16 +52,46 @@ Inception ──G1──> Implement ──G2──> Validate ──G3──> Dep
 
   *(Este é o antigo checklist "Handoff to implementation".)*
 
-### 2. Implement — vive em `band-quest-game`
+### 1.5 Plano de slice — ponte (vive em `band-quest-docs`)
 
 - **Entrada:** G1 passou.
+- **Propósito:** traduzir a iteração (decisões em linguagem de produto, `D1…Dn`)
+  para um **blueprint prático virado ao desenvolvedor** — antes de codar. Fecha o
+  buraco entre "spec aprovada" e "código escrito": o humano vê e aprova **o "como"**
+  num artefato versionado, quando ainda é barato redirecionar.
+- **Onde mora:** `planning/plan-NN.md` da feature (`NN` = o slice/bolt; append-only
+  como as iterações — nunca sobrescrever, criar o próximo). É o companheiro prático
+  e fatiado do `design.md`.
+- **Conteúdo (curto e prático — *snippets, não código*):**
+  1. **Objetivo prático** — 1–2 linhas: o que o dev constrói neste slice.
+  2. **Arquivos tocados** — novos e alterados.
+  3. **Snippets-chave** — só **assinaturas** de tipos/funções e o **ponto de
+     encaixe** (control-flow chave). **Nunca o corpo das funções** — se virar
+     implementação, o gate perdeu a razão de existir.
+  4. **Rastreabilidade** — tabela `Decisão (Dx) → mudança no código → teste
+     planejado`. Toda decisão da spec mapeia para código e teste; todo código
+     mapeia de volta para uma decisão.
+  5. **Bordas** — casos de borda e o que explicitamente **não** entra no slice.
+  6. **Mini-diagrama** (Mermaid) de **encaixe** — onde isto pluga no store/data/
+     view. Reusa `diagrams/`, mas é diagrama de *implementação*, não de domínio.
+- **Gate G1.5 — Plano aprovado (Plano de slice → Implement):** o humano aprovou o
+  `plan-NN.md`. Sem aprovação, não há código. Só exigido para mecânica/economia/
+  progressão/UI estrutural (mesmo gatilho dos 4 gates) — fast-track pula este gate.
+
+### 2. Implement — vive em `band-quest-game`
+
+- **Entrada:** G1.5 passou (ou fast-track, para mudança pequena).
+- **Reconciliação:** o código segue o `plan-NN.md` aprovado; desvios relevantes do
+  plano voltam ao `plan-NN.md` antes de seguir, não viram surpresa no playtest.
 - **Propósito:** codificar contra o contrato (a spec da feature + `tokens.css`),
   já com testes.
 - **Atividades:** `data/`, store, views; respeitar `tokens.css` como contrato
   visual; escrever os testes (Vitest) **junto** com o código, não depois.
 - **Gate G2 — Código + testes (Implement → Validate):** o comportamento novo está
   implementado e coberto por teste automatizado (lógica e, em componentes Vue,
-  render). Nenhum slice é "feito" sem o teste correspondente existir.
+  render). Nenhum slice é "feito" sem o teste correspondente existir. Quando houve
+  G1.5, o código **reconcilia** com o `plan-NN.md`: cada `Dx` do plano tem mudança e
+  teste; desvios estão refletidos no plano, não só no código.
 
 ### 3. Validate — vive em `band-quest-game`
 
@@ -97,9 +133,11 @@ A profundidade do ritual acompanha o tamanho da mudança:
 - **Mudança pequena/isolada** (typo, copy, bug óbvio, ajuste de número placeholder):
   *fast-track*. Pode atravessar Implement + Validate + Deploy num único ciclo, sem
   gate escrito — basta o gate verde e um commit claro. Pode dispensar a fase de
-  Inception (sem pasta de feature), conforme a estratégia SDD em `AGENTS.md`.
+  Inception (sem pasta de feature) **e o Plano de slice (G1.5)**, conforme a
+  estratégia SDD em `AGENTS.md`.
 - **Mudança de mecânica, economia, progressão ou UI estrutural:** passa
-  **explicitamente** pelos 4 gates, registrados inline (ver abaixo).
+  **explicitamente** pelos gates G1 → **G1.5** → G2 → G3 → G4, registrados inline
+  (ver abaixo). O `plan-NN.md` aprovado em G1.5 é pré-requisito do código.
 
 Na dúvida, comece pelo caminho leve e pergunte ao humano se precisa de mais
 estrutura. Não aplique o fluxo completo "por segurança" — isso anula o ganho.
@@ -112,6 +150,8 @@ Sem arquivo novo por ciclo. O registro mora nos artefatos que já existem:
   o gate liberado. Exemplo:
 
   ```md
+  - **[0.2.5]** `2026-06-25` — Plano de slice → Implement (G1.5): `plan-04.md`
+    aprovado (royalties; D4 → accrueRoyalty + aba Ganhos → 11 testes planejados).
   - **[0.3.0]** `2026-06-25` — Implement → Validate (G2→G3): gate verde,
     91 testes, type-check/lint/build OK. Playtest 03 registrado.
   ```
@@ -124,6 +164,7 @@ Sem arquivo novo por ciclo. O registro mora nos artefatos que já existem:
 | Fase | Repo | Artefatos | Gate de saída |
 |---|---|---|---|
 | Inception | docs | overview, questions, iteration-NN, design | **G1** Spec pronta |
+| Plano de slice | docs | `planning/plan-NN.md` (snippets + Dx→teste + diagrama de encaixe) | **G1.5** Plano aprovado |
 | Implement | game | `data/`, store, views, testes Vitest | **G2** Código + testes |
 | Validate | game | gate verde + playtest | **G3** Qualidade |
 | Deploy | game + docs | commits, memory, roadmap, log | **G4** Incremento registrado |

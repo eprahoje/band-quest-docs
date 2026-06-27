@@ -1,5 +1,22 @@
 # Feature 0015 - Songwriting and Releases (Log)
 
+## [0.9.0] - 2026-06-26T00:00:00Z — fast-track (inventário: músicas prontas vs lançadas)
+
+### Input
+- Playtest 04 ponto 2 (feedback): mover as músicas lançadas para a aba Lançamentos,
+  tirando-as de Músicas, para não confundir o descarte (não validado em jogo ainda).
+
+### Summary
+- Aba **Músicas** passa a listar **só as músicas prontas** (`store.availableSongs`,
+  status `composed`) — o botão de descarte só aparece para elas.
+- Aba **Lançamentos** passa a mostrar as **faixas pelo nome** (resolvidas de `trackIds`)
+  em vez de "N faixa(s)". As músicas lançadas vivem aqui.
+- Removido o chip de status redundante das linhas de Músicas.
+
+### Validate (gate verde)
+- `test:unit` 141; `SongLibrary.spec` atualizado (mock ganhou `availableSongs`/`discardSong`;
+  asserts de status/contagem ajustados). `type-check`/`lint`/`build` OK. Playtest deferido.
+
 ## [0.8.0] - 2026-06-26T00:00:00Z — iteration-03 (gênero na composição + descarte) — G1→G4
 
 ### Input

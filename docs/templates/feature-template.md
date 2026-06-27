@@ -12,6 +12,7 @@ docs/features/feature-slug/
   planning/
     overview.md
     design.md        <- opcional, ver "Design template"
+    plan-NN.md       <- gate G1.5, um por slice; ver "Plan template"
   refinement/
     decomposition.md
     checklist.md
@@ -89,6 +90,47 @@ funcional. Features pequenas podem ir direto de `planning/overview.md` para
 - Risco um e como será mitigado.
 ```
 
+## Plan template (gate G1.5 — Plano de slice)
+
+Um arquivo curto por slice/bolt, em `planning/plan-NN.md` (`NN` = o slice). É o
+blueprint **prático, virado ao desenvolvedor** que traduz a iteração aprovada para
+o "como", e que o humano valida **antes** de qualquer código. Só exigido para
+mecânica/economia/progressão/UI estrutural — mudança pequena faz fast-track e pula.
+**Snippets, não código:** só assinaturas e o ponto de encaixe, nunca o corpo das
+funções.
+
+```
+# Feature 000X - Feature Name — Plano slice NN (G1.5)
+
+## Objetivo prático
+- 1–2 linhas: o que o dev constrói neste slice.
+
+## Arquivos tocados
+- `caminho/arquivo.ts` — novo | alterado: o que muda.
+
+## Snippets-chave (assinaturas + ponto de encaixe, sem corpo)
+```ts
+funcaoNova(args): Retorno
+TipoExistente += { campoNovo }
+// onde pluga: store.advanceDays -> chama X antes de Y
+```
+
+## Rastreabilidade (Decisão -> mudança -> teste)
+| Dx | Mudança no código | Teste planejado |
+|----|-------------------|-----------------|
+| D1 | ...               | ... (×N)        |
+
+## Bordas e não-escopo
+- Caso de borda tratado.
+- O que NÃO entra neste slice.
+
+## Diagrama de encaixe (Mermaid)
+```mermaid
+flowchart LR
+  origem --> novaPeca --> destino
+```
+```
+
 ## Checklist template
 
 ```
@@ -106,6 +148,12 @@ funcional. Features pequenas podem ir direto de `planning/overview.md` para
 ## Handoff readiness
 - [ ] Scope can be split into small, testable implementation steps.
 - [ ] `band-quest-game` team/agent has enough context without re-reading the whole history.
+
+## Plan readiness (gate G1.5 — só mecânica/economia/progressão/UI)
+- [ ] `planning/plan-NN.md` existe para o slice.
+- [ ] Cada decisão (Dx) mapeia para mudança + teste planejado.
+- [ ] Snippets cobrem assinaturas e ponto de encaixe (sem corpo de função).
+- [ ] Plano aprovado pelo humano antes de codar.
 ```
 
 ## Questions template

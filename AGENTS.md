@@ -29,6 +29,8 @@ docs/features/<english-slug>/
   diagrams/
   planning/
     overview.md
+    design.md       (opcional)
+    plan-NN.md      (gate G1.5, um por slice; só mecânica/economia/progressão/UI)
   refinement/
     decomposition.md
     checklist.md
@@ -52,8 +54,14 @@ While the game is in pre-alpha we go explicitly through **4 of the 5 phases**
 - **Inception** (this repo, `band-quest-docs`) -> `planning/overview.md`,
   `refinement/questions.md`, `refinement/iteration-NN.md`, `design.md`.
   Exit gate **G1 (Spec pronta)** = the "Handoff to implementation" checklist below.
+- **Plano de slice** (this repo, `band-quest-docs`) -> `planning/plan-NN.md`: a
+  short, developer-facing blueprint per slice (touched files, key signatures, a
+  `Dx -> change -> test` table, edge cases, a Mermaid wiring diagram). Snippets
+  only, never function bodies. Exit gate **G1.5 (Plano aprovado)** = the human
+  approved the plan; only required for mechanics/economy/progression/structural-UI.
 - **Implement** (`band-quest-game`) -> code against the spec + `tokens.css`,
-  with Vitest tests. Exit gate **G2** = new behavior implemented and covered.
+  following the approved `plan-NN.md`, with Vitest tests. Exit gate **G2** = new
+  behavior implemented and covered.
 - **Validate** (`band-quest-game`) -> the "gate verde": `test:unit` +
   `type-check` + `lint` + build, plus a manual playtest when mechanics change.
   Exit gate **G3**.
@@ -64,8 +72,8 @@ While the game is in pre-alpha we go explicitly through **4 of the 5 phases**
 Never edit a past iteration; create the next one — each iteration file is one
 bolt. Scale the ceremony to the size of the change (see the scaling rule in
 `ai-dlc.md`): small fixes fast-track through Implement/Validate/Deploy in a
-single cycle; mechanics/economy/progression/structural-UI changes go through all
-four gates, recorded inline in the feature `log.md`.
+single cycle; mechanics/economy/progression/structural-UI changes go through every
+gate — G1, G1.5, G2, G3, G4 — recorded inline in the feature `log.md`.
 
 ## Integrity rule
 

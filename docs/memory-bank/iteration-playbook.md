@@ -13,8 +13,9 @@ This document is the rulebook for agent-led feature iterations in Band Quest doc
 
 These eight steps are the detail of the **Inception** phase of AI-DLC (see the
 canonical model in [ai-dlc.md](ai-dlc.md)). Steps 1–7 happen inside Inception;
-step 8 (Handoff) is the **G1 gate** that moves the feature on to Implement,
-Validate and Deploy in `band-quest-game`.
+step 8 (Handoff) is the **G1 gate** that approves the spec, and step 9 (Plan) is
+the **G1.5 gate** that approves the *implementation plan* before any code is
+written in `band-quest-game`.
 
 1. Intake: capture the original user request and the feature context.
 2. Clarification: identify gaps and ask the human before guessing.
@@ -24,6 +25,11 @@ Validate and Deploy in `band-quest-game`.
 6. Validation: compare the iteration against the current request and the open questions.
 7. Logging: append the iteration outcome to `refinement/log.md`.
 8. Handoff (gate G1): prepare the resulting contract for `band-quest-game`.
+9. Plan (gate G1.5): for mechanics/economy/progression/structural-UI slices,
+   translate the approved iteration into a short, developer-facing
+   `planning/plan-NN.md` (one per slice/bolt) and get the human to approve it
+   before coding. Snippets only — signatures and the wiring point, never function
+   bodies. Small fixes fast-track and skip this step.
 
 ## Required checkpoints
 
@@ -31,6 +37,8 @@ Validate and Deploy in `band-quest-game`.
 - Re-check whether the plan needs improvement after each iteration.
 - If the feature or instruction is unclear, stop and ask for clarification.
 - Never start implementation work in `band-quest-game` while open questions remain unresolved.
+- For mechanics/economy/progression/structural-UI slices, never start coding before
+  the slice's `planning/plan-NN.md` is approved by the human (gate G1.5).
 - Keep `refinement/checklist.md` updated as the control surface for the feature.
 - Keep log entries append-only and timestamped.
 - When asking questions, always provide distinct formatting with alternative options AND an open/custom option for the user to provide their own answer.

@@ -1,5 +1,20 @@
 # Feature 0014 - Core Loop and Actions (Log)
 
+## [0.12.0] - 2026-06-26T00:00:00Z — iteration-07 (reputação por faixa) — G1→G4
+
+### Input
+- Playtest 04 ponto 4 (feedback): reputação do show não precisa ser fixa; sortear entre
+  N e M (ex.: 1–5). Refina a it-06.
+
+### Summary
+- `ActionOutcome.reputationRange [min,max]`; `resolveOutcome` sobrepõe a reputação por um
+  inteiro sorteado. `play-show` → `[1, 5]` (removido o `reputation` fixo). Cachê ∝
+  reputação (it-06) mantido. Números = placeholders (0003).
+
+### Validate (gate verde)
+- `test:unit` 141 (+faixa sorteada dentro de [1,5]; teste-base do show ajustado p/ 3 com
+  rng 0.5). `type-check`/`lint`/`build` OK. Playtest deferido.
+
 ## [0.11.0] - 2026-06-26T00:00:00Z — iteration-06 (cachê ∝ reputação) — G1→G4
 
 ### Input
