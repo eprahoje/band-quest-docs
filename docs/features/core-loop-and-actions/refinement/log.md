@@ -1,5 +1,25 @@
 # Feature 0014 - Core Loop and Actions (Log)
 
+## [0.13.0] - 2026-06-27T00:00:00Z — balance da turnê (Playtest 05 ponto 9)
+
+### Input
+- Playtest 05 ponto 9: um show na Casa de Shows Aurora rendia mais que uma turnê de 14
+  dias. Causa: o show escala com fãs (bilheteria) e a turnê era um valor fixo → conforme
+  os fãs crescem, o show sempre vence.
+
+### Summary
+- A turnê passa a ter **cachê escalado por fãs** (toca para a base em várias praças):
+  `cash = (TOUR_GUARANTEE + fãs × TOUR_CASH_PER_FAN) × esforço × multiplicador de reputação`
+  (placeholders 1500 / 30 → 0003). Override no `completeAction` para `category === 'tour'`,
+  substituindo o cash fixo do catálogo. Reputação/fãs/fadiga da turnê seguem como antes.
+
+### Validate (gate verde)
+- `test:unit` 158 (+turnê escala com fãs e supera a bilheteria de um show grande).
+  `type-check`/`lint`/`build` OK. Playtest deferido (leva).
+
+### Next step
+- Gate de staff para locais maiores (Playtest 05 ponto 7) — depende da iteração da 0013.
+
 ## [0.12.0] - 2026-06-26T00:00:00Z — iteration-07 (reputação por faixa) — G1→G4
 
 ### Input

@@ -269,8 +269,9 @@ Após o MVP da 0016 (shows datados por local). Detalhe e input original em
 ### Balance / gates
 - **Gate de staff para locais maiores** (pontos 7, 8) — Aurora vira dinheiro fácil; exigir
   staff (roadie) além de reputação+fãs. Reforça a **0013** + amarra na 0016.
-- **Turnê vs show** (ponto 9, + P03 ponto 9) — turnê de 14 dias rende menos que um show na
-  Aurora; rever cachê de turnê × bilheteria. 0003 + 0014 + 0016.
+- ✅ **Turnê vs show** (ponto 9, + P03 ponto 9) — **feito** (0014 [0.13.0]): cachê da turnê
+  passou a **escalar com fãs** (`(garantia + fãs×por-fã) × esforço × reputação`), superando a
+  bilheteria de um show avulso. Números → balance (0003).
 
 ### Nova mecânica (futuro)
 - **Temas múltiplos + combos + tendências** (ponto 3) — música com vários temas; combos com
