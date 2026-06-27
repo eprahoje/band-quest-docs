@@ -1,60 +1,30 @@
 # Feature 0013 - Staff and Crew (Questions)
 
 ## Open Questions
-
-### [Q1] Quais papéis de staff existem no conjunto inicial?
-**Context:** Define o escopo do sistema e os efeitos disponíveis.
-**Status:** 🟡 Needs Discussion
-**Options:**
-- [A] 4 papéis: empresário, preparador vocal, roadie, motorista.
-- [B] A + produtor musical e assessor de imprensa (6 papéis).
-- [C] Conjunto por área (palco, estúdio, negócios, logística), extensível.
-- [X] Aberto: (Usuário pode definir outra solução)
-
-**Answer:** [Usuário, digite sua resposta aqui (ex: A, B ou texto livre)]
-
-### [Q2] Como o staff é pago?
-**Context:** Define o peso econômico da contratação.
-**Status:** 🟡 Needs Discussion
-**Options:**
-- [A] Custo único de contratação.
-- [B] Salário recorrente por turno.
-- [C] Contratação + salário recorrente (ambos).
-- [X] Aberto: (Usuário pode definir outra solução)
-
-**Answer:** [Usuário, digite sua resposta aqui (ex: A, B ou texto livre)]
-
-### [Q3] Que tipo de efeito o staff gera?
-**Context:** Define se staff é modificador passivo, habilitador de ações ou ambos.
-**Status:** 🟡 Needs Discussion
-**Options:**
-- [A] Modificadores passivos (ex.: empresário → +caixa por show; roadie → -fadiga).
-- [B] Habilita ações/caminhos novos (ex.: motorista → turnês mais longas).
-- [C] Ambos — cada papel declara modificadores e/ou desbloqueios.
-- [X] Aberto: (Usuário pode definir outra solução)
-
-**Answer:** [Usuário, digite sua resposta aqui (ex: A, B ou texto livre)]
-
-### [Q4] Como o staff se relaciona com itens (0012) e marcos (0011)?
-**Context:** O usuário ligou staff a "outros desbloqueios e caminhos".
-**Status:** 🟡 Needs Discussion
-**Options:**
-- [A] Staff desbloqueia itens (0012) e/ou habilita marcos (0011).
-- [B] Staff é independente; só efeitos próprios, sem tocar 0011/0012.
-- [C] Staff pode, ele próprio, ser um pré-requisito desbloqueável (por marco/época).
-- [X] Aberto: (Usuário pode definir outra solução)
-
-**Answer:** [Usuário, digite sua resposta aqui (ex: A, B ou texto livre)]
-
-### [Q5] Onde ficam os números (custos/salários/efeitos)?
-**Context:** Evitar duplicar calibragem com a 0003.
-**Status:** 🟡 Needs Discussion
-**Options:**
-- [A] Conceito/estrutura aqui; números na 0003.
-- [B] Tudo aqui, com a 0003 só revisando.
-- [X] Aberto: (Usuário pode definir outra solução)
-
-**Answer:** [Usuário, digite sua resposta aqui (ex: A, B ou texto livre)]
+*(Nenhuma. Q1–Q6 resolvidas na iteration-02 — G1 liberado.)*
 
 ## Resolved Questions
-*(Nenhuma ainda.)*
+
+### [Q1] Papéis iniciais → 4 papéis
+**Decisão (it-02 D1):** empresário, preparador vocal, roadie, motorista. Ampliar é evolução.
+
+### [Q2] Pagamento → contratação + salário
+**Decisão (it-02 D2):** custo único de contratação + salário mensal recorrente (espelha o
+custo dos membros, 0003). Demitir encerra o salário.
+
+### [Q3] Efeito → híbrido (modificadores + desbloqueios)
+**Decisão (it-02 D3):** cada papel declara modificadores passivos e/ou desbloqueios
+(empresário +cachê; preparador vocal −fadiga; roadie habilita locais maiores; motorista
+habilita turnês maiores).
+
+### [Q4] Relação com 0011/0012 → independente por ora (default)
+**Decisão (it-02 D5):** staff é independente e declara seus próprios efeitos/desbloqueios; a
+ligação com itens (0012)/marcos (0011) fica como gancho/evolução.
+
+### [Q5] Números → na 0003 (default)
+**Decisão (it-02 D6):** conceito/estrutura aqui; custos/salários/percentuais/crew = 0003.
+
+### [Q6] Gate de locais (Playtest 05 ponto 7) → escalonado por tier
+**Decisão (it-02 D4):** `Venue.requiredStaff` por tier (bar livre; casa 1 roadie; ginásio
+crew maior; estádio crew completo). Sem a equipe, o local fica bloqueado para agendar.
+Acopla 0013 ↔ 0016.

@@ -132,7 +132,7 @@
 - Checklist: [checklist.md](./staff-and-crew/refinement/checklist.md)
 - Perguntas: [questions.md](./staff-and-crew/refinement/questions.md)
 - Log: [log.md](./staff-and-crew/refinement/log.md)
-- Refinamento: [iteration-01.md](./staff-and-crew/refinement/iteration-01.md)
+- Refinamento: [iteration-02.md](./staff-and-crew/refinement/iteration-02.md)
 
 ## 0014 - Core Loop and Actions
 - Diagrams: [README.md](./core-loop-and-actions/diagrams/README.md)

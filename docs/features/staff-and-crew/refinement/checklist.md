@@ -2,13 +2,14 @@
 
 ## Planning
 - [x] Problem is clearly stated.
-- [ ] Goals are measurable or at least falsifiable.
-- [ ] Non-goals are explicit.
+- [x] Goals are measurable or at least falsifiable.
+- [x] Non-goals are explicit.
 
 ## Refinement
-- [ ] All blocking questions in `questions.md` are answered.
-- [ ] Latest iteration reflects the current decision, not a stale one.
+- [x] All blocking questions in `questions.md` are answered (Q1–Q6, iteration-02).
+- [x] Latest iteration reflects the current decision (iteration-02).
 
-## Handoff readiness
-- [ ] Scope can be split into small, testable implementation steps.
-- [ ] `band-quest-game` team/agent has enough context without re-reading the whole history.
+## Handoff readiness (G1)
+- [x] Scope can be split into small, testable implementation steps (4 slices; MVP = 1 e 2).
+- [x] `band-quest-game` tem contexto suficiente (modelo + gate descritos na iteration-02).
+- ✅ **G1 liberado.** Próximo: Implement da slice 1 (modelo + contratação + salário).
