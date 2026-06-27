@@ -1,5 +1,38 @@
 # Feature 0016 - Venues and Shows (Log)
 
+## [0.4.0] - 2026-06-27T00:00:00Z — slice 2 (agendar show + cachê+bilheteria) — Implement→Validate→Deploy
+
+### Input
+- Slice 2 do MVP. Decisão do usuário: **substituir** o `play-show` imediato (abordagem A).
+  Show vira **compromisso datado** por local (D4) com receita **cachê + bilheteria** (D3).
+
+### Summary
+- `data/venues.ts`: `baseCachet` + `ticketPrice` por local; `computeShowResult(venue, ctx)` —
+  público = `min(fãs, capacidade)`; receita = cachê (`baseCachet × multiplicador de
+  reputação`) + bilheteria (`público × ticketPrice`); fãs ganhos = base + fração do público;
+  reputação ganha = faixa **1–5** (migrada do antigo `reputationRange`).
+- `data/actions.ts`: **removido o `play-show`**; removido `ActionOutcome.reputationRange` (e
+  seu uso no `resolveOutcome`) — a reputação do show agora vive no `computeShowResult`.
+- `stores/game.ts`: `ScheduledShow` + `scheduledShows` + `scheduleShow(venueId, leadDays)`
+  (valida desbloqueio); `fireScheduledShows()` dispara na data (credita cachê+bilheteria+fãs+
+  reputação, cobra `SHOW_FATIGUE`, zera inatividade, evento categoria `show`);
+  `nextCompletionDays` passa a saltar até o próximo show agendado; `play-show` saiu de
+  `PUBLIC_ACTION_IDS`/`completionMessage`. Reset em startGame/resetGame.
+- `components/VenueList.vue`: botões **Agendar (1 sem / 2 sem / 1 mês)** nos locais liberados +
+  seção **Próximos shows** (local + data).
+
+### Validate (gate verde)
+- `test:unit` 148 (migrados ~10 usos de play-show p/ outras ações/scheduleShow; +scheduleShow
+  recusa local travado, +dispara na data creditando cachê+bilheteria, +nextCompletion salta até
+  o show). `type-check`/`lint`/`build` OK.
+- **Playtest do modelo de show = humano** (o usuário sinalizou que valida quando o modelo mudar).
+
+### Open questions
+- Nenhuma. Números (cachê/ingresso/lead/capacidade) = placeholders (0003).
+
+### Next step
+- Slice 3 (promoção na janela pré-show + penalidade de falta) — quando priorizada.
+
 ## [0.3.0] - 2026-06-27T00:00:00Z — slice 1 (catálogo + desbloqueio) — Implement→Validate→Deploy
 
 ### Input

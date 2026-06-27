@@ -219,8 +219,13 @@ Dois itens marcados como bug foram **investigados no código** antes do registro
   puxa a visão ao abrir o painel de composição/seleção.
 - ✅ **Cachê de show ∝ reputação** (ponto 4 + P03 ponto 7) — **feito** (0014 it-06): cachê de
   show/turnê escala com a reputação (`1 + rep × 0.01`).
-- ✅ **Reputação do show por faixa aleatória** (ponto 4, feedback) — **feito** (0014 it-07):
-  show sorteia reputação **1–5** (`reputationRange`), em vez de valor fixo.
+- ✅ **Reputação do show por faixa aleatória** (ponto 4, feedback) — **feito** (0014 it-07);
+  na 0016 slice 2 a lógica do show migrou para `computeShowResult` (venues) e o `reputationRange`
+  da 0014 foi removido — o show ainda sorteia **1–5**.
+- ✅ **Shows por local + agenda + bilheteria** (P03 7.1–7.3, P04 3.3) — **feito** (0016 MVP,
+  slices 1 e 2): catálogo de locais por reputação+fãs; show vira compromisso datado; receita
+  cachê+bilheteria; o `play-show` imediato foi substituído. Slices 3–5 (promoção/penalidade,
+  turnê-trajeto, geografia híbrida) = futuro.
 - ✅ **Músicas prontas vs lançadas** (ponto 2, feedback) — **feito** (0015 fast-track): aba
   Músicas lista só as prontas; Lançamentos mostra as faixas pelo nome (evita confusão no descarte).
 
