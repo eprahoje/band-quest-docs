@@ -1,5 +1,20 @@
 # Feature 0014 - Core Loop and Actions (Log)
 
+## [0.9.1] - 2026-06-26T00:00:00Z — fast-track (UX/reporting)
+
+### Input
+- Report imediato do playtest da it-04: shows e descansos pararam de mostrar o ganho/
+  recuperação de fadiga nos acontecimentos (efeito colateral de tirar a fadiga dos
+  `outcome.metrics`).
+
+### Summary
+- `completeAction` volta a anexar o **chip de fadiga** ao evento de conclusão, atribuindo
+  o total da ação (`fatiguePerDay × totalTurns`) — só para exibição, sem reaplicar ao
+  estado (a fadiga continua acumulando por dia no avanço). Show = +18 (neg); descanso =
+  −30 (pos). Sem mudança de mecânica.
+- 134 testes (era 133; +1 chip de recuperação do descanso); chip de show restaurado no
+  teste de efeitos. Gate verde (type-check/lint/build OK).
+
 ## [0.9.0] - 2026-06-26T00:00:00Z — Inception → Implement → Validate → Deploy (G1→G4)
 
 ### Input
