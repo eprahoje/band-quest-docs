@@ -1,6 +1,6 @@
 # Feature 0013 - Staff and Crew
 
-**Status:** Ready for Implementation (G1 ✅) — MVP = slices 1 (modelo + contratação + salário) e 2 (gate de locais escalonado, Playtest 05 ponto 7)
+**Status:** In Implementation — MVP (slices 1 e 2) entregue: modelo + contratação + salário mensal + gate de locais escalonado (resolve Playtest 05 ponto 7). Próximas: slice 3 (modificadores), 4 (motorista → turnê maior)
 
 ## Navigation
 - [Diagrams](diagrams/README.md)

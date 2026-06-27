@@ -267,8 +267,9 @@ Após o MVP da 0016 (shows datados por local). Detalhe e input original em
   migrado do `window.confirm`.
 
 ### Balance / gates
-- **Gate de staff para locais maiores** (pontos 7, 8) — Aurora vira dinheiro fácil; exigir
-  staff (roadie) além de reputação+fãs. Reforça a **0013** + amarra na 0016.
+- ✅ **Gate de staff para locais maiores** (ponto 7) — **feito** (0013 [0.3.0] slices 1+2):
+  contratar equipe (custo + salário mensal); `Venue.requiredStaff` por tier (casa 1 roadie;
+  ginásio 2; estádio 2 roadies + motorista) bloqueia agendar sem a crew. Fecha a "Aurora fácil".
 - ✅ **Turnê vs show** (ponto 9, + P03 ponto 9) — **feito** (0014 [0.13.0]): cachê da turnê
   passou a **escalar com fãs** (`(garantia + fãs×por-fã) × esforço × reputação`), superando a
   bilheteria de um show avulso. Números → balance (0003).
@@ -276,6 +277,13 @@ Após o MVP da 0016 (shows datados por local). Detalhe e input original em
 ### Nova mecânica (futuro)
 - **Temas múltiplos + combos + tendências** (ponto 3) — música com vários temas; combos com
   bônus; tendências por período com contrapartida (saturar tema → perde fãs). 0015 + 0008 + 0003.
+- **Turnê com modificadores de investimento** (proposta 2026-06-27, iteração futura da turnê) —
+  ao montar a turnê o jogador escolhe **investimentos** opcionais que melhoram a qualidade/retorno:
+  turnê simples vs **iluminação profissional**, **preparação** (ensaios + roteiro), **hospedagem
+  da equipe**, **divulgação em TV/rádio**, etc. Cada investimento custa e pode (ou não) render mais
+  — permite "investir na própria banda" com risco/retorno. Conecta 0014 (modelo da turnê) + 0013
+  (equipe/hospedagem) + 0012 (iluminação como item) + 0009/marketing (TV/rádio) + 0003 (números).
+  Substitui/expande o atual `outcomeModifier` de esforço por um conjunto de modificadores ricos.
 
 ## Mudança de premissa temporal (0001, iteration-02)
 

@@ -41,3 +41,30 @@
 ### Next step
 - **G1 ✅** — Implement da slice 1 (modelo + contratação + salário) quando priorizado;
   depois slice 2 (gate de locais), que resolve o Playtest 05 ponto 7.
+
+## [0.3.0] - 2026-06-27T00:00:00Z — slices 1 e 2 (modelo + gate de locais) — Implement→Validate→Deploy
+
+### Input
+- Decisão do usuário: implementar a 0013 para fechar o Playtest 05 ponto 7 (Aurora = dinheiro
+  fácil). Fechar o ponto exige as duas slices do MVP (modelo + gate).
+
+### Summary
+- `data/staff.ts`: `StaffRole` (manager/vocal-coach/roadie/driver) + `STAFF_ROLES` (label,
+  descrição, `hireCost`, `monthlySalary`) + `getStaffRole`/`staffCountsByRole`. Números = 0003.
+- `data/venues.ts`: `Venue.requiredStaff` por tier (bar livre; casa 1 roadie; ginásio 2;
+  estádio 2 roadies + 1 motorista) + `venueStaffShortfall`/`venueStaffSatisfied`.
+- `stores/game.ts`: `hiredStaff` + `hireStaff`/`fireStaff` (custo único na hora; salário
+  mensal somado ao custo da virada de mês); `monthlyStaffCost`; `staffCounts`; `venueCatalog`
+  ganhou `staffShortfall`/`staffOk`/`bookable`; `scheduleShow` bloqueia se faltar equipe.
+- UI: `StaffPanel.vue` (contratar/dispensar, salário mensal) no GameView; `VenueList` mostra
+  "Requer equipe: X" e só habilita Agendar quando `bookable`.
+
+### Validate (gate verde)
+- `test:unit` 167 (era 158; +staff.spec, +venues staff gate, +store hire/fire/salário/gate de
+  local). `type-check`/`lint`/`build` OK.
+
+### Open questions
+- Nenhuma. Slices 3 (modificadores passivos) e 4 (motorista → turnê maior) ficam para depois.
+
+### Next step
+- Slice 3 (empresário +cachê, preparador −fadiga) quando priorizada; calibrar números (0003).
