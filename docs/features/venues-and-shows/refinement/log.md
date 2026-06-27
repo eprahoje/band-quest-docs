@@ -1,5 +1,22 @@
 # Feature 0016 - Venues and Shows (Log)
 
+## [0.5.0] - 2026-06-27T00:00:00Z — fast-track: travas de agendamento (Playtest 05 pontos 6 e 8)
+
+### Input
+- Playtest 05: (6) dava para agendar 2 shows no mesmo dia; (8) dava para agendar shows
+  ilimitados — deveria ser 1 por vez até a turnê liberar vários.
+
+### Summary
+- `scheduleShow`: (6) recusa se já houver show na **mesma data** ("Já há um show agendado
+  para essa data"); (8) recusa um 2º show enquanto a turnê não libera — novo computed
+  `canBookMultipleShows` (reputação ≥ requisito da turnê, 30). Exportado.
+- `VenueList.vue`: botões Agendar **desabilitados** no limite (com dica "Só um show por vez
+  — a turnê libera agendar vários") e mensagem de erro inline ao falhar (ex.: data ocupada).
+
+### Validate (gate verde)
+- `test:unit` 150 (era 148; +limite de 1 show antes da turnê, +bloqueio de mesma data com a
+  turnê liberada). `type-check`/`lint`/`build` OK.
+
 ## [0.4.0] - 2026-06-27T00:00:00Z — slice 2 (agendar show + cachê+bilheteria) — Implement→Validate→Deploy
 
 ### Input

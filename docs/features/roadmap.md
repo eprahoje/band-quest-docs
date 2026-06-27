@@ -250,10 +250,10 @@ Após o MVP da 0016 (shows datados por local). Detalhe e input original em
 [docs/playtests/playtest-2026-06-27.md](../playtests/playtest-2026-06-27.md).
 
 ### Bugs / quick wins
-- **Agendamento duplicado** (0016, ponto 6) — `scheduleShow` permite 2 shows no mesmo
-  dia/local; bloquear conflito de data.
-- **1 show por vez até a turnê** (0016, ponto 8) — limitar a 1 show agendado enquanto a
-  turnê (0014, rep 30) não libera agendar vários.
+- ✅ **Agendamento duplicado** (0016, ponto 6) — **feito** (0016 [0.5.0]): `scheduleShow`
+  recusa 2 shows na mesma data.
+- ✅ **1 show por vez até a turnê** (0016, ponto 8) — **feito** (0016 [0.5.0]):
+  `canBookMultipleShows` (rep ≥ 30) libera agendar vários; até lá, 1 por vez.
 - **Editar nome na composição** (0015, ponto 2) — campo de nome no compose chooser
   (placeholder autogerado, editável).
 - **Tipos de descanso** (0014, ponto 4) — `rest` com mais opções (folga / descanso / férias 30d).
