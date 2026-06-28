@@ -285,6 +285,44 @@ Após o MVP da 0016 (shows datados por local). Detalhe e input original em
   (equipe/hospedagem) + 0012 (iluminação como item) + 0009/marketing (TV/rádio) + 0003 (números).
   Substitui/expande o atual `outcomeModifier` de esforço por um conjunto de modificadores ricos.
 
+## Backlog de playtest — 2026-06-27 sessão 02 (Playtest 06)
+
+Sessão jogada pela noiva do usuário + análise do usuário. Detalhe e input verbatim em
+[docs/playtests/playtest-2026-06-27-session-02.md](../playtests/playtest-2026-06-27-session-02.md).
+Pontos 3 e 7 investigados no código.
+
+### Investigados
+- **Custo do marketing varia** (ponto 3, 0014/0003) — a variância (±20%) incide no custo
+  (não só nos ganhos); o card mostra o "base". Decisão: **não aplicar variância ao custo**
+  (custos previsíveis) e/ou ajustar o rótulo.
+- **Gate do ginásio = 2 roadies** (ponto 7) — **não é bug**, é o gate escalonado. UI confunde
+  ao mostrar o que "falta" e não o total. Quick win: clareza no requisito de equipe.
+
+### UX / mecânica (iterar)
+- **Cancelar ação iniciada** (ponto 2, 0014) — botão cancelar no "Em andamento" antes de
+  avançar; devolve insumos reservados.
+- **Tipos de descanso** (pontos 4, 8, 8.1, 0014) — descanso prolongado (10d/−60) + **férias**
+  (recupera muito, com **cooldown**). Reforça o Playtest 05 ponto 4.
+- **Clareza do gate de equipe** (ponto 7) — mostrar total exigido / "faltam X".
+
+### Iterações de feature
+- **0017 Contracts and Salaries** (ponto 1) — explicar/iterar salário dos membros (por
+  atributos + reputação + contrato). Hoje o custo sobe com a reputação sem feedback.
+- **0013 slices 3 e 4** (pontos 5, 6) — preparador vocal (−fadiga), empresário (+cachê),
+  motorista (turnês maiores). Decididas na it-02; faltam implementar.
+- **Ensaiar ↔ progressão de membros** (ponto 9, 0015 entrosamento + 0007) — ensaiar evolui a
+  banda e melhora as composições; refatorar `rehearse`.
+
+### Balance (iteração dedicada — 0003)
+- **Variância no custo** (ponto 3) — custos não deveriam ser aleatórios.
+- **Show de estádio vs turnê** (ponto 11) — eficiência por fadiga/tempo + conter a escala da
+  bilheteria no endgame.
+
+### Arquitetura de UI (0006 + navegação)
+- **UI Shell** (O1, retoma Playtest 03 ponto 11) — (a) telas/abas por área mantendo o estado
+  (Banda/Estúdio/Shows/Finanças/Equipe); (b) paliativo barato: **layout multi-coluna** para
+  reduzir o scroll. Avaliar no design system.
+
 ## Mudança de premissa temporal (0001, iteration-02)
 
 A 0001 foi redefinida: **sem seleção de era** — o jogo começa fixo no **Brasil
