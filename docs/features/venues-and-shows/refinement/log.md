@@ -1,5 +1,20 @@
 # Feature 0016 - Venues and Shows (Log)
 
+## [0.6.0] - 2026-06-27T00:00:00Z — quick wins (Playtest 06: cancelar show + clareza do gate)
+
+### Input
+- Playtest 06: (2) cancelar compromissos; (7) o requisito de equipe do ginásio confundiu —
+  mostrava o que faltava ("1 roadie") e não o total exigido (2).
+
+### Summary
+- **Cancelar show agendado**: `cancelScheduledShow(id)` + botão ✕ em "Próximos shows".
+- **Clareza do gate de equipe** (ponto 7): o requisito passa a mostrar o **total exigido** e
+  o que a banda **tem** — ex.: "Requer equipe: 2 roadie (tem 1)". O gate escalonado (ginásio
+  = 2 roadies) é por design; só a comunicação estava confusa.
+
+### Validate (gate verde)
+- `test:unit` 170; `type-check`/`lint`/`build` OK. (Cobertura de cancelar show no game.spec.)
+
 ## [0.5.0] - 2026-06-27T00:00:00Z — fast-track: travas de agendamento (Playtest 05 pontos 6 e 8)
 
 ### Input

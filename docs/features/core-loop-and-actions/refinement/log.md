@@ -1,5 +1,22 @@
 # Feature 0014 - Core Loop and Actions (Log)
 
+## [0.14.0] - 2026-06-27T00:00:00Z — quick wins (Playtest 06 pontos 2 e 3)
+
+### Input
+- Playtest 06: (2) não dava para cancelar uma ação iniciada por engano; (3) o custo do
+  marketing variava (R$300 → R$256) porque a variância incidia no custo.
+
+### Summary
+- **Custo previsível** (ponto 3): `resolveOutcome` deixa de aplicar variância ao **custo**
+  (cash negativo) — a variância leve só afeta os ganhos. O "Custo base: R$X" do card bate
+  com o cobrado.
+- **Cancelar ação** (ponto 2): `cancelAction(actionId)` remove a ação em andamento antes de
+  avançar e **devolve os insumos reservados** (músicas voltam a `composed`). UI: botão ✕ no
+  painel "Em andamento".
+
+### Validate (gate verde)
+- `test:unit` 170 (+custo sem variância, +cancelar ação devolve músicas). `type-check`/`lint`/`build` OK.
+
 ## [0.13.0] - 2026-06-27T00:00:00Z — balance da turnê (Playtest 05 ponto 9)
 
 ### Input

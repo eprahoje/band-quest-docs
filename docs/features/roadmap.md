@@ -299,11 +299,19 @@ Pontos 3 e 7 investigados no código.
   ao mostrar o que "falta" e não o total. Quick win: clareza no requisito de equipe.
 
 ### UX / mecânica (iterar)
-- **Cancelar ação iniciada** (ponto 2, 0014) — botão cancelar no "Em andamento" antes de
-  avançar; devolve insumos reservados.
+- ✅ **Cancelar ação iniciada** (ponto 2, 0014 [0.14.0]) — **feito**: botão ✕ no "Em andamento"
+  + cancelar show agendado (0016 [0.6.0]); devolve insumos reservados.
+- ✅ **Custo previsível** (ponto 3, 0014 [0.14.0]) — **feito**: variância não incide mais no custo.
+- ✅ **Clareza do gate de equipe** (ponto 7, 0016 [0.6.0]) — **feito**: mostra total exigido + o
+  que a banda tem ("2 roadie (tem 1)").
 - **Tipos de descanso** (pontos 4, 8, 8.1, 0014) — descanso prolongado (10d/−60) + **férias**
   (recupera muito, com **cooldown**). Reforça o Playtest 05 ponto 4.
-- **Clareza do gate de equipe** (ponto 7) — mostrar total exigido / "faltam X".
+
+### Staff como upgrades (proposta 2026-06-27 — iteração 0013)
+- **Contratação como upgrade, não infinita** — tratar papéis como **cargos únicos/upgrades** em
+  vez de poder contratar N do mesmo. O gate de locais deixaria de ser por **contagem** (2 roadies)
+  e passaria a exigir **cargos de nível** (casa → roadie; ginásio → técnico de palco; estádio →
+  equipe de produção) — resolve na raiz a confusão do ponto 7. Nova iteration da 0013.
 
 ### Iterações de feature
 - **0017 Contracts and Salaries** (ponto 1) — explicar/iterar salário dos membros (por

@@ -1,7 +1,22 @@
 # Feature 0013 - Staff and Crew (Questions)
 
 ## Open Questions
-*(Nenhuma. Q1–Q6 resolvidas na iteration-02 — G1 liberado.)*
+
+### [Q7] Staff são cargos únicos/upgrades ou contratáveis em quantidade? (Playtest 06)
+**Context:** A contratação atual permite N do mesmo papel (o gate usa contagem: ginásio = 2
+roadies), o que confundiu no Playtest 06 (ponto 7) e parece estranho ("5 empresários"). O
+usuário propôs tratar staff como **upgrades**, não infinito.
+**Status:** 🟡 Needs Discussion (próxima iteração — it-03)
+**Options:**
+- [A] **Cargos únicos + upgrades**: 1 por papel, melhorável por nível. O gate de locais passa
+  a exigir **cargos/níveis** (casa → roadie; ginásio → técnico de palco; estádio → equipe de
+  produção) em vez de contagem. Resolve o ponto 7 na raiz.
+- [B] **Híbrido**: papéis de "negócio" (empresário, preparador) são únicos; "crew" (roadie,
+  motorista) continua contável (tamanho de equipe).
+- [C] Manter como está (contagem para tudo), só melhorando a UI.
+- [X] Aberto.
+
+**Answer:** [a definir na iteration-03]
 
 ## Resolved Questions
 
