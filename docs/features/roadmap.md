@@ -308,10 +308,11 @@ Pontos 3 e 7 investigados no código.
   (recupera muito, com **cooldown**). Reforça o Playtest 05 ponto 4.
 
 ### Staff como upgrades (proposta 2026-06-27 — iteração 0013)
-- **Contratação como upgrade, não infinita** — tratar papéis como **cargos únicos/upgrades** em
-  vez de poder contratar N do mesmo. O gate de locais deixaria de ser por **contagem** (2 roadies)
-  e passaria a exigir **cargos de nível** (casa → roadie; ginásio → técnico de palco; estádio →
-  equipe de produção) — resolve na raiz a confusão do ponto 7. Nova iteration da 0013.
+- ✅ **Contratação como upgrade + catálogo expandido** — **feito** (0013 it-03 / [0.4.0]): cargos
+  **únicos** (1 por papel); catálogo de **8 cargos** (+ técnico de som, iluminador, segurança,
+  produtor de palco); gate de locais por **conjunto de cargos distintos** (casa = roadie; ginásio =
+  roadie+som+luz; estádio = +segurança+produtor de palco). Resolve o Playtest 06 ponto 7 na raiz.
+  Pendente (futuro): níveis de upgrade por cargo; modificadores (slice 3); motorista→turnê (slice 4).
 
 ### Iterações de feature
 - **0017 Contracts and Salaries** (ponto 1) — explicar/iterar salário dos membros (por

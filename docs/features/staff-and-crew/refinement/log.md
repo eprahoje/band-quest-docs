@@ -68,3 +68,33 @@
 
 ### Next step
 - Slice 3 (empresário +cachê, preparador −fadiga) quando priorizada; calibrar números (0003).
+
+## [0.4.0] - 2026-06-28T00:00:00Z — iteration-03 (cargos únicos + catálogo expandido + gate por conjunto)
+
+### Input
+- Playtest 06 ponto 7 + proposta do usuário: staff como **upgrade/cargo único** (não contratação
+  infinita) e locais maiores exigindo **mais cargos distintos** (mais gente na produção). Resolve
+  a Q7. Supersede o gate por contagem da slice 2.
+
+### Summary
+- **D7 — cargos únicos**: `hireStaff` recusa um papel já contratado (1 por papel).
+- **D8 — catálogo expandido (8)**: + `sound-tech` (Técnico de som), `lighting-tech` (Iluminador),
+  `security` (Segurança), `stage-manager` (Produtor de palco), além de manager/vocal-coach/roadie/
+  driver.
+- **D9 — gate por conjunto de cargos**: `Venue.requiredStaff: StaffRole[]` (distintos). Casa =
+  roadie; ginásio = roadie + som + luz; estádio = + segurança + produtor de palco.
+  `venueStaffShortfall` retorna os cargos faltantes. Resolve o ponto 7 na raiz.
+- UI: `StaffPanel` mostra cada cargo como Contratar ou Contratado/Dispensar (sem duplicar);
+  `VenueList` lista os cargos exigidos com ✓/✗.
+
+### Validate (gate verde)
+- `test:unit` 172 (era 170; +cargos únicos/duplicata bloqueada, +gate por conjunto no ginásio,
+  catálogo de 8). `type-check`/`lint`/`build` OK.
+
+### Open questions
+- Nenhuma. Níveis de upgrade por cargo (roadie → chefe de equipe) e modificadores (slice 3) =
+  futuro. Números = placeholders (0003).
+
+### Next step
+- Slice 3 (modificadores: empresário +cachê, preparador −fadiga) + slice 4 (motorista → turnê
+  maior) quando priorizadas.
