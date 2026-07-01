@@ -165,3 +165,35 @@
 ### Next step
 - Reaproveitar `SelectField`/`ConfirmDialog` nos próximos fluxos que precisarem de lista/
   confirmação (ex.: seleção de faixas, modos no StartView).
+
+## [0.8.1] - 2026-06-30T00:00:00Z — fix: re-sync do bloco Overlay no espelho do game
+
+### Input
+- Bug de UI (fast-track, AI-DLC): ao compor uma música, os dropdowns de gênero e tema
+  ficavam ATRÁS das abas e dos cards de ação abaixo, em vez de sobrepô-los.
+
+### Summary
+- **Causa raiz — drift do contrato, não CSS local.** O [0.8.0] adicionou `--bq-overlay` e
+  `--bq-z-overlay` ao `tokens.css` canônico (docs) e os usou em `SelectField.vue` e
+  `ConfirmDialog.vue`, mas o **espelho** `band-quest-game/src/assets/tokens.css` nunca
+  recebeu o bloco. Com o token indefinido, `z-index: var(--bq-z-overlay)` vira inválido →
+  `z-index: auto`; como o compose chooser vem antes das abas/cards no DOM, esses elementos
+  posteriores pintavam por cima da lista aberta do dropdown.
+  (O `ConfirmDialog` mascarava o problema porque usa Teleport para o `body` → já era o
+  último no DOM; o `SelectField`, inline, expunha o bug.)
+- **Correção:** re-sincronizado o bloco *Overlay* (`--bq-overlay` + `--bq-z-overlay: 100`)
+  no espelho do game, alinhando-o ao contrato.
+
+### Validate (gate verde)
+- `test:unit` 172/172, `type-check`/`lint`/`build` OK.
+
+### Open questions
+- Nenhuma bloqueante. Itens de correspondência design-system ↔ UI levantados na auditoria
+  (ver Next step) ficam como backlog.
+
+### Next step
+- Backlog de correspondência (drift residual, não bloqueante):
+  1. Previews ausentes no bundle p/ padrões reusáveis que a UI evoluiu: **CollapsibleSection**
+     (accordion), **ActionCard** (card de ação + preview de fadiga) e o **shell de abas** (0020).
+  2. Hardcode isolado: `ConfirmDialog.vue` usa `color: #fff` no botão danger (trocar por token).
+  3. Guarda anti-regressão: teste leve que verifica que o espelho contém os tokens do contrato.
