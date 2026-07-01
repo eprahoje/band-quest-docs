@@ -332,6 +332,25 @@ Pontos 3 e 7 investigados no código.
   (Banda/Estúdio/Shows/Finanças/Equipe); (b) paliativo barato: **layout multi-coluna** para
   reduzir o scroll. Avaliar no design system.
 
+## Backlog de playtest — 2026-06-28 (Playtest 07)
+
+Detalhe e input em [docs/playtests/playtest-2026-06-28.md](../playtests/playtest-2026-06-28.md).
+**Diretriz do usuário: priorizar a refatoração de UI/UX (ponto 4) antes de tudo.**
+
+### Prioridade ativa
+- **UI Shell / Navegação** (ponto 4) — refatorar o scroll único do GameView em **telas/abas
+  por área** (Visão, Banda, Estúdio, Shows, Equipe, Finanças…) preservando o estado, com **HUD
+  fixo** (Stats + avançar). Design system (0006) + arquitetura de navegação. **Inception a seguir.**
+
+### Backlog (iterar depois)
+- **Cancelar show com consequência** (ponto 1.1, 0016) — aviso (ConfirmDialog) + penalidade
+  (multa/reputação) proporcional à proximidade da data.
+- **Balance da equipe — conquista gradual** (ponto 2, 0013 + 0003) — custos progressivos e/ou
+  gates (reputação/marcos), para não comprar toda a equipe cedo. Casa com o balance da turnê.
+- **Rework da turnê** (ponto 3, 0014 + 0016 + 0008) — turnê vira trajeto de shows (nacional/
+  internacional) + **festivais** como eventos sazonais no calendário. A turnê abstrata perdeu
+  sentido com o agendamento por local.
+
 ## Mudança de premissa temporal (0001, iteration-02)
 
 A 0001 foi redefinida: **sem seleção de era** — o jogo começa fixo no **Brasil
