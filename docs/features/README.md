@@ -161,3 +161,8 @@
 - Perguntas: [questions.md](./venues-and-shows/refinement/questions.md)
 - Log: [log.md](./venues-and-shows/refinement/log.md)
 - Refinamento: [iteration-02.md](./venues-and-shows/refinement/iteration-02.md)
+
+## 0020 - UI Shell and Navigation
+- Planejamento: [overview.md](./ui-shell-and-navigation/planning/overview.md)
+- Log: [log.md](./ui-shell-and-navigation/refinement/log.md)
+- Refinamento: [iteration-01.md](./ui-shell-and-navigation/refinement/iteration-01.md)

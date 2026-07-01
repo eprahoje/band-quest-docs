@@ -338,9 +338,10 @@ Detalhe e input em [docs/playtests/playtest-2026-06-28.md](../playtests/playtest
 **Diretriz do usuário: priorizar a refatoração de UI/UX (ponto 4) antes de tudo.**
 
 ### Prioridade ativa
-- **UI Shell / Navegação** (ponto 4) — refatorar o scroll único do GameView em **telas/abas
-  por área** (Visão, Banda, Estúdio, Shows, Equipe, Finanças…) preservando o estado, com **HUD
-  fixo** (Stats + avançar). Design system (0006) + arquitetura de navegação. **Inception a seguir.**
+- ✅ **UI Shell / Navegação** (ponto 4) — **feito** (0020 [0.2.0]): GameView refatorado em **HUD
+  fixo** (stats + calendário + Avançar) + **abas por área** (Visão/Banda/Estúdio/Shows/Equipe/
+  Finanças), só a aba ativa renderiza, ações distribuídas por tela. Novo `ActionCard.vue`. Estado
+  preservado (store central). Futuro: rota por aba, responsividade, realce de pendências.
 
 ### Backlog (iterar depois)
 - **Cancelar show com consequência** (ponto 1.1, 0016) — aviso (ConfirmDialog) + penalidade
