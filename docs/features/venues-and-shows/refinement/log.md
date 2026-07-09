@@ -1,5 +1,25 @@
 # Feature 0016 - Venues and Shows (Log)
 
+## [0.7.0] - 2026-07-09T00:00:00Z — cancelar show com consequência (Playtest 07 ponto 1.1)
+
+### Input
+- Playtest 07 ponto 1.1: cancelar um show agendado deve avisar das consequências e
+  penalizar (multa/reputação) proporcional à proximidade da data.
+
+### Summary
+- Store: `showCancellationPenalty(id)` — dentro da janela de carência
+  (`SHOW_CANCEL_GRACE_DAYS` 14), multa = `baseCachet × proximidade` e reputação =
+  `round(3 × proximidade)`, onde proximidade = (14 − diasAté)/14; fora da janela, zero.
+  `cancelScheduledShow` aplica a penalidade e loga evento `setback` ("cancelado em cima
+  da hora") com chips; cancelamento sem penalidade segue silencioso.
+- UI (VenueList): o ✕ abre **ConfirmDialog** (reuso 0006) mostrando a penalidade exata
+  antes de confirmar (variante danger quando há multa); longe da data, avisa "sem
+  penalidade". NÚMEROS = placeholders → balance (0003).
+
+### Validate (gate verde)
+- `test:unit` 179 (+multa/reputação na janela, +cancelamento antecipado grátis e sem
+  evento). `type-check`/`lint`/`build` OK.
+
 ## [0.6.0] - 2026-06-27T00:00:00Z — quick wins (Playtest 06: cancelar show + clareza do gate)
 
 ### Input

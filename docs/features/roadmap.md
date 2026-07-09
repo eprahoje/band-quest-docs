@@ -254,9 +254,11 @@ Após o MVP da 0016 (shows datados por local). Detalhe e input original em
   recusa 2 shows na mesma data.
 - ✅ **1 show por vez até a turnê** (0016, ponto 8) — **feito** (0016 [0.5.0]):
   `canBookMultipleShows` (rep ≥ 30) libera agendar vários; até lá, 1 por vez.
-- **Editar nome na composição** (0015, ponto 2) — campo de nome no compose chooser
-  (placeholder autogerado, editável).
-- **Tipos de descanso** (0014, ponto 4) — `rest` com mais opções (folga / descanso / férias 30d).
+- ✅ **Editar nome na composição** (0015, ponto 2) — **feito (2026-07-09, 0015 [0.10.0])**:
+  campo de nome no compose chooser (sugerido por `generateSongName`, editável; 🎲 re-sorteia).
+- ✅ **Tipos de descanso** (0014, ponto 4) — **feito (2026-07-09, 0014 [0.15.0])**: `rest`
+  com Folga (2d) / Descanso (5d) / Descanso prolongado (10d) + ação **Férias** (30d,
+  recuperação profunda, cooldown de 1 ano).
 
 ### Padrões de UI (design system — 0006)
 - ✅ **Select/Dropdown próprio** (ponto 1) — **feito** (0006 [0.8.0]): `SelectField.vue`
@@ -304,8 +306,9 @@ Pontos 3 e 7 investigados no código.
 - ✅ **Custo previsível** (ponto 3, 0014 [0.14.0]) — **feito**: variância não incide mais no custo.
 - ✅ **Clareza do gate de equipe** (ponto 7, 0016 [0.6.0]) — **feito**: mostra total exigido + o
   que a banda tem ("2 roadie (tem 1)").
-- **Tipos de descanso** (pontos 4, 8, 8.1, 0014) — descanso prolongado (10d/−60) + **férias**
-  (recupera muito, com **cooldown**). Reforça o Playtest 05 ponto 4.
+- ✅ **Tipos de descanso** (pontos 4, 8, 8.1, 0014) — **feito (2026-07-09, 0014 [0.15.0])**:
+  descanso prolongado (10d/−60) + **férias** (30d, −10/dia, cooldown de 1 ano via
+  `ActionDef.cooldownDays`). Fecha também o Playtest 05 ponto 4.
 
 ### Staff como upgrades (proposta 2026-06-27 — iteração 0013)
 - ✅ **Contratação como upgrade + catálogo expandido** — **feito** (0013 it-03 / [0.4.0]): cargos
@@ -344,8 +347,9 @@ Detalhe e input em [docs/playtests/playtest-2026-06-28.md](../playtests/playtest
   preservado (store central). Futuro: rota por aba, responsividade, realce de pendências.
 
 ### Backlog (iterar depois)
-- **Cancelar show com consequência** (ponto 1.1, 0016) — aviso (ConfirmDialog) + penalidade
-  (multa/reputação) proporcional à proximidade da data.
+- ✅ **Cancelar show com consequência** (ponto 1.1, 0016) — **feito (2026-07-09, 0016
+  [0.7.0])**: ConfirmDialog mostra a penalidade exata; multa (∝ cachê do local) +
+  reputação, proporcionais à proximidade dentro da janela de 14 dias.
 - **Balance da equipe — conquista gradual** (ponto 2, 0013 + 0003) — custos progressivos e/ou
   gates (reputação/marcos), para não comprar toda a equipe cedo. Casa com o balance da turnê.
 - **Rework da turnê** (ponto 3, 0014 + 0016 + 0008) — turnê vira trajeto de shows (nacional/

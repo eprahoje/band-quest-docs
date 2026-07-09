@@ -1,5 +1,25 @@
 # Feature 0014 - Core Loop and Actions (Log)
 
+## [0.15.0] - 2026-07-09T00:00:00Z — iteration-08 (tipos de descanso + férias com cooldown)
+
+### Input
+- Playtest 05 ponto 4 + Playtest 06 pontos 4/8/8.1: mais opções de descanso (folga /
+  descanso / prolongado) e férias que recuperam muito, com cooldown para não emendar.
+
+### Summary
+- **Tipos de descanso**: `rest` ganhou 3 opções de esforço — Folga (2d), Descanso (5d)
+  e Descanso prolongado (10d), todas na mesma taxa (−6/dia). Só a duração varia.
+- **Férias**: nova ação `vacation` (30d, −10/dia, `allowWhenFatigued`) com o novo campo
+  `ActionDef.cooldownDays` (360 = 1x/ano). Store: `actionCooldowns` (turno em que a ação
+  volta a liberar, setado ao concluir); `canStartAction` recusa com "Disponível de novo
+  em N dia(s)". Cancelar no meio não ativa o cooldown. UI: Férias na aba Banda (0020).
+- NÚMEROS = placeholders → balance (0003).
+
+### Validate (gate verde)
+- `test:unit` 179 (+folga/prolongado proporcionais, +férias recuperam e entram em
+  cooldown; teste antigo do rest fixado no label 'Descanso'). `type-check`/`lint`/`build`
+  OK. Playtest do feel = humano.
+
 ## [0.14.0] - 2026-06-27T00:00:00Z — quick wins (Playtest 06 pontos 2 e 3)
 
 ### Input

@@ -1,5 +1,22 @@
 # Feature 0015 - Songwriting and Releases (Log)
 
+## [0.10.0] - 2026-07-09T00:00:00Z — fast-track (nome da música na composição)
+
+### Input
+- Playtest 05 ponto 2: editar o NOME da música já no compose chooser (placeholder
+  autogerado, editável), em vez de só depois na aba Músicas.
+
+### Summary
+- Compose chooser (GameView) ganhou campo **Nome** pré-preenchido com `generateSongName()`;
+  o 🎲 Aleatório também sorteia um novo nome. `ActionSelection.name` →
+  `ActiveAction.composeName` → `createSong({ name })` na conclusão (vazio/em branco cai no
+  autogerado). O evento de conclusão nomeia a faixa com o nome escolhido. Edição inline da
+  D7 (aba Músicas) segue valendo.
+
+### Validate (gate verde)
+- `test:unit` 179 (+nome aplicado na criação, +nome em branco cai no autogerado, +teste de
+  UI do campo no chooser). `type-check`/`lint`/`build` OK.
+
 ## [0.9.0] - 2026-06-26T00:00:00Z — fast-track (inventário: músicas prontas vs lançadas)
 
 ### Input
